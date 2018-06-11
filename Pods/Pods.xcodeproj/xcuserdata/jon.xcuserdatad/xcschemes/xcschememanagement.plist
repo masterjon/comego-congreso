@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-comego.xcscheme</key>
+		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-comego-congreso.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

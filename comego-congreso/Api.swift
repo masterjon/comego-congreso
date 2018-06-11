@@ -7,7 +7,7 @@
 //
 
 import Foundation
-let baseUrl = "https://comego.iddeasapps.xyz/api/v1/"
+let baseUrl = "https://comego-congreso.iddeasapps.xyz/api/v1/"
 func getApiBaseUrl()->String{
     return baseUrl
 }

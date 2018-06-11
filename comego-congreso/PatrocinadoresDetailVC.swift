@@ -1,4 +1,4 @@
-//
+    //
 //  PatrocinadoresDetailVC.swift
 //  flasog
 //
@@ -11,11 +11,13 @@ import UIKit
 class PatrocinadoresDetailVC: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     var url = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.webView.loadRequest(URLRequest(url: URL(string:self.url)!))
-        
+        if let url = URL(string:self.url){
+            self.webView.loadRequest(URLRequest(url: url))
+        }
         // Do any additional setup after loading the view.
         
     }
@@ -23,6 +25,9 @@ class PatrocinadoresDetailVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        self.loadingIndicator.stopAnimating()
     }
     
 

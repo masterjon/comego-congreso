@@ -7,33 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D9C3B3DFFC3A82B6F2C15F2 /* Pods_comego.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2650141864F6FEFA6E84AA /* Pods_comego.framework */; };
+		77F1D4F83386396B3055ECBD /* Pods_comego_congreso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66762477302425AA72F218D /* Pods_comego_congreso.framework */; };
 		FC1270081F005A2A008624C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1270071F005A2A008624C3 /* AppDelegate.swift */; };
 		FC12700A1F005A2A008624C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1270091F005A2A008624C3 /* ViewController.swift */; };
 		FC12700D1F005A2A008624C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC12700B1F005A2A008624C3 /* Main.storyboard */; };
 		FC12700F1F005A2A008624C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC12700E1F005A2A008624C3 /* Assets.xcassets */; };
 		FC1270121F005A2A008624C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1270101F005A2A008624C3 /* LaunchScreen.storyboard */; };
-		FC38B1041F3E68FB008F1B11 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38B1031F3E68FA008F1B11 /* MenuTableViewController.swift */; };
+		FC40B0B520CEDFDD00FEBBEA /* CDMXVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40B0B420CEDFDC00FEBBEA /* CDMXVC.swift */; };
+		FC40B0B720CEE12000FEBBEA /* HotelesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40B0B620CEE12000FEBBEA /* HotelesVC.swift */; };
+		FC40B0B920CEE12E00FEBBEA /* LugaresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40B0B820CEE12E00FEBBEA /* LugaresVC.swift */; };
+		FC40B0BB20CF0EA700FEBBEA /* TuFotoSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40B0BA20CF0EA700FEBBEA /* TuFotoSourceViewController.swift */; };
+		FC40B0BD20CF0EEB00FEBBEA /* TuFotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40B0BC20CF0EEB00FEBBEA /* TuFotoViewController.swift */; };
 		FC41EBBB1F6F618D00FF9CF9 /* MyScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41EBBA1F6F618D00FF9CF9 /* MyScheduleItem.swift */; };
 		FC456AFD1F33792C00CDDB44 /* PatrocinadoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC456AFC1F33792C00CDDB44 /* PatrocinadoresVC.swift */; };
 		FC456B011F337F4300CDDB44 /* PatrocinadoresDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC456B001F337F4300CDDB44 /* PatrocinadoresDetailVC.swift */; };
 		FC467F8D20BF9A4900E529D2 /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC467F8C20BF9A4900E529D2 /* MenuCollectionViewController.swift */; };
 		FC4BDB3220B4E92C00F00AC4 /* GuiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BDB3120B4E92C00F00AC4 /* GuiaViewController.swift */; };
 		FC4BDB3420B4EE5F00F00AC4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BDB3320B4EE5F00F00AC4 /* WebViewController.swift */; };
-		FC4BDB3620B4F87600F00AC4 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BDB3520B4F87600F00AC4 /* PodcastViewController.swift */; };
-		FC4BDB3820B5006400F00AC4 /* PublicacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BDB3720B5006400F00AC4 /* PublicacionesViewController.swift */; };
+		FC4BDB3620B4F87600F00AC4 /* ProfesoresExtranjerosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BDB3520B4F87600F00AC4 /* ProfesoresExtranjerosViewController.swift */; };
+		FC4BDB3820B5006400F00AC4 /* ProfesoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BDB3720B5006400F00AC4 /* ProfesoresViewController.swift */; };
 		FC528DDC1F1C1060005931F0 /* StaticTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC528DDB1F1C1060005931F0 /* StaticTabViewController.swift */; };
 		FC53AF321F4267230051A23E /* ScheduleContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC53AF311F4267230051A23E /* ScheduleContent.swift */; };
-		FC57009B20A74A6C001063DD /* BoletinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57009A20A74A6C001063DD /* BoletinesViewController.swift */; };
+		FC57009B20A74A6C001063DD /* ProfesoresNacionalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57009A20A74A6C001063DD /* ProfesoresNacionalesViewController.swift */; };
 		FC57009D20A74EE1001063DD /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57009C20A74EE1001063DD /* Api.swift */; };
 		FC57386C1F415F5A00FE1304 /* MiAgendaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC57386B1F415F5A00FE1304 /* MiAgendaVC.swift */; };
+		FC62AD0B20C99B7600D14E6B /* PorofesorDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC62AD0A20C99B7600D14E6B /* PorofesorDetalleViewController.swift */; };
 		FC78BD7120C3632000AB0AFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC78BD7020C3631E00AB0AFA /* GoogleService-Info.plist */; };
 		FC812BEF1F04C5F2004C406D /* OrganizadoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC812BEE1F04C5F2004C406D /* OrganizadoresVC.swift */; };
 		FC812BF21F04C85E004C406D /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC812BF11F04C85E004C406D /* ColorPalette.swift */; };
 		FC8890FA20B8B4B300D932B5 /* ProgramSubcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8890F920B8B4B200D932B5 /* ProgramSubcategory.swift */; };
+		FCA1528820C9EC5200AE5A4B /* AsistentesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1528720C9EC5200AE5A4B /* AsistentesViewController.swift */; };
+		FCA60C9C20C7584300561EC3 /* ComitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA60C9B20C7584300561EC3 /* ComitesViewController.swift */; };
+		FCD228DD20CB2F28000F427A /* ICCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228DC20CB2F28000F427A /* ICCVC.swift */; };
+		FCD228E120CB3048000F427A /* CancunICCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228E020CB3048000F427A /* CancunICCVC.swift */; };
+		FCD228E320CB3232000F427A /* ExpoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228E220CB3232000F427A /* ExpoVC.swift */; };
+		FCD228E520CB34FD000F427A /* SalonesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228E420CB34FD000F427A /* SalonesVC.swift */; };
+		FCD228E720CB368C000F427A /* SalonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228E620CB368C000F427A /* SalonDetailVC.swift */; };
 		FCD579F31F34EED4004A311C /* ProgramaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD579F21F34EED4004A311C /* ProgramaVC.swift */; };
-		FCE5C1AD20B5CA9800F7A30D /* PodcastPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C1AC20B5CA9800F7A30D /* PodcastPartsViewController.swift */; };
-		FCE5C1AF20B5CC4700F7A30D /* PodcastPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C1AE20B5CC4700F7A30D /* PodcastPart.swift */; };
+		FCE4AD8220CF146B005734F4 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4AD8120CF146B005734F4 /* QRViewController.swift */; };
 		FCE5C1B120B5D5D000F7A30D /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C1B020B5D5D000F7A30D /* Podcast.swift */; };
 		FCE5C1B320B6371F00F7A30D /* NormatividadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C1B220B6371F00F7A30D /* NormatividadViewController.swift */; };
 		FCE5C1B520B645D200F7A30D /* NormasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C1B420B645D200F7A30D /* NormasViewController.swift */; };
@@ -49,8 +60,11 @@
 /* Begin PBXFileReference section */
 		16B10EFDBA613A4A8B0D5342 /* Pods_flasog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flasog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3202A266B0BD1D6CA81CB470 /* Pods-comego.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comego.debug.xcconfig"; path = "Pods/Target Support Files/Pods-comego/Pods-comego.debug.xcconfig"; sourceTree = "<group>"; };
+		349C9256D7F3AA5711EB949E /* Pods-comego-congreso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comego-congreso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-comego-congreso/Pods-comego-congreso.debug.xcconfig"; sourceTree = "<group>"; };
 		9E2650141864F6FEFA6E84AA /* Pods_comego.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comego.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4150555E7B6696FE869AD3 /* Pods-comego-congreso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comego-congreso.release.xcconfig"; path = "Pods/Target Support Files/Pods-comego-congreso/Pods-comego-congreso.release.xcconfig"; sourceTree = "<group>"; };
 		D8A3D6AA0C9803790DF13753 /* Pods-comego.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comego.release.xcconfig"; path = "Pods/Target Support Files/Pods-comego/Pods-comego.release.xcconfig"; sourceTree = "<group>"; };
+		F66762477302425AA72F218D /* Pods_comego_congreso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comego_congreso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1270041F005A2A008624C3 /* comego-congreso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "comego-congreso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1270071F005A2A008624C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC1270091F005A2A008624C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,27 +72,38 @@
 		FC12700E1F005A2A008624C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1270111F005A2A008624C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC1270131F005A2A008624C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC38B1031F3E68FA008F1B11 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		FC40B0B420CEDFDC00FEBBEA /* CDMXVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMXVC.swift; sourceTree = "<group>"; };
+		FC40B0B620CEE12000FEBBEA /* HotelesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelesVC.swift; sourceTree = "<group>"; };
+		FC40B0B820CEE12E00FEBBEA /* LugaresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugaresVC.swift; sourceTree = "<group>"; };
+		FC40B0BA20CF0EA700FEBBEA /* TuFotoSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuFotoSourceViewController.swift; sourceTree = "<group>"; };
+		FC40B0BC20CF0EEB00FEBBEA /* TuFotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuFotoViewController.swift; sourceTree = "<group>"; };
 		FC41EBBA1F6F618D00FF9CF9 /* MyScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleItem.swift; sourceTree = "<group>"; };
 		FC456AFC1F33792C00CDDB44 /* PatrocinadoresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatrocinadoresVC.swift; sourceTree = "<group>"; };
 		FC456B001F337F4300CDDB44 /* PatrocinadoresDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatrocinadoresDetailVC.swift; sourceTree = "<group>"; };
 		FC467F8C20BF9A4900E529D2 /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
 		FC4BDB3120B4E92C00F00AC4 /* GuiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuiaViewController.swift; sourceTree = "<group>"; };
 		FC4BDB3320B4EE5F00F00AC4 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		FC4BDB3520B4F87600F00AC4 /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
-		FC4BDB3720B5006400F00AC4 /* PublicacionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicacionesViewController.swift; sourceTree = "<group>"; };
+		FC4BDB3520B4F87600F00AC4 /* ProfesoresExtranjerosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfesoresExtranjerosViewController.swift; sourceTree = "<group>"; };
+		FC4BDB3720B5006400F00AC4 /* ProfesoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfesoresViewController.swift; sourceTree = "<group>"; };
 		FC528DDB1F1C1060005931F0 /* StaticTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTabViewController.swift; sourceTree = "<group>"; };
 		FC53AF311F4267230051A23E /* ScheduleContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleContent.swift; sourceTree = "<group>"; };
-		FC57009A20A74A6C001063DD /* BoletinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoletinesViewController.swift; sourceTree = "<group>"; };
+		FC57009A20A74A6C001063DD /* ProfesoresNacionalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfesoresNacionalesViewController.swift; sourceTree = "<group>"; };
 		FC57009C20A74EE1001063DD /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		FC57386B1F415F5A00FE1304 /* MiAgendaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiAgendaVC.swift; sourceTree = "<group>"; };
+		FC62AD0A20C99B7600D14E6B /* PorofesorDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorofesorDetalleViewController.swift; sourceTree = "<group>"; };
 		FC78BD7020C3631E00AB0AFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC812BEE1F04C5F2004C406D /* OrganizadoresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizadoresVC.swift; sourceTree = "<group>"; };
 		FC812BF11F04C85E004C406D /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FC8890F920B8B4B200D932B5 /* ProgramSubcategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramSubcategory.swift; sourceTree = "<group>"; };
+		FCA1528720C9EC5200AE5A4B /* AsistentesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsistentesViewController.swift; sourceTree = "<group>"; };
+		FCA60C9B20C7584300561EC3 /* ComitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComitesViewController.swift; sourceTree = "<group>"; };
+		FCD228DC20CB2F28000F427A /* ICCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICCVC.swift; sourceTree = "<group>"; };
+		FCD228E020CB3048000F427A /* CancunICCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancunICCVC.swift; sourceTree = "<group>"; };
+		FCD228E220CB3232000F427A /* ExpoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoVC.swift; sourceTree = "<group>"; };
+		FCD228E420CB34FD000F427A /* SalonesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonesVC.swift; sourceTree = "<group>"; };
+		FCD228E620CB368C000F427A /* SalonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonDetailVC.swift; sourceTree = "<group>"; };
 		FCD579F21F34EED4004A311C /* ProgramaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaVC.swift; sourceTree = "<group>"; };
-		FCE5C1AC20B5CA9800F7A30D /* PodcastPartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPartsViewController.swift; sourceTree = "<group>"; };
-		FCE5C1AE20B5CC4700F7A30D /* PodcastPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPart.swift; sourceTree = "<group>"; };
+		FCE4AD8120CF146B005734F4 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		FCE5C1B020B5D5D000F7A30D /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		FCE5C1B220B6371F00F7A30D /* NormatividadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormatividadViewController.swift; sourceTree = "<group>"; };
 		FCE5C1B420B645D200F7A30D /* NormasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormasViewController.swift; sourceTree = "<group>"; };
@@ -97,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D9C3B3DFFC3A82B6F2C15F2 /* Pods_comego.framework in Frameworks */,
+				77F1D4F83386396B3055ECBD /* Pods_comego_congreso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +134,8 @@
 			children = (
 				3202A266B0BD1D6CA81CB470 /* Pods-comego.debug.xcconfig */,
 				D8A3D6AA0C9803790DF13753 /* Pods-comego.release.xcconfig */,
+				349C9256D7F3AA5711EB949E /* Pods-comego-congreso.debug.xcconfig */,
+				AE4150555E7B6696FE869AD3 /* Pods-comego-congreso.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -118,6 +145,7 @@
 			children = (
 				16B10EFDBA613A4A8B0D5342 /* Pods_flasog.framework */,
 				9E2650141864F6FEFA6E84AA /* Pods_comego.framework */,
+				F66762477302425AA72F218D /* Pods_comego_congreso.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,11 +176,11 @@
 				FC812BF01F04C83A004C406D /* Utils */,
 				FC1270071F005A2A008624C3 /* AppDelegate.swift */,
 				FC1270091F005A2A008624C3 /* ViewController.swift */,
-				FC38B1031F3E68FA008F1B11 /* MenuTableViewController.swift */,
 				FC12700B1F005A2A008624C3 /* Main.storyboard */,
 				FC12700E1F005A2A008624C3 /* Assets.xcassets */,
 				FC1270101F005A2A008624C3 /* LaunchScreen.storyboard */,
 				FC1270131F005A2A008624C3 /* Info.plist */,
+				FCA60C9B20C7584300561EC3 /* ComitesViewController.swift */,
 				FC812BEE1F04C5F2004C406D /* OrganizadoresVC.swift */,
 				FC528DDB1F1C1060005931F0 /* StaticTabViewController.swift */,
 				FC78BD7020C3631E00AB0AFA /* GoogleService-Info.plist */,
@@ -164,7 +192,6 @@
 				FCFA542A1F362C35007EC429 /* ProgramaFullVC.swift */,
 				FC57386B1F415F5A00FE1304 /* MiAgendaVC.swift */,
 				FCF698CA1FA52E1000D73123 /* flasog-Bridging-Header.h */,
-				FC467F8C20BF9A4900E529D2 /* MenuCollectionViewController.swift */,
 			);
 			path = "comego-congreso";
 			sourceTree = "<group>";
@@ -172,16 +199,29 @@
 		FC57009520A749CC001063DD /* comego */ = {
 			isa = PBXGroup;
 			children = (
-				FC4BDB3720B5006400F00AC4 /* PublicacionesViewController.swift */,
-				FC57009A20A74A6C001063DD /* BoletinesViewController.swift */,
+				FC467F8C20BF9A4900E529D2 /* MenuCollectionViewController.swift */,
+				FC4BDB3720B5006400F00AC4 /* ProfesoresViewController.swift */,
+				FC57009A20A74A6C001063DD /* ProfesoresNacionalesViewController.swift */,
+				FC4BDB3520B4F87600F00AC4 /* ProfesoresExtranjerosViewController.swift */,
+				FC62AD0A20C99B7600D14E6B /* PorofesorDetalleViewController.swift */,
 				FC4BDB3120B4E92C00F00AC4 /* GuiaViewController.swift */,
 				FC4BDB3320B4EE5F00F00AC4 /* WebViewController.swift */,
-				FC4BDB3520B4F87600F00AC4 /* PodcastViewController.swift */,
-				FCE5C1AC20B5CA9800F7A30D /* PodcastPartsViewController.swift */,
 				FCE5C1B220B6371F00F7A30D /* NormatividadViewController.swift */,
 				FCE5C1B420B645D200F7A30D /* NormasViewController.swift */,
 				FCE5C1B620B6502300F7A30D /* ReglamentosViewController.swift */,
 				FCE5C1B820B6575800F7A30D /* LeyesViewController.swift */,
+				FCA1528720C9EC5200AE5A4B /* AsistentesViewController.swift */,
+				FCD228DC20CB2F28000F427A /* ICCVC.swift */,
+				FCD228E020CB3048000F427A /* CancunICCVC.swift */,
+				FCD228E220CB3232000F427A /* ExpoVC.swift */,
+				FCD228E420CB34FD000F427A /* SalonesVC.swift */,
+				FCD228E620CB368C000F427A /* SalonDetailVC.swift */,
+				FC40B0B420CEDFDC00FEBBEA /* CDMXVC.swift */,
+				FC40B0B620CEE12000FEBBEA /* HotelesVC.swift */,
+				FC40B0B820CEE12E00FEBBEA /* LugaresVC.swift */,
+				FC40B0BA20CF0EA700FEBBEA /* TuFotoSourceViewController.swift */,
+				FC40B0BC20CF0EEB00FEBBEA /* TuFotoViewController.swift */,
+				FCE4AD8120CF146B005734F4 /* QRViewController.swift */,
 			);
 			name = comego;
 			sourceTree = "<group>";
@@ -203,7 +243,6 @@
 				FC8890F920B8B4B200D932B5 /* ProgramSubcategory.swift */,
 				FCFA54261F350303007EC429 /* ProgramItem.swift */,
 				FC41EBBA1F6F618D00FF9CF9 /* MyScheduleItem.swift */,
-				FCE5C1AE20B5CC4700F7A30D /* PodcastPart.swift */,
 				FCE5C1B020B5D5D000F7A30D /* Podcast.swift */,
 			);
 			name = Models;
@@ -287,9 +326,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-comego/Pods-comego-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-comego-congreso/Pods-comego-congreso-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -299,6 +339,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Segmentio.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -306,7 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-comego/Pods-comego-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-comego-congreso/Pods-comego-congreso-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B15A641061F2A4389B98E45B /* [CP] Check Pods Manifest.lock */ = {
@@ -320,7 +361,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-comego-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-comego-congreso-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -336,33 +377,44 @@
 			files = (
 				FC456AFD1F33792C00CDDB44 /* PatrocinadoresVC.swift in Sources */,
 				FC41EBBB1F6F618D00FF9CF9 /* MyScheduleItem.swift in Sources */,
+				FCD228E320CB3232000F427A /* ExpoVC.swift in Sources */,
 				FCE5C1B720B6502300F7A30D /* ReglamentosViewController.swift in Sources */,
-				FC4BDB3620B4F87600F00AC4 /* PodcastViewController.swift in Sources */,
-				FCE5C1AD20B5CA9800F7A30D /* PodcastPartsViewController.swift in Sources */,
+				FC4BDB3620B4F87600F00AC4 /* ProfesoresExtranjerosViewController.swift in Sources */,
 				FC812BEF1F04C5F2004C406D /* OrganizadoresVC.swift in Sources */,
 				FC57009D20A74EE1001063DD /* Api.swift in Sources */,
-				FCE5C1AF20B5CC4700F7A30D /* PodcastPart.swift in Sources */,
+				FCA60C9C20C7584300561EC3 /* ComitesViewController.swift in Sources */,
 				FC12700A1F005A2A008624C3 /* ViewController.swift in Sources */,
-				FC38B1041F3E68FB008F1B11 /* MenuTableViewController.swift in Sources */,
 				FC456B011F337F4300CDDB44 /* PatrocinadoresDetailVC.swift in Sources */,
+				FCE4AD8220CF146B005734F4 /* QRViewController.swift in Sources */,
+				FC40B0B720CEE12000FEBBEA /* HotelesVC.swift in Sources */,
 				FCE5C1B920B6575800F7A30D /* LeyesViewController.swift in Sources */,
 				FCE5C1B520B645D200F7A30D /* NormasViewController.swift in Sources */,
 				FC4BDB3220B4E92C00F00AC4 /* GuiaViewController.swift in Sources */,
+				FC40B0B920CEE12E00FEBBEA /* LugaresVC.swift in Sources */,
+				FC40B0BB20CF0EA700FEBBEA /* TuFotoSourceViewController.swift in Sources */,
 				FC528DDC1F1C1060005931F0 /* StaticTabViewController.swift in Sources */,
 				FC53AF321F4267230051A23E /* ScheduleContent.swift in Sources */,
 				FC4BDB3420B4EE5F00F00AC4 /* WebViewController.swift in Sources */,
+				FC62AD0B20C99B7600D14E6B /* PorofesorDetalleViewController.swift in Sources */,
 				FCFA542B1F362C35007EC429 /* ProgramaFullVC.swift in Sources */,
+				FC40B0BD20CF0EEB00FEBBEA /* TuFotoViewController.swift in Sources */,
+				FCD228DD20CB2F28000F427A /* ICCVC.swift in Sources */,
 				FCFA54291F352E63007EC429 /* ProgramItemDetailVC.swift in Sources */,
-				FC4BDB3820B5006400F00AC4 /* PublicacionesViewController.swift in Sources */,
+				FC4BDB3820B5006400F00AC4 /* ProfesoresViewController.swift in Sources */,
 				FCE5C1B320B6371F00F7A30D /* NormatividadViewController.swift in Sources */,
 				FCD579F31F34EED4004A311C /* ProgramaVC.swift in Sources */,
 				FC1270081F005A2A008624C3 /* AppDelegate.swift in Sources */,
+				FCD228E520CB34FD000F427A /* SalonesVC.swift in Sources */,
 				FCFA54271F350303007EC429 /* ProgramItem.swift in Sources */,
+				FC40B0B520CEDFDD00FEBBEA /* CDMXVC.swift in Sources */,
+				FCD228E720CB368C000F427A /* SalonDetailVC.swift in Sources */,
 				FC812BF21F04C85E004C406D /* ColorPalette.swift in Sources */,
 				FCE5C1B120B5D5D000F7A30D /* Podcast.swift in Sources */,
 				FC57386C1F415F5A00FE1304 /* MiAgendaVC.swift in Sources */,
 				FCFA54231F34FAB8007EC429 /* ProgramCategory.swift in Sources */,
-				FC57009B20A74A6C001063DD /* BoletinesViewController.swift in Sources */,
+				FCA1528820C9EC5200AE5A4B /* AsistentesViewController.swift in Sources */,
+				FC57009B20A74A6C001063DD /* ProfesoresNacionalesViewController.swift in Sources */,
+				FCD228E120CB3048000F427A /* CancunICCVC.swift in Sources */,
 				FC467F8D20BF9A4900E529D2 /* MenuCollectionViewController.swift in Sources */,
 				FCFA54251F34FF80007EC429 /* ProgramaCatDetailVC.swift in Sources */,
 				FC8890FA20B8B4B300D932B5 /* ProgramSubcategory.swift in Sources */,
@@ -498,7 +550,7 @@
 		};
 		FC1270171F005A2A008624C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3202A266B0BD1D6CA81CB470 /* Pods-comego.debug.xcconfig */;
+			baseConfigurationReference = 349C9256D7F3AA5711EB949E /* Pods-comego-congreso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X8G464WQ9L;
@@ -514,7 +566,7 @@
 		};
 		FC1270181F005A2A008624C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8A3D6AA0C9803790DF13753 /* Pods-comego.release.xcconfig */;
+			baseConfigurationReference = AE4150555E7B6696FE869AD3 /* Pods-comego-congreso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X8G464WQ9L;

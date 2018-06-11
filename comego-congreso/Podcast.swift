@@ -8,8 +8,9 @@
 
 import Foundation
 
-class Podcast:NSObject{
+class Profesor:NSObject{
     var title:String = ""
     var imageUrl:String = ""
-    var parts : [PodcastPart] = []
+    var descripcion:String = ""
+
 }

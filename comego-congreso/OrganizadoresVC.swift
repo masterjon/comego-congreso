@@ -59,11 +59,12 @@ class OrganizadoresVC: UIViewController {
         }
     }
     private func segmentioContent() -> [SegmentioItem] {
-        var items : [SegmentioItem] = []
+        //var items : [SegmentioItem] = []
         return [
-            SegmentioItem(title: "Filosofía", image: nil),
-            SegmentioItem(title: "Historia", image: nil ),
-            SegmentioItem(title: "Presidentes", image: nil ),
+            SegmentioItem(title: "XXIII CRC", image: nil),
+            SegmentioItem(title: "Pdte. COMEGO", image: nil ),
+            SegmentioItem(title: "Pdte. FEMECOG", image: nil ),
+            SegmentioItem(title: "Pdte. XXIII CRC", image: nil ),
         ]
     }
     
@@ -80,7 +81,7 @@ class OrganizadoresVC: UIViewController {
         
         return SegmentioOptions(
             backgroundColor:  .clear,
-            maxVisibleItems: 3,
+            maxVisibleItems: 4,
             scrollEnabled: true,
             indicatorOptions: segmentioIndicatorOptions(),
             horizontalSeparatorOptions: nil,
@@ -94,7 +95,7 @@ class OrganizadoresVC: UIViewController {
     }
     
     private func segmentioStates() -> SegmentioStates {
-        let font = UIFont.systemFont(ofSize:16)
+        let font = UIFont.systemFont(ofSize:12)
         return SegmentioStates(
             defaultState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
@@ -132,8 +133,9 @@ class OrganizadoresVC: UIViewController {
         let tab1 = StaticTabViewController.create(storyboardId:"vc1")
         let tab2 = StaticTabViewController.create(storyboardId:"vc2")
         let tab3 = StaticTabViewController.create(storyboardId:"vc22")
+        let tab4 = StaticTabViewController.create(storyboardId:"vc23")
   
-        return [tab1,tab2,tab3]
+        return [tab1,tab2,tab3,tab4]
         
         //        return viewcontrollers
     }

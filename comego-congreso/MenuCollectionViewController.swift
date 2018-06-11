@@ -11,19 +11,35 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class MenuCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
-    let items = [["title":"03-INICIO", "vc":"InicioNVC"],
-                 ["title":"03-COLEGIO","vc":"OrganizadoresNVC"],
-                 ["title":"03-ACTIVIDADES","vc":"ProgramaNVC"],
-                 ["title":"03-CALENDARIO", "vc":"CalendarioNVC"],
-                 ["title":"03-MISCURSOS", "vc":"MiAgendaNVC"],
-                 ["title":"03-PUBLICACIONES","vc":"PublicacionesNVC"],
-                 ["title":"03-NORMATIVIDAD","vc":"NormatividadNVC"],
-                 ["title":"03-CEMS","vc":"ProgramaNVC"],
-                 ["title":"03-COMEGOTV","link":"http://tv.comego.org.mx"],
-                 ["title":"03-PODCAST","vc":"PublicacionesNVC"],
-                 ["title":"03-COLEGIATE","link":"http://www.comego.org.mx/index.php/comegomenu/como-pertenecer-al-comego/beneficios"],
-                 ["title":"03-GRUPOELITE","vc":"PatrocinadoresNVC"],
-                 
+    let items = [["title":"m-Inicio", "vc":"InicioNVC"],
+                 ["title":"m-Agenda", "vc":"MiAgendaNVC"],
+                 ["title":"m-Comites", "vc":"ComitesNVC"],
+                 ["title":"m-Evento", "vc":"OrganizadoresNVC"],
+                 ["title":"m-Programa", "vc":"InicioNVC"],
+                 ["title":"m-Ahora", "vc":"InicioNVC"],
+                 ["title":"m-Profesores", "vc":"ProfesoresNVC"],
+                 ["title":"m-Recinto", "vc":"RecintoNVC"],
+                 ["title":"m-Tabajos", "vc":"InicioNVC"],
+                 ["title":"m-CDMX", "vc":"CDMXNVC"],
+                 ["title":"m-MiFoto", "vc":"TuFotoSourceNVC"],
+                 ["title":"m-Asistentes", "vc":"AsistentesNVC"],
+                 ["title":"m-Puntaje", "vc":"PuntajeNVC"],
+                 ["title":"m-Patrocinadores", "vc":"PatrocinadoresNVC"],
+                 ["title":"m-QRScanner", "vc":"QRNVC"],
+        
+//                 ["title":"03-INICIO", "vc":"InicioNVC"],
+//                 ["title":"03-COLEGIO","vc":"OrganizadoresNVC"],
+//                 ["title":"03-ACTIVIDADES","vc":"ProgramaNVC"],
+//                 ["title":"03-CALENDARIO", "vc":"CalendarioNVC"],
+//                 ["title":"03-MISCURSOS", "vc":"MiAgendaNVC"],
+//                 ["title":"03-PUBLICACIONES","vc":"PublicacionesNVC"],
+//                 ["title":"03-NORMATIVIDAD","vc":"NormatividadNVC"],
+//                 ["title":"03-CEMS","vc":"ProgramaNVC"],
+//                 ["title":"03-COMEGOTV","link":"http://tv.comego.org.mx"],
+//                 ["title":"03-PODCAST","vc":"PublicacionesNVC"],
+//                 ["title":"03-COLEGIATE","link":"http://www.comego.org.mx/index.php/comegomenu/como-pertenecer-al-comego/beneficios"],
+//                 ["title":"03-GRUPOELITE","vc":"PatrocinadoresNVC"],
+        
                  ]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,11 +98,11 @@ class MenuCollectionViewController: UICollectionViewController,UICollectionViewD
             if vcTitle.count > 0{
                 
                 let nvc = self.storyboard!.instantiateViewController(withIdentifier: vcTitle)
-                if items[indexPath.row]["title"] == "03-PODCAST"{
-                    if let vc = nvc.childViewControllers[0] as? PublicacionesViewController{
-                        vc.selctedIndex = 2
-                    }
-                }
+//                if items[indexPath.row]["title"] == "03-PODCAST"{
+//                    if let vc = nvc.childViewControllers[0] as? PublicacionesViewController{
+//                        vc.selctedIndex = 2
+//                    }
+//                }
                 if items[indexPath.row]["title"] == "03-CEMS"{
                     if let vc = nvc.childViewControllers[0] as? ProgramaVC{
                         vc.cems = true

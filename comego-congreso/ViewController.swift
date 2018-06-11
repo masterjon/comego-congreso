@@ -191,34 +191,9 @@ class ViewController: UIViewController {
         
     }
 
-    
-    @IBAction func comegoTV(_ sender: UIButton) {
-        let url = URL(string: "http://tv.comego.org.mx/")!
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-    }
-    
-    @IBAction func podcastBtn(_ sender: UIButton) {
-        let nvc = self.storyboard!.instantiateViewController(withIdentifier: "PublicacionesNVC")
-        print(nvc.childViewControllers.count)
-        if let vc = nvc.childViewControllers[0] as? PublicacionesViewController{
-            vc.selctedIndex = 2
-        }
-        self.present(nvc, animated: false, completion: nil)
-        
-    }
-    @IBAction func inscribeteBtn(_ sender: UIButton) {
-        let url = URL(string: "http://bit.ly/2mayanj")!
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-        
-    }
+
+
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "cemsSegue", let vc = segue.destination as? ProgramaCatDetailVC{
             let actividad = ProgramCat()
