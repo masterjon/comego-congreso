@@ -11,7 +11,7 @@ import UserNotifications
 import AVFoundation
 
 
-class ProgramItemDetailVC: UIViewController {
+class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
     let userDefaults = UserDefaults.standard
     var programItem:ProgramItem!
     var hideBtn:Bool?
@@ -30,6 +30,7 @@ class ProgramItemDetailVC: UIViewController {
     
     @IBOutlet var InscribeteBtn: UIButton!
     
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,10 +56,35 @@ class ProgramItemDetailVC: UIViewController {
             self.InscribeteBtn.isHidden = false
         }
         
+        print(programItem.presentaciones)
         
         // Do any additional setup after loading the view.
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(programItem.presentaciones.count)
+        return programItem.presentaciones.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let presentacion = programItem.presentaciones[indexPath.row]
+        print(presentacion.title)
+        print(presentacion.profesor)
+        if let title = cell.viewWithTag(2) as? UILabel{
+            title.text = presentacion.title
+        }
+        if let prof = cell.viewWithTag(1) as? UILabel{
+            prof.text = presentacion.profesor
+        }
+        return cell
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! PresentacionViewController
+        if let indexPath = tableView.indexPathForSelectedRow{
+            let item = programItem.presentaciones[indexPath.row]
+            vc.presentacion = item
+        }
+    }
     @IBAction func addToSchedule(_ sender: UIButton) {
         print("Agregado")
         
@@ -97,7 +123,7 @@ class ProgramItemDetailVC: UIViewController {
         let alert4 = UIAlertController(title:"Recuerda", message: "Sólo puedes agregar 1 precongreso y 1 transcongreso a tu agenda. Para poder agregar este elemento necesitas primero quitar de tu agenda el precongreso/transcongreso existente", preferredStyle: .alert)
         alert4.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
-        if var my_schedule_array = userDefaults.object(forKey: "my_schedule_comego") as? [Int]{
+        if var my_schedule_array = userDefaults.object(forKey: "my_schedule_comegoC") as? [Int]{
             //if !my_schedule_array.contains(programItem.catId){
             var exists = false
            
@@ -118,7 +144,7 @@ class ProgramItemDetailVC: UIViewController {
                     }
                 })
               my_schedule_array.append(programItem.id)
-                userDefaults.set(my_schedule_array, forKey: "my_schedule_comego")
+                userDefaults.set(my_schedule_array, forKey: "my_schedule_comegoC")
                 
                 self.present(alert2, animated: true, completion: nil)
             }
@@ -133,14 +159,14 @@ class ProgramItemDetailVC: UIViewController {
             
         }
         else{
-            userDefaults.set([programItem.id], forKey: "my_schedule_comego")
+            userDefaults.set([programItem.id], forKey: "my_schedule_comegoC")
             self.present(alert2, animated: true, completion: nil)
         }
         userDefaults.synchronize()
         
         
         
-        if let t = userDefaults.object(forKey: "my_schedule_comego") as? [Int]{
+        if let t = userDefaults.object(forKey: "my_schedule_comegoC") as? [Int]{
             print("my_schedule_comego")
             print(t)
         }
@@ -159,6 +185,7 @@ class ProgramItemDetailVC: UIViewController {
                 }
             }
     }
+    
     
     @IBAction func inscribiteAction(_ sender: UIButton) {
         if let url = URL(string: programItem.inscriptionUrl){

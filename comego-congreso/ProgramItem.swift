@@ -25,5 +25,6 @@ class ProgramItem:NSObject{
     var dateEnd = ""
     var category = ""
     var dateString = "23-10-2017 00:00:00"
+    var presentaciones = [Presentacion]()
     
 }

@@ -114,12 +114,13 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func ubicacionAction(_ sender: UIButton) {
-        let url = URL(string: "https://www.google.com.mx/maps/place/CANCUN+ICC/@21.1385675,-86.7505158,19.2z/data=!4m5!3m4!1s0x8f4c2c09dc820c41:0x2f257685e799c209!8m2!3d21.1386758!4d-86.7503051?hl=es-419")!
+        let url = URL(string: "https://goo.gl/maps/ZvSkq1i3gZ12")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
             UIApplication.shared.openURL(url)
         }
+        
     }
     
     
@@ -132,7 +133,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "Síguenos en ", message: "", preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "Facebook", style: .default, handler: { (action) in
             //execute some code when this option is selected
-            let url = URL(string: "https://www.facebook.com/FLASOG2017")!
+            let url = URL(string: "https://www.facebook.com/COMEGOAC/")!
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
@@ -142,7 +143,7 @@ class ViewController: UIViewController {
         }))
         alert.addAction(UIAlertAction(title: "Twitter", style: .default, handler: { (action) in
             //execute some code when this option is selected
-            let url = URL(string: "https://twitter.com/FLASOG2017")!
+            let url = URL(string: "https://twitter.com/COMEGOAC")!
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
@@ -151,7 +152,7 @@ class ViewController: UIViewController {
         }))
         alert.addAction(UIAlertAction(title: "Instagram", style: .default, handler: { (action) in
             //execute some code when this option is selected
-            let url = URL(string: "https://www.instagram.com/FLASOG2017")!
+            let url = URL(string: "https://www.instagram.com/COMEGOAC/")!
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {

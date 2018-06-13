@@ -38,6 +38,7 @@ class ProgramaVC: UIViewController, UICollectionViewDataSource, UICollectionView
                     actividad.title = item["title"].string!
                     actividad.image = item["picture"].string ?? ""
                     actividad.link = item["link"].string ?? ""
+                    actividad.color = item["color"].string ?? "#000"
                     self.items.append(actividad)
                     
                 }
@@ -132,7 +133,7 @@ class ProgramaVC: UIViewController, UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
         let width = (self.view.frame.size.width - 25 * 2) / 2 //some width
-        let height = (self.view.frame.size.width/2) //ratio
+        let height = (self.view.frame.size.width/3) //ratio
         return CGSize(width: width, height: height)
     }
     

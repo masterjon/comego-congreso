@@ -96,17 +96,17 @@ class ComitesViewController: UIViewController {
             defaultState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .black
+                titleTextColor: .white
             ),
             selectedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .white
+                titleTextColor: ColorPallete.DarkPrimaryColor
             ),
             highlightedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .white
+                titleTextColor: ColorPallete.DarkPrimaryColor
             )
         )
     }
@@ -178,4 +178,16 @@ class ComitesViewController: UIViewController {
     }
     */
 
+}
+extension ComitesViewController : UIScrollViewDelegate{
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let currentPage = floor(scrollView.contentOffset.x / scrollView.frame.width)
+        segmentioView.selectedSegmentioIndex = Int(currentPage)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 0)
+    }
+    
 }

@@ -36,7 +36,7 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     let userDefaults = UserDefaults.standard
     let url = "\(getApiBaseUrl())actividades_all/"
-    let months = ["", "Enero", "Frebrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+    let months = ["Martes, 26 de Junio","Miércoles, 27 de Junio", "Jueves, 28 de Junio", "Viernes, 29 de Junio"]
     
     let center = UNUserNotificationCenter.current()
     
@@ -70,19 +70,20 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 30))
         label.text = months[section]
         label.textAlignment = .center
+        label.textColor = .white
         label.font = UIFont(name: "Helvetica-Bold", size: 18)
-        label.backgroundColor = UIColor.lightGray
+        label.backgroundColor = ColorPallete.DarkPrimaryColor
         
-        if section == 0{
-            return UIView(frame: CGRect.zero)
-        }
+//        if section == 0{
+//            return UIView(frame: CGRect.zero)
+//        }
         return label
         
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 0{
-            return 0
-        }
+//        if section == 0{
+//            return 0
+//        }
         return 30
     }
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -115,7 +116,7 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             print("delete")
             
             let row = mylist[indexPath.section][indexPath.row]
-            if var storedCats = userDefaults.object(forKey: "my_schedule_comego") as? [Int]{
+            if var storedCats = userDefaults.object(forKey: "my_schedule_comegoC") as? [Int]{
                 let notifIdentifier = "\(row.id)\(row.title)"
                 print("Delete Notif:"+notifIdentifier)
                 center.removePendingNotificationRequests(withIdentifiers: [notifIdentifier])
@@ -127,7 +128,7 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                 }
                 if let i = deleteIndex{
                     storedCats.remove(at: i)
-                    userDefaults.set(storedCats, forKey: "my_schedule_comego")
+                    userDefaults.set(storedCats, forKey: "my_schedule_comegoC")
                     userDefaults.synchronize()
                     tableView.beginUpdates()
                     tableView.deleteRows(at: [indexPath], with: .automatic)
@@ -209,12 +210,35 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                     actividad.academicProgramUrl = item["academic_program_url"].string ?? ""
                     actividad.inscriptionUrl = item["inscription_url"].string ?? ""
                     actividad.category = item["category"].string ?? ""
+                    for presentacionItem in item["presentaciones"].arrayValue{
+                        let presentacion = Presentacion()
+                        presentacion.id = presentacionItem["id"].int!
+                        presentacion.title = presentacionItem["title"].string ?? ""
+                        presentacion.profesor = presentacionItem["doctor"].string ?? ""
+                        presentacion.pdf = presentacionItem["pdf"].string ?? ""
+                        actividad.presentaciones.append(presentacion)
+                    }
                     self.list.append(actividad)
                 }
-                if let schedule_items = self.userDefaults.object(forKey: "my_schedule_comego") as? [Int]{
+                if let schedule_items = self.userDefaults.object(forKey: "my_schedule_comegoC") as? [Int]{
                     for i in schedule_items{
                         if let index = self.list.index(where: {$0.id == i}){
-                            guard let idx = Int(dateFormatCustom2( self.list[index].dateStart)) else{return}
+                            let startDate = self.list[index].dateStart
+                            guard let day =  Int(dateFormatCustom3(startDate)) else{return}
+                            var idx = 0
+                            switch day{
+                            case 26:
+                                idx = 0
+                            case 27:
+                                idx = 1
+                            case 28:
+                                idx = 2
+                            case 29:
+                                idx = 3
+                            default:
+                                idx = 0
+                            }
+                            
                             self.mylist[idx].append(self.list[index])
                         }
                     }

@@ -100,17 +100,17 @@ class OrganizadoresVC: UIViewController {
             defaultState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .black
+                titleTextColor: .white
             ),
             selectedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .white
+                titleTextColor: ColorPallete.DarkPrimaryColor
             ),
             highlightedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .white
+                titleTextColor: ColorPallete.DarkPrimaryColor
             )
         )
     }

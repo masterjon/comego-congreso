@@ -54,7 +54,7 @@ class ICCVC: UIViewController {
     private func segmentioContent() -> [SegmentioItem] {
         
         return [
-            SegmentioItem(title: "Cancun ICC", image: UIImage(named: "CIECBco")),
+            SegmentioItem(title: "CIEC WTC", image: UIImage(named: "CIECBco")),
             SegmentioItem(title: "Salones", image: UIImage(named: "SalonesBco")),
             SegmentioItem(title: "Expo", image: UIImage(named: "ExpoBco"))
             

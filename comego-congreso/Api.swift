@@ -16,17 +16,17 @@ func dateFormatCustom(_ dateStr:String, _ dateStr2:String, lineBreak:Bool=false)
     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssxxxxx"
     dateFormatter.locale = Locale(identifier: "es_MX")
     if let date1 = dateFormatter.date(from:dateStr), let date2 = dateFormatter.date(from:dateStr2){
-        dateFormatter.dateFormat = "d MMM yyyy, h:mm a"
+        dateFormatter.dateFormat = "HH:mm"
         let fdate1 = dateFormatter.string(from: date1).capitalized
         let fdate2 = dateFormatter.string(from: date2).capitalized
         if fdate1 == fdate2{
             return  fdate1
         }
         else if lineBreak{
-            return "Inicia: \(fdate1) \nTermina: \(fdate2)"
+            return "\(fdate1) - \(fdate2) hrs."
         }
         else {
-            return "\(fdate1) - \(fdate2)"
+            return "\(fdate1) - \(fdate2) hrs."
         }
     }
     return ""
@@ -37,6 +37,16 @@ func dateFormatCustom2(_ dateStr:String)->String{
     dateFormatter.locale = Locale(identifier: "es_MX")
     if let date1 = dateFormatter.date(from:dateStr){
         dateFormatter.dateFormat = "M"
+        return dateFormatter.string(from: date1)
+    }
+    return ""
+}
+func dateFormatCustom3(_ dateStr:String)->String{
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssxxxxx"
+    dateFormatter.locale = Locale(identifier: "es_MX")
+    if let date1 = dateFormatter.date(from:dateStr){
+        dateFormatter.dateFormat = "d"
         return dateFormatter.string(from: date1)
     }
     return ""

@@ -34,6 +34,8 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleLabel.text = cat.title
+        self.titleLabel.textColor = UIColor(hex: cat.color)
+ 
         loadItems()
         // Do any additional setup after loading the view.
     }
@@ -61,6 +63,14 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
                         actividad.academicProgramUrl = item["academic_program_url"].string ?? ""
                         actividad.inscriptionUrl = item["inscription_url"].string ?? ""
                         actividad.category = item["category"].string ?? ""
+                        for presentacionItem in item["presentaciones"].arrayValue{
+                            let presentacion = Presentacion()
+                            presentacion.id = presentacionItem["id"].int!
+                            presentacion.title = presentacionItem["title"].string ?? ""
+                            presentacion.profesor = presentacionItem["doctor"].string ?? ""
+                            presentacion.pdf = presentacionItem["pdf"].string ?? ""
+                            actividad.presentaciones.append(presentacion)
+                        }
                         subCategory.activities.append(actividad)
                     }
                     self.subCategories.append(subCategory)
@@ -142,4 +152,31 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
     }
     */
 
+}
+extension UIColor {
+    convenience init(hex: String) {
+        var hexnum = hex
+        if !hex.isEmpty{
+            hexnum.removeFirst()
+        }
+        let scanner = Scanner(string: hexnum)
+        scanner.scanLocation = 0
+        
+        var rgbValue: UInt64 = 0
+        
+        scanner.scanHexInt64(&rgbValue)
+        
+        let r = (rgbValue & 0xff0000) >> 16
+        let g = (rgbValue & 0xff00) >> 8
+        let b = rgbValue & 0xff
+        
+        self.init(
+            red: CGFloat(r) / 0xff,
+            green: CGFloat(g) / 0xff,
+            blue: CGFloat(b) / 0xff, alpha: 1
+        )
+        
+        
+       
+    }
 }

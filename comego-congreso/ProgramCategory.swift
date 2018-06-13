@@ -14,5 +14,6 @@ class ProgramCat:NSObject{
     var image:String = ""
     var schedule:String = ""
     var link:String = ""
+    var color:String = "#000"
     var items:[ProgramItem] = []
 }

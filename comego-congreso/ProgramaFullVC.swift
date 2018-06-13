@@ -16,7 +16,7 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     let url = "\(getApiBaseUrl())actividades_all/"
-    let months = ["", "Enero", "Frebrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+    let months = ["Martes, 26 de Junio","Miércoles, 27 de Junio", "Jueves, 28 de Junio", "Viernes, 29 de Junio"]
     
     class func create(storyboardId:String) -> ProgramaFullVC {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -46,19 +46,21 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 30))
         label.text = months[section]
         label.textAlignment = .center
+        label.textColor = .white
         label.font = UIFont(name: "Helvetica-Bold", size: 18)
-        label.backgroundColor = UIColor.lightGray
+        label.backgroundColor = ColorPallete.DarkPrimaryColor
         
-        if section == 0{
-            return UIView(frame: CGRect.zero)
-        }
+//        if section == 0{
+//            return UIView(frame: CGRect.zero)
+//        }
         return label
         
     }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 0{
-            return 0
-        }
+//        if section == 0{
+//            return 0
+//        }
         return 30
     }
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -121,7 +123,21 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
                 let actJSON = JSON(response.value ?? [])
                 for item in actJSON.arrayValue{
                     guard let startDate = item["start_date"].string else{return}
-                    guard let index = Int(dateFormatCustom2(startDate)) else{return}
+                    guard let day = Int(dateFormatCustom3(startDate)) else{return}
+                    var index = 0
+                    switch day{
+                    case 26:
+                        index = 0
+                    case 27:
+                        index = 1
+                    case 28:
+                        index = 2
+                    case 29:
+                        index = 3
+                    default:
+                        index = 0
+                    }
+                    
                     let actividad = ProgramItem()
                     actividad.id = item["id"].int!
                     actividad.title = item["title"].string!
@@ -133,6 +149,14 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
                     actividad.academicProgramUrl = item["academic_program_url"].string ?? ""
                     actividad.inscriptionUrl = item["inscription_url"].string ?? ""
                     actividad.category = item["category"].string ?? ""
+                    for presentacionItem in item["presentaciones"].arrayValue{
+                        let presentacion = Presentacion()
+                        presentacion.id = presentacionItem["id"].int!
+                        presentacion.title = presentacionItem["title"].string ?? ""
+                        presentacion.profesor = presentacionItem["doctor"].string ?? ""
+                        presentacion.pdf = presentacionItem["pdf"].string ?? ""
+                        actividad.presentaciones.append(presentacion)
+                    }
                     self.list[index].append(actividad)
                 }
                 self.tableView.reloadData()
