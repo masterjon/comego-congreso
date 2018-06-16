@@ -89,9 +89,6 @@ class ProgramaVC: UIViewController, UICollectionViewDataSource, UICollectionView
             else{
                 vc.cat = self.items[sender as! Int]
             }
-            
-            
-            
         }
         else if let vc = segue.destination as? WebViewController{
             vc.webUrl = self.items[5].link

@@ -30,9 +30,8 @@ class ProfesoresExtranjerosViewController: UIViewController, UITableViewDataSour
             case .success:
                 let profesoresJSON = JSON(response.value ?? [])
                 for item in profesoresJSON["profesores"].arrayValue{
-                    let fullName = "\(item["nombres"].string!) \(item["apellidos"].string!)"
                     let profesor = Profesor()
-                    profesor.title = fullName
+                    profesor.title = item["nombres"].string!
                     profesor.imageUrl = item["picture"].string ?? ""
                     profesor.descripcion = item["description"].string ?? ""
                     self.profesores.append(profesor)

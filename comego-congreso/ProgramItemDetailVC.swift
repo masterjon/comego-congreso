@@ -39,7 +39,7 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
                 addToBtn.isHidden = isHiden
         }
         self.titleLabel.text = programItem.title
-        let htmlDesc = "<style>body{font-family:Helvetica;font-size:18px;}</style>\(programItem.desc)"
+        let htmlDesc = "<style>body{font-family:Helvetica;font-size:14px;}</style>\(programItem.desc)"
         self.descriptionTextView.attributedText = htmlDesc.htmlToAttributedString
         UIView.animate(withDuration: 0.5, animations: {
                 self.descriptionTextView.alpha = 1
@@ -76,6 +76,15 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
         if let prof = cell.viewWithTag(1) as? UILabel{
             prof.text = presentacion.profesor
         }
+        if let time = cell.viewWithTag(4) as? UILabel{
+            time.text = presentacion.horario
+        }
+        if let pdfView = cell.viewWithTag(3){
+            if presentacion.pdf.isEmpty{
+                pdfView.isHidden = true
+            }
+            
+        }
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -84,6 +93,18 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
             let item = programItem.presentaciones[indexPath.row]
             vc.presentacion = item
         }
+        
+    }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
+            let presentacion = programItem.presentaciones[indexPath.row]
+            if !presentacion.pdf.isEmpty{
+                return true
+            }
+        }
+        
+        return false
+        
     }
     @IBAction func addToSchedule(_ sender: UIButton) {
         print("Agregado")

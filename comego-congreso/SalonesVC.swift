@@ -36,6 +36,7 @@ class SalonesVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         
         // Do any additional setup after loading the view.
     }
+   
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)

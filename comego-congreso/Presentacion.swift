@@ -13,5 +13,6 @@ class Presentacion:NSObject{
     var title:String = ""
     var profesor: String = ""
     var pdf:String = ""
+    var horario:String = ""
     
 }

@@ -69,6 +69,7 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
                             presentacion.title = presentacionItem["title"].string ?? ""
                             presentacion.profesor = presentacionItem["doctor"].string ?? ""
                             presentacion.pdf = presentacionItem["pdf"].string ?? ""
+                            presentacion.horario = presentacionItem["horario"].string ?? ""
                             actividad.presentaciones.append(presentacion)
                         }
                         subCategory.activities.append(actividad)
@@ -103,7 +104,8 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
         label.text = subCategories[section].title
         label.textAlignment = .center
         label.font = UIFont(name: "Helvetica-Bold", size: 18)
-        label.backgroundColor = UIColor.lightGray
+        label.textColor = .white
+        label.backgroundColor = UIColor(hex: cat.color)
         
         return label
     }

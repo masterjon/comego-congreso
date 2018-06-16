@@ -155,6 +155,7 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
                         presentacion.title = presentacionItem["title"].string ?? ""
                         presentacion.profesor = presentacionItem["doctor"].string ?? ""
                         presentacion.pdf = presentacionItem["pdf"].string ?? ""
+                        presentacion.horario = presentacionItem["horario"].string ?? ""
                         actividad.presentaciones.append(presentacion)
                     }
                     self.list[index].append(actividad)

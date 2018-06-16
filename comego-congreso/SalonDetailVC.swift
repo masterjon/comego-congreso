@@ -12,8 +12,8 @@ class SalonDetailVC: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet var image: UIImageView!
     
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var titleLabel: UILabel!
-    
     
     var imageName = ""
     var title_t = ""
@@ -21,9 +21,22 @@ class SalonDetailVC: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         self.titleLabel.text = title_t
         self.image.image = UIImage(named: imageName)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(SalonDetailVC.didTap))
+        tap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
     
+    @objc func didTap() {
+        if self.scrollView.zoomScale > self.scrollView.minimumZoomScale{
+            self.scrollView.setZoomScale(self.scrollView.minimumZoomScale, animated: true)
+        }
+        else{
+            self.scrollView.setZoomScale(self.scrollView.maximumZoomScale, animated: true)
+        }
+        
+    }
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.image
     }

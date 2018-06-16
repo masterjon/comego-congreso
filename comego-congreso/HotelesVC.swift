@@ -20,41 +20,41 @@ class HotelesVC: UITableViewController {
         return mainStoryboard.instantiateViewController(withIdentifier: storyboardId) as! HotelesVC
     }
     
-    let items = [["nombre":"Grand Fiesta Americana Coral Beach Cancún",
+    let items = [["nombre":"Holiday Inn Express WTC CDMX",
                   "image":"HotelC1",
-                  "web":"http://bit.ly/2pwvKOO",
-                  "direccion":"Blvd. Kukulcán Km 9.5, Zona Hotelera, Cancún, Quintana Roo.",
-                  "link":"http://bit.ly/2pzFvf5"],
-                 ["nombre":"Krystal Grand Punta Cancún",
+                  "web":"https://www.ihg.com/holidayinnexpress/hotels/us/es/mexico/mexhm/hoteldetail",
+                  "direccion":"Dakota 95, Nápoles, 03810 Ciudad de México, CDMX",
+                  "link":"https://www.google.com/maps/place/Holiday+Inn+Express+%26+Suites+Mexico+City+at+WTC/@19.3955505,-99.1744639,17z/data=!4m16!1m8!3m7!1s0x85d1ff70ef829b89:0xd2e635ba71228!2sHoliday+Inn+Express+%26+Suites+Mexico+City+at+WTC!5m1!1s2018-07-07!8m2!3d19.3956485!4d-99.1747141!3m6!1s0x85d1ff70ef829b89:0xd2e635ba71228!5m1!1s2018-07-07!8m2!3d19.3956485!4d-99.1747141"],
+                 ["nombre":"Crowne Plaza Hotel de México",
                   "image":"HotelC2",
-                  "web":"http://bit.ly/2q3EfSz",
-                  "direccion":"Blvd. Kukulcán Km. 8.5, Zona Hotelera, Cancún, Quintana Roo.",
-                  "link":"http://bit.ly/2r21e0r"],
-                 ["nombre":"Krystal Hotel & Resort Cancún",
+                  "web":"http://www.hoteldemexico.com/",
+                  "direccion":"Crowne: Calle Dakota 95, Nápoles, 03810 Benito Juárez, CDMX",
+                  "link":"https://www.google.com.mx/maps/place/Crowne+Plaza+Hotel+de+M%C3%A9xico/@19.3961095,-99.1766256,17z/data=!3m1!4b1!4m7!3m6!1s0x85ce013fa8989a07:0x62791b31b80a1cb0!5m1!1s2018-06-30!8m2!3d19.3961095!4d-99.1744369"],
+                 ["nombre":"Isaaya Hotel Boutique",
                   "image":"HotelCE1",
-                  "web":"http://bit.ly/2qoBPRJ",
-                  "direccion":"Blvd. Kukulcán km 9, lotes 9 y 9ª, Zona Hotelera, Cancún, Quintana Roo.",
-                  "link":"http://bit.ly/2q3oRrB"],
-                 ["nombre":"Intercontinental Hotels & Resorts Cancún",
+                  "web":"https://www.isaayahotelboutique.mx/",
+                  "direccion":"Isaaya: Dakota 155, Nápoles, 03810 Ciudad de México, CDMX",
+                  "link":"https://www.google.com.mx/maps/place/Isaaya+Hotel+Boutique+by+WTC/@19.3941423,-99.1777606,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff71b74ebe23:0x18be5eeaf2ee2b77!5m1!1s2018-06-23!8m2!3d19.3941423!4d-99.1755719"],
+                 ["nombre":"Filadelfia Suites Hotel Boutique",
                   "image":"HotelCE2",
-                  "web":"http://bit.ly/2phPXfd",
-                  "direccion":"Blvd. Kukulcán KM 7.5, Zona Hotelera, Cancún, Quintana Roo.",
-                  "link":"http://bit.ly/2pkmhy2"],
-                 ["nombre":"Aloft Cancún",
+                  "web":"http://www.suitesfiladelfia.com.mx",
+                  "direccion":"Filadelfia Suites: Filadelfia 42, Nápoles, 03810 Ciudad de México, CDMX ",
+                  "link":"https://www.google.com.mx/maps/place/Filadelfia+Suites+Hotel+Boutique/@19.3932856,-99.1753246,14z/data=!4m10!1m2!2m1!1shoteles+cercanos+wtc!3m6!1s0x85d1ff71a7d7f571:0xe9d6726422a57fbc!5m1!1s2018-06-18!8m2!3d19.3931276!4d-99.1753647"],
+                 ["nombre":"J. Towers Hotel",
                   "image":"HotelCE3",
-                  "web":"http://bit.ly/2pwothR",
-                  "direccion":"Blvd. Kukulcán KM 9, MZ 48 L-8-1, Zona Hotelera, Cancún, Quintana Roo.",
-                  "link":"http://bit.ly/2qrQSdi"],
-                 ["nombre":"Beachscape KIN HA Villas & Suites Cancún",
+                  "web":"http://www.jtowers.com.mx/",
+                  "direccion":"JTowers: Texas 17, Nápoles, 03810 Delegación Benito Juarez, CDMX ",
+                  "link":"https://www.google.com.mx/maps/place/J.+Towers+Hotel/@19.3928526,-99.1788238,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff7057c207db:0x834310139536f161!5m1!1s2018-06-23!8m2!3d19.3928526!4d-99.1766351"],
+                 ["nombre":"The Host suites",
                   "image":"HotelCE4",
-                  "web":"http://bit.ly/2q1erIW",
-                  "direccion":"Blvd. Kukulcán Km. 8.5, Zona Hotelera, Cancún, Quintana Roo.",
-                  "link":"http://bit.ly/2pzP6Tj"],
-                 ["nombre":"Real Inn Cancún",
+                  "web":"http://www.thehostsuites.com/",
+                  "direccion":"Host: Av. Magdalena 311, Col del Valle Nte, 03100 Mexico City, CDMX ",
+                  "link":"https://www.google.com.mx/maps/place/The+Host+Business+Suites/@19.392075,-99.1742496,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff73c72bffff:0x45a9de83587a59ad!5m1!1s2018-06-15!8m2!3d19.392075!4d-99.1720609"],
+                 ["nombre":"Hotel Novit",
                   "image":"HotelCE5",
-                  "web":"http://bit.ly/2qZnzfc",
-                  "direccion":"Km 5.5, Blvd. Kukulcán, Zona, Zona Hotelera, Cancún, Quintana Roo.",
-                  "link":"http://bit.ly/2qTwHF0"]
+                  "web":"http://www.hotelnovit.com",
+                  "direccion":"Novit: Insurgentes Sur 635, Nápoles, 03810 Ciudad de México, CDMX",
+                  "link":"https://www.google.com.mx/maps/place/Hotel+Novit/@19.3960546,-99.1741898,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff72755e72f7:0xbfc2cef1476e4b38!5m1!1s2018-06-15!8m2!3d19.396094!4d-99.171829"]
     ]
     
     
@@ -97,6 +97,9 @@ class HotelesVC: UITableViewController {
         if let locBtn = cell.viewWithTag(4) as? UIButton{
             locBtn.titleLabel?.text = items[indexPath.row]["direccion"]
         }
+        if let loc = cell.viewWithTag(9) as? UILabel{
+            loc.text = items[indexPath.row]["nombre"]
+        }
         //        if let loc = cell.viewWithTag(3) as? UILabel{
         //            loc.text = items[indexPath.row]["direccion"]
         //        }
@@ -110,7 +113,7 @@ class HotelesVC: UITableViewController {
     
     
     @IBAction func reserveBtn(_ sender: Any) {
-        let url = URL(string: "http://bit.ly/29xJyE4")!
+        let url = URL(string: "http://www.comego.org.mx/regional/index.php/hospedaje")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {

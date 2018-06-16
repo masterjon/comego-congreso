@@ -63,7 +63,7 @@ class OrganizadoresVC: UIViewController {
         return [
             SegmentioItem(title: "XXIII CRC", image: nil),
             SegmentioItem(title: "Pdte. COMEGO", image: nil ),
-            SegmentioItem(title: "Pdte. FEMECOG", image: nil ),
+            SegmentioItem(title: "Pdte. Honorario", image: nil ),
             SegmentioItem(title: "Pdte. XXIII CRC", image: nil ),
         ]
     }

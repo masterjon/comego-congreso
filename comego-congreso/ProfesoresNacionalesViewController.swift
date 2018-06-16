@@ -29,9 +29,8 @@ class ProfesoresNacionalesViewController: UIViewController, UITableViewDataSourc
             case .success:
                 let profesoresJSON = JSON(response.value ?? [])
                 for item in profesoresJSON["profesores"].arrayValue{
-                    let fullName = "\(item["nombres"].string!) \(item["apellidos"].string!)"
                     let profesor = Profesor()
-                    profesor.title = fullName
+                    profesor.title = item["nombres"].string!
                     profesor.imageUrl = item["picture"].string ?? ""
                     profesor.descripcion = item["description"].string ?? ""
                     self.profesores.append(profesor)
@@ -62,6 +61,19 @@ class ProfesoresNacionalesViewController: UIViewController, UITableViewDataSourc
                 vc.profesor = self.profesores[row]
             }
         }
+    }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
+            let profesor = profesores[indexPath.row]
+            print("profesor.description.isEmpty")
+            
+            if !profesor.descripcion.isEmpty {
+                return true
+            }
+        }
+        
+        return false
+        
     }
 
     override func didReceiveMemoryWarning() {
