@@ -22,7 +22,10 @@ class PresentacionViewController: UIViewController,UIWebViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(PresentacionViewController.dismissKeyboard))
+        self.view.addGestureRecognizer(recognizer)
+        NotificationCenter.default.addObserver(self, selector: #selector(PresentacionViewController.keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(PresentacionViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         self.titleLabel.text = presentacion.title
         self.profesorLabel.text = presentacion.profesor
         
@@ -85,6 +88,25 @@ class PresentacionViewController: UIViewController,UIWebViewDelegate {
                                          UIActivityType.postToTencentWeibo,
                                          UIActivityType.airDrop]
         self.present(shareVC, animated: true, completion: nil)
+    }
+    @objc func dismissKeyboard(){
+        self.textView.resignFirstResponder()
+    }
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            print("HELLO")
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    @objc func keyboardWillHide(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
     }
     
     /*

@@ -23,7 +23,7 @@ class PatrocinadoresVC: UIViewController, UITableViewDataSource, UITableViewDele
             case .success:
                 let json = JSON(response.value ?? [])
                 for item in json.arrayValue{
-                    self.sponsors.append((item["title"].string!, item["description"].string!, item["link"].string!, item["picture"].string!))
+                    self.sponsors.append((item["title"].string!, item["description"].string!, item["link"].string ?? "", item["picture"].string ?? ""))
                 }
                 self.tableView.reloadData()
                 self.loadingIndicator.stopAnimating()
@@ -36,8 +36,15 @@ class PatrocinadoresVC: UIViewController, UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if let image = cell.viewWithTag(4) as? UIImageView{
-            Alamofire.request(sponsors[indexPath.row].img).responseData { (response) in
-                image.image = UIImage(data: response.data!)
+            image.image = UIImage(named: "circle")
+            Alamofire.request(sponsors[indexPath.row].img).validate().responseData{ (response) in
+                switch response.result{
+                case .success:
+                    image.image = UIImage(data: response.data!)
+                case .failure(let error):
+                    print(error)
+                }
+                
             }
             
         }
@@ -47,9 +54,11 @@ class PatrocinadoresVC: UIViewController, UITableViewDataSource, UITableViewDele
         if let desc = cell.viewWithTag(2) as? UILabel{
             desc.text = sponsors[indexPath.row].description
         }
-//        if let link = cell.viewWithTag(3) as? UILabel{
-//            link.text = sponsors[indexPath.row].url
-//        }
+        if let link = cell.viewWithTag(3) as? UILabel{
+            if sponsors[indexPath.row].url.isEmpty{
+                link.isHidden = true
+            }
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,6 +73,14 @@ class PatrocinadoresVC: UIViewController, UITableViewDataSource, UITableViewDele
             }
             
         }
+    }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
+            if sponsors[indexPath.row].url.isEmpty{
+                return false
+            }
+        }
+        return true
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
