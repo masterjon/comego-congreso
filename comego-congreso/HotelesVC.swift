@@ -20,7 +20,9 @@ class HotelesVC: UITableViewController {
         return mainStoryboard.instantiateViewController(withIdentifier: storyboardId) as! HotelesVC
     }
     
-    let items = [["nombre":"Holiday Inn Express WTC CDMX",
+    let items = [
+        [
+            ["nombre":"Holiday Inn Express WTC CDMX",
                   "image":"HotelC1",
                   "web":"https://www.ihg.com/holidayinnexpress/hotels/us/es/mexico/mexhm/hoteldetail",
                   "direccion":"Dakota 95, Nápoles, 03810 Ciudad de México, CDMX",
@@ -29,7 +31,9 @@ class HotelesVC: UITableViewController {
                   "image":"HotelC2",
                   "web":"http://www.hoteldemexico.com/",
                   "direccion":"Crowne: Calle Dakota 95, Nápoles, 03810 Benito Juárez, CDMX",
-                  "link":"https://www.google.com.mx/maps/place/Crowne+Plaza+Hotel+de+M%C3%A9xico/@19.3961095,-99.1766256,17z/data=!3m1!4b1!4m7!3m6!1s0x85ce013fa8989a07:0x62791b31b80a1cb0!5m1!1s2018-06-30!8m2!3d19.3961095!4d-99.1744369"],
+                  "link":"https://www.google.com.mx/maps/place/Crowne+Plaza+Hotel+de+M%C3%A9xico/@19.3961095,-99.1766256,17z/data=!3m1!4b1!4m7!3m6!1s0x85ce013fa8989a07:0x62791b31b80a1cb0!5m1!1s2018-06-30!8m2!3d19.3961095!4d-99.1744369"]
+        ],
+        [
                  ["nombre":"Isaaya Hotel Boutique",
                   "image":"HotelCE1",
                   "web":"https://www.isaayahotelboutique.mx/",
@@ -55,6 +59,7 @@ class HotelesVC: UITableViewController {
                   "web":"http://www.hotelnovit.com",
                   "direccion":"Novit: Insurgentes Sur 635, Nápoles, 03810 Ciudad de México, CDMX",
                   "link":"https://www.google.com.mx/maps/place/Hotel+Novit/@19.3960546,-99.1741898,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff72755e72f7:0xbfc2cef1476e4b38!5m1!1s2018-06-15!8m2!3d19.396094!4d-99.171829"]
+        ]
     ]
     
     
@@ -68,7 +73,27 @@ class HotelesVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    
+ 
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 30))
+        if section == 0{
+          label.text = "Hoteles en Convenio"
+        }
+        else{
+            label.text = "Hoteles Cercanos"
+        }
+        
+        label.textAlignment = .center
+        label.textColor = .white
+        label.font = UIFont(name: "Helvetica-Bold", size: 18)
+        label.backgroundColor = ColorPallete.DarkPrimaryColor
+        
+        //        if section == 0{
+        //            return UIView(frame: CGRect.zero)
+        //        }
+        return label
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -78,27 +103,49 @@ class HotelesVC: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return items.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return items.count
+        return items[section].count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let item = items[indexPath.section][indexPath.row]
         if let img = cell.viewWithTag(1) as? UIImageView{
-            img.image = UIImage(named: items[indexPath.row]["image"]!)
+            img.image = UIImage(named: item["image"]!)
         }
         if let loc = cell.viewWithTag(2) as? UILabel{
-            loc.text = items[indexPath.row]["direccion"]
+            loc.text = item["direccion"]
         }
         if let locBtn = cell.viewWithTag(4) as? UIButton{
-            locBtn.titleLabel?.text = items[indexPath.row]["direccion"]
+            locBtn.titleLabel?.text = item["direccion"]
         }
+        
+        if let hotelimg = cell.viewWithTag(10) as? UIImageView{
+            if indexPath.section == 1{
+                hotelimg.isHidden = true
+                
+            }
+            else{
+                hotelimg.isHidden = false
+            }
+            
+        }
+        if let hotelBtn = cell.viewWithTag(3) as? UIButton{
+            if indexPath.section == 1{
+                hotelBtn.isHidden = true
+            }
+            else{
+                hotelBtn.isHidden = false
+            }
+            
+        }
+        
         if let loc = cell.viewWithTag(9) as? UILabel{
-            loc.text = items[indexPath.row]["nombre"]
+            loc.text = item["nombre"]
         }
         //        if let loc = cell.viewWithTag(3) as? UILabel{
         //            loc.text = items[indexPath.row]["direccion"]
@@ -127,8 +174,8 @@ class HotelesVC: UITableViewController {
         let touchPoint = sender.convert(CGPoint.zero, to: self.view)
         
         let clickedButtonIndexPath = view.indexPathForRow(at: touchPoint)
-        if let row = clickedButtonIndexPath?.row{
-            let url = URL(string: items[row]["web"]!)!
+        if let row = clickedButtonIndexPath?.row, let section = clickedButtonIndexPath?.section{
+            let url = URL(string: items[section][row]["web"]!)!
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
@@ -143,8 +190,9 @@ class HotelesVC: UITableViewController {
         let touchPoint = sender.convert(CGPoint.zero, to: self.view)
         
         let clickedButtonIndexPath = view.indexPathForRow(at: touchPoint)
-        if let row = clickedButtonIndexPath?.row{
-            let url = URL(string: items[row]["link"]!)!
+        
+        if let row = clickedButtonIndexPath?.row, let section = clickedButtonIndexPath?.section{
+            let url = URL(string: items[section][row]["link"]!)!
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {

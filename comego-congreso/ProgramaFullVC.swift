@@ -16,7 +16,7 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     let url = "\(getApiBaseUrl())actividades_all/"
-    let months = ["Martes, 26 de Junio","Miércoles, 27 de Junio", "Jueves, 28 de Junio", "Viernes, 29 de Junio"]
+    let months = ["Sábado, 23 de Junio", "Martes, 26 de Junio","Miércoles, 27 de Junio", "Jueves, 28 de Junio", "Viernes, 29 de Junio"]
     
     class func create(storyboardId:String) -> ProgramaFullVC {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -76,7 +76,14 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
             titleLabel.text = row.title
         }
         if let cat = cell.viewWithTag(2) as? UILabel{
-            cat.text = row.category
+            if row.category == "Otro"{
+                cat.text = ""
+            }
+            else{
+                cat.text = row.category
+            }
+            
+            
         }
         if let fechas = cell.viewWithTag(3) as? UILabel{
             fechas.text = dateFormatCustom(row.dateStart, row.dateEnd)
@@ -100,7 +107,21 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
     }
-    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+            if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
+                let item = self.list[indexPath.section][indexPath.row]
+                if item.category == "Otro"{
+                    return false
+                }
+                
+            }
+        
+      
+        
+        
+        return true
+    }
     
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -126,14 +147,16 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
                     guard let day = Int(dateFormatCustom3(startDate)) else{return}
                     var index = 0
                     switch day{
-                    case 26:
+                    case 23:
                         index = 0
-                    case 27:
+                    case 26:
                         index = 1
-                    case 28:
+                    case 27:
                         index = 2
-                    case 29:
+                    case 28:
                         index = 3
+                    case 29:
+                        index = 4
                     default:
                         index = 0
                     }

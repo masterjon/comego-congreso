@@ -44,7 +44,8 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
         UIView.animate(withDuration: 0.5, animations: {
                 self.descriptionTextView.alpha = 1
         })
-        self.daysLabel.text = dateFormatCustom(programItem.dateStart, programItem.dateEnd, lineBreak: true)
+        let customdate="\(dateFormatCustom4(programItem.dateStart).capitalized) \n \(dateFormatCustom(programItem.dateStart, programItem.dateEnd, lineBreak: true))"
+        self.daysLabel.text = customdate
         self.dressCodeLabel.text = "Código de vestir: \(programItem.dresscode.capitalized)"
         self.roomLabel.text = "Salón: \(programItem.room)"
         //self.durationLabel.text = "Duración: \(programItem.duration) mins."
@@ -83,6 +84,9 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
             if presentacion.pdf.isEmpty{
                 pdfView.isHidden = true
             }
+            else{
+                pdfView.isHidden = false
+            }
             
         }
         return cell
@@ -117,20 +121,15 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssxxxxx"
-        var date = dateFormatter.date(from: "2018-01-01T19:00:00-05:00")
+        var date = dateFormatter.date(from: "2018-01-01T18:00:00-05:00")
+//        print(date!)
         if let dd = dateFormatter.date(from: programItem.dateStart){
              date = dd.addingTimeInterval(15.0 * 60.0 * -1)
         }
-
+//        print(programItem.dateStart)
+//        print(date!)
+       
         
-        let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date!)
-        
-        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate,
-                                                    repeats: false)
-        let identifier = "\(programItem.id)\(programItem.title)"
-        print("Add Notif:"+identifier)
-        let request = UNNotificationRequest(identifier: identifier,
-                                            content: content, trigger: trigger)
 
 //
         
@@ -143,35 +142,62 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
         
         let alert4 = UIAlertController(title:"Recuerda", message: "Sólo puedes agregar 1 precongreso y 1 transcongreso a tu agenda. Para poder agregar este elemento necesitas primero quitar de tu agenda el precongreso/transcongreso existente", preferredStyle: .alert)
         alert4.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        let alertError = UIAlertController(title:"Hubo un Error", message: "Intentalo nuevamente", preferredStyle: .alert)
+        alertError.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
-        if var my_schedule_array = userDefaults.object(forKey: "my_schedule_comegoC") as? [Int]{
+        if var my_schedule_array = userDefaults.object(forKey: "my_schedule_comegoC") as? [[Int]]{
             //if !my_schedule_array.contains(programItem.catId){
             var exists = false
-           
+            var transCounter = 0
+            var preCounter = 0
+            var tooManyCourses = false
             
             for item in my_schedule_array{
-                if item == programItem.id{
+                if item[1] == programItem.id{
                    exists = true
                 }
+                if item[0] == 1{
+                    preCounter+=1
+                }
+                if item[0] == 2{
+                    transCounter+=1
+                }
             }
-//            if (programItem.catId == 0 && preCounter > 0) || (programItem.catId == 1 && transCounter > 0){
-//                tooManyCourses = true
-//            }
-            if !exists {
-              
-                center.add(request, withCompletionHandler: { (error) in
-                    if let error = error {
-                        print("Something went wrong\(error)")
-                    }
-                })
-              my_schedule_array.append(programItem.id)
-                userDefaults.set(my_schedule_array, forKey: "my_schedule_comegoC")
-                
-                self.present(alert2, animated: true, completion: nil)
+            if (programItem.catId == 1 && preCounter > 0) || (programItem.catId == 2 && transCounter > 0){
+                tooManyCourses = true
+            }
+            if !exists && !tooManyCourses{
+                if let nDate = date{
+                    let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: nDate)
+                    
+                    let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate,
+                                                                repeats: false)
+                    let identifier = "\(programItem.id)\(programItem.title)"
+                    print("Add Notif:"+identifier)
+                    let request = UNNotificationRequest(identifier: identifier,
+                                                        content: content, trigger: trigger)
+                    center.add(request, withCompletionHandler: { (error) in
+                        if let error = error {
+                            print("Something went wrong\(error)")
+                        }
+                    })
+                    my_schedule_array.append([programItem.catId ,programItem.id])
+                    userDefaults.set(my_schedule_array, forKey: "my_schedule_comegoC")
+                    
+                    self.present(alert2, animated: true, completion: nil)
+                }
+                else{
+                    self.present(alertError, animated: true, completion: nil)
+                    
+                }
+               
             }
            
             else if exists{
                 self.present(alert3, animated: true, completion: nil)
+            }
+            else if tooManyCourses {
+                self.present(alert4, animated: true, completion: nil)
             }
             
             
@@ -180,14 +206,34 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
             
         }
         else{
-            userDefaults.set([programItem.id], forKey: "my_schedule_comegoC")
-            self.present(alert2, animated: true, completion: nil)
+            userDefaults.set([[programItem.catId,programItem.id]], forKey: "my_schedule_comegoC")
+            if let nDate = date{
+                let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: nDate)
+                
+                let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate,
+                                                            repeats: false)
+                let identifier = "\(programItem.id)\(programItem.title)"
+                print("Add Notif:"+identifier)
+                let request = UNNotificationRequest(identifier: identifier,
+                                                    content: content, trigger: trigger)
+                center.add(request, withCompletionHandler: { (error) in
+                    if let error = error {
+                        print("Something went wrong\(error)")
+                    }
+                })
+               
+                self.present(alert2, animated: true, completion: nil)
+            }
+            else{
+                self.present(alertError, animated: true, completion: nil)
+            }
+            
         }
         userDefaults.synchronize()
         
         
         
-        if let t = userDefaults.object(forKey: "my_schedule_comegoC") as? [Int]{
+        if let t = userDefaults.object(forKey: "my_schedule_comegoC") as? [[Int]]{
             print("my_schedule_comego")
             print(t)
         }

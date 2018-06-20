@@ -39,8 +39,11 @@
 		FC812BEF1F04C5F2004C406D /* OrganizadoresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC812BEE1F04C5F2004C406D /* OrganizadoresVC.swift */; };
 		FC812BF21F04C85E004C406D /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC812BF11F04C85E004C406D /* ColorPalette.swift */; };
 		FC8890FA20B8B4B300D932B5 /* ProgramSubcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8890F920B8B4B200D932B5 /* ProgramSubcategory.swift */; };
+		FC8EE8E320D9999E003A1EB0 /* ProgramaTextoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8EE8E220D9999E003A1EB0 /* ProgramaTextoViewController.swift */; };
+		FC8EE8E520D9CBE2003A1EB0 /* ReglamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8EE8E420D9CBE2003A1EB0 /* ReglamentoViewController.swift */; };
 		FCA1528820C9EC5200AE5A4B /* AsistentesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1528720C9EC5200AE5A4B /* AsistentesViewController.swift */; };
 		FCA60C9C20C7584300561EC3 /* ComitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA60C9B20C7584300561EC3 /* ComitesViewController.swift */; };
+		FCC149BE20DA29C8007BB27A /* TrabajosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC149BD20DA29C8007BB27A /* TrabajosViewController.swift */; };
 		FCD228DD20CB2F28000F427A /* ICCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228DC20CB2F28000F427A /* ICCVC.swift */; };
 		FCD228E120CB3048000F427A /* CancunICCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228E020CB3048000F427A /* CancunICCVC.swift */; };
 		FCD228E320CB3232000F427A /* ExpoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228E220CB3232000F427A /* ExpoVC.swift */; };
@@ -101,8 +104,11 @@
 		FC812BEE1F04C5F2004C406D /* OrganizadoresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizadoresVC.swift; sourceTree = "<group>"; };
 		FC812BF11F04C85E004C406D /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FC8890F920B8B4B200D932B5 /* ProgramSubcategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramSubcategory.swift; sourceTree = "<group>"; };
+		FC8EE8E220D9999E003A1EB0 /* ProgramaTextoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramaTextoViewController.swift; sourceTree = "<group>"; };
+		FC8EE8E420D9CBE2003A1EB0 /* ReglamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReglamentoViewController.swift; sourceTree = "<group>"; };
 		FCA1528720C9EC5200AE5A4B /* AsistentesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsistentesViewController.swift; sourceTree = "<group>"; };
 		FCA60C9B20C7584300561EC3 /* ComitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComitesViewController.swift; sourceTree = "<group>"; };
+		FCC149BD20DA29C8007BB27A /* TrabajosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrabajosViewController.swift; sourceTree = "<group>"; };
 		FCD228DC20CB2F28000F427A /* ICCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICCVC.swift; sourceTree = "<group>"; };
 		FCD228E020CB3048000F427A /* CancunICCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancunICCVC.swift; sourceTree = "<group>"; };
 		FCD228E220CB3232000F427A /* ExpoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoVC.swift; sourceTree = "<group>"; };
@@ -232,6 +238,9 @@
 				FC40B0BC20CF0EEB00FEBBEA /* TuFotoViewController.swift */,
 				FCE4AD8120CF146B005734F4 /* QRViewController.swift */,
 				FC406FF620D1CA1C004BCF84 /* AhoraViewController.swift */,
+				FC8EE8E220D9999E003A1EB0 /* ProgramaTextoViewController.swift */,
+				FC8EE8E420D9CBE2003A1EB0 /* ReglamentoViewController.swift */,
+				FCC149BD20DA29C8007BB27A /* TrabajosViewController.swift */,
 			);
 			name = comego;
 			sourceTree = "<group>";
@@ -391,6 +400,7 @@
 				FCE5C1B720B6502300F7A30D /* ReglamentosViewController.swift in Sources */,
 				FC4BDB3620B4F87600F00AC4 /* ProfesoresExtranjerosViewController.swift in Sources */,
 				FC812BEF1F04C5F2004C406D /* OrganizadoresVC.swift in Sources */,
+				FC8EE8E520D9CBE2003A1EB0 /* ReglamentoViewController.swift in Sources */,
 				FC57009D20A74EE1001063DD /* Api.swift in Sources */,
 				FCA60C9C20C7584300561EC3 /* ComitesViewController.swift in Sources */,
 				FC406FF120D07C20004BCF84 /* Presentacion.swift in Sources */,
@@ -405,12 +415,14 @@
 				FC4BDB3220B4E92C00F00AC4 /* GuiaViewController.swift in Sources */,
 				FC40B0B920CEE12E00FEBBEA /* LugaresVC.swift in Sources */,
 				FC40B0BB20CF0EA700FEBBEA /* TuFotoSourceViewController.swift in Sources */,
+				FCC149BE20DA29C8007BB27A /* TrabajosViewController.swift in Sources */,
 				FC528DDC1F1C1060005931F0 /* StaticTabViewController.swift in Sources */,
 				FC4BDB3420B4EE5F00F00AC4 /* WebViewController.swift in Sources */,
 				FC62AD0B20C99B7600D14E6B /* PorofesorDetalleViewController.swift in Sources */,
 				FCFA542B1F362C35007EC429 /* ProgramaFullVC.swift in Sources */,
 				FC40B0BD20CF0EEB00FEBBEA /* TuFotoViewController.swift in Sources */,
 				FCD228DD20CB2F28000F427A /* ICCVC.swift in Sources */,
+				FC8EE8E320D9999E003A1EB0 /* ProgramaTextoViewController.swift in Sources */,
 				FCFA54291F352E63007EC429 /* ProgramItemDetailVC.swift in Sources */,
 				FC4BDB3820B5006400F00AC4 /* ProfesoresViewController.swift in Sources */,
 				FCE5C1B320B6371F00F7A30D /* NormatividadViewController.swift in Sources */,

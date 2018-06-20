@@ -1,30 +1,19 @@
 //
-//  WebViewController.swift
-//  comego
+//  ReglamentoViewController.swift
+//  comego-congreso
 //
-//  Created by Jonathan Horta on 5/22/18.
+//  Created by Jonathan Horta on 6/19/18.
 //  Copyright © 2018 iddeas. All rights reserved.
 //
 
 import UIKit
 
-class WebViewController: UIViewController, UIWebViewDelegate {
-
+class ReglamentoViewController: UIViewController {
+    let url = "https://online.flippingbook.com/view/48168/"
     @IBOutlet var webView: UIWebView!
-    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
-    var webUrl = ""
-    var hideLoading = false
-    class func create(storyboardId:String) -> WebViewController {
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        return mainStoryboard.instantiateViewController(withIdentifier: storyboardId) as! WebViewController
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if hideLoading{
-            self.loadingIndicator.stopAnimating()
-        }
-        if let url = URL(string:self.webUrl){
+        if let url = URL(string:self.url){
             self.webView.loadRequest(URLRequest(url: url))
         }
         // Do any additional setup after loading the view.
@@ -34,9 +23,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        self.loadingIndicator.stopAnimating()
-    }
+    
 
     /*
     // MARK: - Navigation

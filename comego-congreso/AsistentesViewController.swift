@@ -14,7 +14,7 @@ class AsistentesViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet var tableView: UITableView!
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     let url = "\(getApiBaseUrl())asistentes/"
-    var profesores = [String]()
+    var profesores = [(name:String,folio:Int)]()
     var dictt=[String:[String]]()
     var nd = [(key: String, value: [String])]()
 
@@ -26,18 +26,19 @@ class AsistentesViewController: UIViewController, UITableViewDataSource, UITable
             case .success:
                 let profesoresJSON = JSON(response.value ?? [])
                 for item in profesoresJSON.arrayValue{
-                    let fullName = "\(item["nombres"].string!) \(item["apellidos"].string!)"
-                    self.profesores.append(fullName)
+                    let fullName = item["nombre"].string!
+                    let folio = item["folio"].int!
+                    self.profesores.append((fullName,folio))
                 }
-                for name in self.profesores{
-                    if let c = name.folding(options: [.diacriticInsensitive, .widthInsensitive, .caseInsensitive] , locale: .current).first{
+                for item in self.profesores{
+                    if let c = item.name.folding(options: [.diacriticInsensitive, .widthInsensitive, .caseInsensitive] , locale: .current).first{
                         let key = "\(c)".uppercased()
                         if let _ = self.dictt[key]{
-                            self.dictt[key]?.append(name)
+                            self.dictt[key]?.append("\(item.folio) - \(item.name)")
                         }
                         else{
                             self.dictt[key] = []
-                            self.dictt[key]?.append(name)
+                            self.dictt[key]?.append("\(item.folio) - \(item.name)")
                         }
                     }
                 }
@@ -80,6 +81,7 @@ class AsistentesViewController: UIViewController, UITableViewDataSource, UITable
         if let label = cell.viewWithTag(1) as? UILabel{
             label.text = nd[indexPath.section].value[indexPath.row]
         }
+        
         return cell
     }
     

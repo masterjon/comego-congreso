@@ -75,12 +75,20 @@ class PatrocinadoresVC: UIViewController, UITableViewDataSource, UITableViewDele
         }
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
-            if sponsors[indexPath.row].url.isEmpty{
-                return false
+        
+        if identifier == "programSegue"{
+            if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
+                if !sponsors[indexPath.row].url.isEmpty{
+                    return true
+                }
             }
         }
-        return true
+        else if identifier == "menuSegue"{
+            return true
+        }
+        
+        
+        return false
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

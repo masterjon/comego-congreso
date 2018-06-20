@@ -196,16 +196,12 @@ class ViewController: UIViewController {
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "cemsSegue", let vc = segue.destination as? ProgramaCatDetailVC{
+
+        if segue.identifier == "residentesHomeSegue", let vc = segue.destination as? ProgramaTextoViewController{
             let actividad = ProgramCat()
-            actividad.id = 3
-            actividad.title = "CEMS Ginecología"
-            vc.cat = actividad
-        }
-        if segue.identifier == "intSegue", let vc = segue.destination as? ProgramaCatDetailVC{
-            let actividad = ProgramCat()
-            actividad.id = 1
-            actividad.title = "Cursos Internacionales"
+            actividad.id = 7
+            actividad.title = "XIII Encuentro de Residentes"
+            actividad.color = "#9641a4"
             vc.cat = actividad
         }
         

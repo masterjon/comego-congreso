@@ -53,6 +53,7 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
                     subCategory.title = subCat["title"].string!
                     for item in subCat["actividades"].arrayValue {
                         let actividad = ProgramItem()
+                        actividad.catId = self.cat.id
                         actividad.id = item["id"].int!
                         actividad.title = item["title"].string!
                         actividad.desc = item["description"].string!
@@ -110,9 +111,9 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
         return label
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if subCategories.count < 2{
-            return 0
-        }
+//        if subCategories.count < 2{
+//            return 0
+//        }
         return 30.00
     }
     

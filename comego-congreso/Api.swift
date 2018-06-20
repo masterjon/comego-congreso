@@ -51,5 +51,17 @@ func dateFormatCustom3(_ dateStr:String)->String{
     }
     return ""
 }
+func dateFormatCustom4(_ dateStr:String)->String{
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssxxxxx"
+    dateFormatter.locale = Locale(identifier: "es_MX")
+    if let date1 = dateFormatter.date(from:dateStr){
+        dateFormatter.dateFormat = "EEEE, MMM d"
+        return dateFormatter.string(from: date1)
+    }
+    return ""
+}
+
+
 
 

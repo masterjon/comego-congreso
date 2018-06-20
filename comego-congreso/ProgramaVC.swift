@@ -33,13 +33,16 @@ class ProgramaVC: UIViewController, UICollectionViewDataSource, UICollectionView
             case .success:
                 let actividadesJSON = JSON(response.value ?? [])
                 for item in actividadesJSON.arrayValue{
-                    let actividad = ProgramCat()
-                    actividad.id = item["id"].int!
-                    actividad.title = item["title"].string!
-                    actividad.image = item["picture"].string ?? ""
-                    actividad.link = item["link"].string ?? ""
-                    actividad.color = item["color"].string ?? "#000"
-                    self.items.append(actividad)
+                    if item["title"].string! != "Otro"{
+                    
+                        let actividad = ProgramCat()
+                        actividad.id = item["id"].int!
+                        actividad.title = item["title"].string!
+                        actividad.image = item["picture"].string ?? ""
+                        actividad.link = item["link"].string ?? ""
+                        actividad.color = item["color"].string ?? "#000"
+                        self.items.append(actividad)
+                    }
                     
                 }
 //                let progAcademico = ProgramCat()
@@ -90,20 +93,22 @@ class ProgramaVC: UIViewController, UICollectionViewDataSource, UICollectionView
                 vc.cat = self.items[sender as! Int]
             }
         }
-        else if let vc = segue.destination as? WebViewController{
-            vc.webUrl = self.items[5].link
+        else if let vc = segue.destination as? ProgramaTextoViewController{
+            if let index = self.items.index(where: {$0.id == 7}){
+                vc.cat = self.items[index]
+            }
         }
         
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "programSegue"{
             if let indexPath = self.collectionView.indexPath(for: sender as! UICollectionViewCell){
-                if self.items[indexPath.row].link.isEmpty{
+                if self.items[indexPath.row].id != 7{
                     return true
                 }
             }
         }
-        else if identifier == "menuSegue"{
+        else if identifier == "menuSegue" {
             return true
         }
         
@@ -112,9 +117,8 @@ class ProgramaVC: UIViewController, UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if !self.items[indexPath.row].link.isEmpty{
-            
-            performSegue(withIdentifier: "progAcadSegue", sender: nil)
+        if self.items[indexPath.row].id == 7{
+            performSegue(withIdentifier: "ShowTestSegue", sender: nil)
         }
 
     }

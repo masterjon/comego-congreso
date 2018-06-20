@@ -84,6 +84,9 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l0-6v-MfA">
                                                 <rect key="frame" x="0.0" y="149.5" width="167" height="62"/>
+                                                <connections>
+                                                    <segue destination="V6R-Vk-QxU" kind="show" identifier="residentesHomeSegue" id="99G-cB-fNx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -821,14 +824,14 @@ Gracias y bienvenidos.
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-xJ-47h">
-                                                    <rect key="frame" x="8" y="8" width="231" height="18.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-xJ-47h">
+                                                    <rect key="frame" x="8" y="30.5" width="231" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-of-eJ8">
-                                                    <rect key="frame" x="247" y="7.5" width="120" height="20"/>
+                                                    <rect key="frame" x="247" y="30" width="120" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="L67-An-N6Q"/>
                                                         <constraint firstAttribute="width" constant="120" id="hSl-U1-MVO"/>
@@ -838,7 +841,7 @@ Gracias y bienvenidos.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ocE-4M-K3d">
-                                                    <rect key="frame" x="8" y="34.5" width="359" height="20"/>
+                                                    <rect key="frame" x="8" y="57" width="359" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="XD3-v2-eDv"/>
                                                     </constraints>
@@ -854,7 +857,7 @@ Gracias y bienvenidos.
                                                 <constraint firstItem="Tlc-of-eJ8" firstAttribute="centerY" secondItem="OW7-xJ-47h" secondAttribute="centerY" id="Tb6-Pm-aha"/>
                                                 <constraint firstItem="Tlc-of-eJ8" firstAttribute="leading" secondItem="OW7-xJ-47h" secondAttribute="trailing" constant="8" id="Tr4-Dx-STt"/>
                                                 <constraint firstAttribute="trailing" secondItem="Tlc-of-eJ8" secondAttribute="trailing" constant="8" id="WQi-RC-fvW"/>
-                                                <constraint firstItem="OW7-xJ-47h" firstAttribute="top" secondItem="zjI-SU-GXv" secondAttribute="top" constant="8" id="edc-Ir-4P4"/>
+                                                <constraint firstItem="OW7-xJ-47h" firstAttribute="centerY" secondItem="zjI-SU-GXv" secondAttribute="centerY" constant="-10" id="esm-1q-dZm"/>
                                                 <constraint firstItem="ocE-4M-K3d" firstAttribute="top" secondItem="OW7-xJ-47h" secondAttribute="bottom" constant="8" id="f2E-ED-bRe"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -944,7 +947,7 @@ Gracias y bienvenidos.
                                             <constraint firstItem="TmQ-ZK-eIA" firstAttribute="top" secondItem="B87-AU-ELp" secondAttribute="top" id="wnF-1T-zgD"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="kER-6e-MH1" kind="show" identifier="programSegue" id="L1y-5u-T1R"/>
+                                            <segue destination="kER-6e-MH1" kind="show" identifier="programSegue" id="GfL-9J-CJX"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -962,9 +965,9 @@ Gracias y bienvenidos.
                         <constraints>
                             <constraint firstItem="ArV-dG-6hi" firstAttribute="centerX" secondItem="WjX-Kp-htM" secondAttribute="centerX" id="6ar-Ew-kpX"/>
                             <constraint firstItem="ArV-dG-6hi" firstAttribute="centerY" secondItem="WjX-Kp-htM" secondAttribute="centerY" id="73p-ge-e2A"/>
-                            <constraint firstItem="bVF-qL-ezh" firstAttribute="top" secondItem="1oc-ND-lO7" secondAttribute="bottom" id="QJG-sp-UZp"/>
+                            <constraint firstItem="1oc-ND-lO7" firstAttribute="top" secondItem="sck-EH-F2v" secondAttribute="bottom" constant="16" id="cT5-uE-lSk"/>
                             <constraint firstAttribute="trailing" secondItem="1oc-ND-lO7" secondAttribute="trailing" id="eqh-bJ-ieh"/>
-                            <constraint firstItem="1oc-ND-lO7" firstAttribute="top" secondItem="sck-EH-F2v" secondAttribute="bottom" constant="16" id="hc8-Ou-fb2"/>
+                            <constraint firstItem="bVF-qL-ezh" firstAttribute="top" secondItem="1oc-ND-lO7" secondAttribute="bottom" id="g19-SM-bLB"/>
                             <constraint firstItem="1oc-ND-lO7" firstAttribute="leading" secondItem="WjX-Kp-htM" secondAttribute="leading" id="iwi-YJ-7nR"/>
                         </constraints>
                     </view>
@@ -980,6 +983,7 @@ Gracias y bienvenidos.
                         <outlet property="collectionView" destination="1oc-ND-lO7" id="Y9j-40-xkQ"/>
                         <outlet property="loadingIndicator" destination="ArV-dG-6hi" id="gLV-TS-bEd"/>
                         <segue destination="cNs-Of-j6F" kind="show" identifier="progAcadSegue" id="7nI-h9-O0l"/>
+                        <segue destination="V6R-Vk-QxU" kind="show" identifier="ShowTestSegue" id="jEM-bu-Xxq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P2-TC-bfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -995,23 +999,23 @@ Gracias y bienvenidos.
                         <viewControllerLayoutGuide type="bottom" id="ziu-Zj-9O6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BTG-al-VbK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBS-v2-h4W">
-                                <rect key="frame" x="16" y="40" width="343" height="23"/>
+                                <rect key="frame" x="16" y="20" width="343" height="23"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WyJ-vD-Cx2">
-                                <rect key="frame" x="94" y="66" width="187.5" height="1"/>
+                                <rect key="frame" x="94" y="46" width="187.5" height="1"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.1647058824" blue="0.40784313729999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="jVU-dp-Dic"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZrL-T5-Gdk">
-                                <rect key="frame" x="0.0" y="83" width="375" height="584"/>
+                                <rect key="frame" x="0.0" y="63" width="375" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -1059,7 +1063,7 @@ Gracias y bienvenidos.
                                 </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="RAA-Td-tg5">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <rect key="frame" x="169" y="283" width="37" height="37"/>
                                 <color key="color" red="0.4039215686" green="0.71764705880000002" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -1087,7 +1091,7 @@ Gracias y bienvenidos.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSc-oE-VyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="1551"/>
+            <point key="canvasLocation" x="2076" y="1549"/>
         </scene>
         <!--Program Item DetailVC-->
         <scene sceneID="zaX-TQ-nML">
@@ -1117,7 +1121,7 @@ Gracias y bienvenidos.
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ece-0w-SZe">
-                                <rect key="frame" x="16" y="497" width="343" height="1"/>
+                                <rect key="frame" x="16" y="487" width="343" height="1"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.1647058824" blue="0.40784313729999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="tYc-M8-ISG"/>
@@ -1159,7 +1163,7 @@ Gracias y bienvenidos.
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-TB-oYN">
-                                <rect key="frame" x="16" y="256" width="343" height="233"/>
+                                <rect key="frame" x="16" y="256" width="343" height="223"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="147" id="AhN-Es-32U">
@@ -1254,7 +1258,7 @@ Gracias y bienvenidos.
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZ8-X3-nnu">
-                                <rect key="frame" x="16" y="505" width="343" height="90"/>
+                                <rect key="frame" x="16" y="495" width="343" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salón:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mti-Gh-ZP5">
                                         <rect key="frame" x="8" y="34.5" width="210" height="18.5"/>
@@ -1297,7 +1301,7 @@ Gracias y bienvenidos.
                                     <constraint firstItem="Mti-Gh-ZP5" firstAttribute="leading" secondItem="NZ8-X3-nnu" secondAttribute="leading" constant="8" id="gYI-lr-dZF"/>
                                     <constraint firstItem="o3y-wG-MHf" firstAttribute="leading" secondItem="Mti-Gh-ZP5" secondAttribute="trailing" constant="8" id="n0z-N7-zEv"/>
                                     <constraint firstItem="M7h-hj-cSB" firstAttribute="leading" secondItem="NZ8-X3-nnu" secondAttribute="leading" constant="8" id="nLR-88-EhY"/>
-                                    <constraint firstAttribute="height" constant="90" id="pRj-aR-h8n"/>
+                                    <constraint firstAttribute="height" constant="100" id="pRj-aR-h8n"/>
                                     <constraint firstItem="4pG-sf-paH" firstAttribute="top" secondItem="NZ8-X3-nnu" secondAttribute="top" constant="8" id="r6S-Ka-sW0"/>
                                 </constraints>
                             </view>
@@ -1384,12 +1388,19 @@ Gracias y bienvenidos.
                                                 </constraints>
                                             </view>
                                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmy-Ui-6xh">
-                                                <rect key="frame" x="8" y="98.5" width="359" height="305.5"/>
+                                                <rect key="frame" x="8" y="98.5" width="359" height="309.5"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="jFV-dS-pxJ" id="akb-ny-jlM"/>
                                                 </connections>
                                             </webView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-Wr-fir">
+                                                <rect key="frame" x="8" y="416" width="359" height="1"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="kJt-CT-FBW"/>
+                                                </constraints>
+                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis notas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsD-5s-loC">
                                                 <rect key="frame" x="8" y="424" width="359" height="19"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
@@ -1418,57 +1429,48 @@ Gracias y bienvenidos.
                                                     <action selector="deleteComment:" destination="jFV-dS-pxJ" eventType="touchUpInside" id="xv9-l6-dYZ"/>
                                                 </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" text="Ingresa texto" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VzL-H7-lX3">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" keyboardDismissMode="onDrag" text="Ingresa texto" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VzL-H7-lX3">
                                                 <rect key="frame" x="8" y="451" width="359" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="hEb-Mh-4qb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkc-BL-Uga">
-                                                <rect key="frame" x="276" y="421" width="25" height="25"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="25" id="CHm-x8-Bhv"/>
-                                                    <constraint firstAttribute="width" secondItem="fkc-BL-Uga" secondAttribute="height" multiplier="1:1" id="w74-0h-RY9"/>
-                                                </constraints>
-                                                <state key="normal" image="icons8-save-50"/>
-                                                <connections>
-                                                    <action selector="saveComment:" destination="jFV-dS-pxJ" eventType="touchUpInside" id="23j-j2-0AP"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="6Ac-ZJ-Epx" secondAttribute="trailing" constant="8" id="3nW-Bs-9Vf"/>
                                             <constraint firstItem="rmy-Ui-6xh" firstAttribute="top" secondItem="6Ac-ZJ-Epx" secondAttribute="bottom" constant="16" id="4CD-gk-Oz3"/>
                                             <constraint firstAttribute="trailing" secondItem="XGs-Fx-jcG" secondAttribute="trailing" constant="16" id="4G9-4L-Ej8"/>
-                                            <constraint firstItem="dsD-5s-loC" firstAttribute="top" secondItem="rmy-Ui-6xh" secondAttribute="bottom" constant="20" id="60P-Nz-Ygf"/>
                                             <constraint firstItem="8hB-lH-TRq" firstAttribute="top" secondItem="Gw6-Sa-OPW" secondAttribute="top" constant="20" id="8DA-H7-Uui"/>
                                             <constraint firstItem="8hB-lH-TRq" firstAttribute="leading" secondItem="Gw6-Sa-OPW" secondAttribute="leading" constant="16" id="9Hv-ll-goL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rnt-Wr-fir" secondAttribute="trailing" constant="8" id="9X4-Vw-Suo"/>
+                                            <constraint firstItem="Rnt-Wr-fir" firstAttribute="top" secondItem="dsD-5s-loC" secondAttribute="top" constant="-8" id="Dm0-jh-TWQ"/>
                                             <constraint firstAttribute="trailing" secondItem="VzL-H7-lX3" secondAttribute="trailing" constant="8" id="F9T-we-Ibi"/>
                                             <constraint firstItem="XGs-Fx-jcG" firstAttribute="top" secondItem="8hB-lH-TRq" secondAttribute="bottom" constant="8" id="G0X-rR-VBC"/>
                                             <constraint firstAttribute="trailing" secondItem="rmy-Ui-6xh" secondAttribute="trailing" constant="8" id="Hn2-Zi-UUH"/>
                                             <constraint firstAttribute="trailing" secondItem="ayz-Hd-DIy" secondAttribute="trailing" constant="8" id="JFf-nz-wtS"/>
                                             <constraint firstItem="XGs-Fx-jcG" firstAttribute="leading" secondItem="Gw6-Sa-OPW" secondAttribute="leading" constant="16" id="L1z-8S-kYY"/>
-                                            <constraint firstItem="ayz-Hd-DIy" firstAttribute="centerY" secondItem="fkc-BL-Uga" secondAttribute="centerY" id="Oza-5f-Dtu"/>
                                             <constraint firstItem="ayz-Hd-DIy" firstAttribute="leading" secondItem="ctJ-pO-1aH" secondAttribute="trailing" constant="8" id="QB4-5M-ee5"/>
                                             <constraint firstItem="VzL-H7-lX3" firstAttribute="top" secondItem="dsD-5s-loC" secondAttribute="bottom" constant="8" id="QCL-sg-St5"/>
                                             <constraint firstItem="dsD-5s-loC" firstAttribute="leading" secondItem="Gw6-Sa-OPW" secondAttribute="leading" constant="8" id="QDu-Ci-AIb"/>
+                                            <constraint firstItem="Rnt-Wr-fir" firstAttribute="top" secondItem="rmy-Ui-6xh" secondAttribute="bottom" constant="8" id="Rp0-1S-BEW"/>
+                                            <constraint firstItem="ayz-Hd-DIy" firstAttribute="centerY" secondItem="ctJ-pO-1aH" secondAttribute="centerY" id="SWd-Qo-cwm"/>
                                             <constraint firstItem="6Ac-ZJ-Epx" firstAttribute="top" secondItem="XGs-Fx-jcG" secondAttribute="bottom" constant="16" id="XfG-9A-D8r"/>
-                                            <constraint firstItem="ctJ-pO-1aH" firstAttribute="centerY" secondItem="fkc-BL-Uga" secondAttribute="centerY" id="b9F-3N-Qot"/>
+                                            <constraint firstItem="ctJ-pO-1aH" firstAttribute="centerY" secondItem="dsD-5s-loC" secondAttribute="centerY" id="bDM-pI-gQl"/>
                                             <constraint firstAttribute="trailing" secondItem="8hB-lH-TRq" secondAttribute="trailing" constant="16" id="fsx-fV-hmP"/>
+                                            <constraint firstItem="Rnt-Wr-fir" firstAttribute="leading" secondItem="Gw6-Sa-OPW" secondAttribute="leading" constant="8" id="lKk-Uy-OGw"/>
                                             <constraint firstAttribute="trailing" secondItem="dsD-5s-loC" secondAttribute="trailing" constant="8" id="ltV-p7-ZpI"/>
                                             <constraint firstAttribute="bottom" secondItem="VzL-H7-lX3" secondAttribute="bottom" constant="2" id="lvP-oC-lUw"/>
-                                            <constraint firstItem="ctJ-pO-1aH" firstAttribute="leading" secondItem="fkc-BL-Uga" secondAttribute="trailing" constant="8" id="pba-gO-WKA"/>
                                             <constraint firstItem="6Ac-ZJ-Epx" firstAttribute="leading" secondItem="Gw6-Sa-OPW" secondAttribute="leading" constant="8" id="rrX-Am-cgr"/>
-                                            <constraint firstItem="fkc-BL-Uga" firstAttribute="centerY" secondItem="dsD-5s-loC" secondAttribute="centerY" id="uAg-Wl-M0q"/>
                                             <constraint firstItem="VzL-H7-lX3" firstAttribute="leading" secondItem="Gw6-Sa-OPW" secondAttribute="leading" constant="8" id="vuw-GG-LF5"/>
                                             <constraint firstItem="rmy-Ui-6xh" firstAttribute="leading" secondItem="Gw6-Sa-OPW" secondAttribute="leading" constant="8" id="ywC-fx-4us"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Gw6-Sa-OPW" secondAttribute="bottom" id="To0-N0-Rg7"/>
                                     <constraint firstItem="Gw6-Sa-OPW" firstAttribute="leading" secondItem="uGT-LP-XTi" secondAttribute="leading" id="Vte-Ai-y0n"/>
@@ -1572,7 +1574,7 @@ Gracias y bienvenidos.
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="1ed-1b-dE8" kind="show" id="vxT-XP-pho"/>
+                                            <segue destination="1ed-1b-dE8" kind="show" identifier="programSegue" id="vxT-XP-pho"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1600,7 +1602,7 @@ Gracias y bienvenidos.
                         <barButtonItem key="rightBarButtonItem" image="menu" id="sFC-Z7-Qlp">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="mnd-Rx-1bS" kind="presentation" modalTransitionStyle="crossDissolve" id="YHd-SC-kHL"/>
+                                <segue destination="mnd-Rx-1bS" kind="presentation" identifier="menuSegue" modalTransitionStyle="crossDissolve" id="YHd-SC-kHL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1682,14 +1684,14 @@ Gracias y bienvenidos.
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="b7F-4H-C6L">
-                                                    <rect key="frame" x="8" y="8" width="231" height="18.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="b7F-4H-C6L">
+                                                    <rect key="frame" x="8" y="30" width="231" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="z63-xb-64X">
-                                                    <rect key="frame" x="247" y="7.5" width="120" height="20"/>
+                                                    <rect key="frame" x="247" y="29.5" width="120" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="B8S-62-SFE"/>
                                                         <constraint firstAttribute="height" constant="20" id="WsW-tU-1sO"/>
@@ -1699,7 +1701,7 @@ Gracias y bienvenidos.
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CY0-mb-vgl">
-                                                    <rect key="frame" x="8" y="34.5" width="359" height="20"/>
+                                                    <rect key="frame" x="8" y="56.5" width="359" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="7fx-IW-RBV"/>
                                                     </constraints>
@@ -1712,7 +1714,7 @@ Gracias y bienvenidos.
                                                 <constraint firstItem="b7F-4H-C6L" firstAttribute="leading" secondItem="khZ-j2-gNY" secondAttribute="leading" constant="8" id="7fp-jS-2I3"/>
                                                 <constraint firstAttribute="trailing" secondItem="z63-xb-64X" secondAttribute="trailing" constant="8" id="Bgu-2W-Xhh"/>
                                                 <constraint firstItem="z63-xb-64X" firstAttribute="centerY" secondItem="b7F-4H-C6L" secondAttribute="centerY" id="CDA-A5-mkT"/>
-                                                <constraint firstItem="b7F-4H-C6L" firstAttribute="top" secondItem="khZ-j2-gNY" secondAttribute="top" constant="8" id="bWP-mR-gC6"/>
+                                                <constraint firstItem="b7F-4H-C6L" firstAttribute="centerY" secondItem="khZ-j2-gNY" secondAttribute="centerY" constant="-10" id="UHd-Cq-cWz"/>
                                                 <constraint firstAttribute="trailing" secondItem="CY0-mb-vgl" secondAttribute="trailing" constant="8" id="da4-m3-hTk"/>
                                                 <constraint firstItem="CY0-mb-vgl" firstAttribute="leading" secondItem="khZ-j2-gNY" secondAttribute="leading" constant="8" id="nnG-Nn-NFt"/>
                                                 <constraint firstItem="CY0-mb-vgl" firstAttribute="top" secondItem="b7F-4H-C6L" secondAttribute="bottom" constant="8" id="uWP-14-Pac"/>
@@ -3676,7 +3678,7 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Acerca la imágen usando los dedos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djg-tR-r2Z">
-                                <rect key="frame" x="16" y="301" width="343" height="38"/>
+                                <rect key="frame" x="16" y="250" width="343" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="koP-gD-lVZ"/>
                                 </constraints>
@@ -3685,14 +3687,165 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uwo-uF-55v">
-                                <rect key="frame" x="16" y="339" width="343" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="pGo-Yk-B43"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="288" width="343" height="371"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">
-Horario: 9:00 - 18:00 hrs. </string>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="54 ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Stands">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+IAo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">3 Zonas de descanso
+27-29 de junio </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="a partir de las 7:00 hrs. ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="19" name="Times-Roman"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="19" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="19" name=".SFNSDisplay"/>
@@ -3711,10 +3864,10 @@ Horario: 9:00 - 18:00 hrs. </string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="fGe-DU-q5c">
-                                <rect key="frame" x="16" y="36" width="343" height="257"/>
+                                <rect key="frame" x="16" y="36" width="343" height="206"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="122PlanoExpo" translatesAutoresizingMaskIntoConstraints="NO" id="BYT-7o-p3o">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="257"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="206"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -3722,7 +3875,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                                     <constraint firstItem="BYT-7o-p3o" firstAttribute="centerX" secondItem="fGe-DU-q5c" secondAttribute="centerX" id="QIP-0N-7vS"/>
                                     <constraint firstAttribute="trailing" secondItem="BYT-7o-p3o" secondAttribute="trailing" id="YHB-d6-lZY"/>
                                     <constraint firstItem="BYT-7o-p3o" firstAttribute="top" secondItem="fGe-DU-q5c" secondAttribute="top" id="kvy-OS-0c2"/>
-                                    <constraint firstAttribute="width" secondItem="fGe-DU-q5c" secondAttribute="height" multiplier="4:3" id="vsF-cQ-ieR"/>
+                                    <constraint firstAttribute="width" secondItem="fGe-DU-q5c" secondAttribute="height" multiplier="15:9" id="vsF-cQ-ieR"/>
                                     <constraint firstAttribute="bottom" secondItem="BYT-7o-p3o" secondAttribute="bottom" id="zci-Ih-eBf"/>
                                     <constraint firstItem="BYT-7o-p3o" firstAttribute="leading" secondItem="fGe-DU-q5c" secondAttribute="leading" id="zr0-bV-P7q"/>
                                 </constraints>
@@ -3737,6 +3890,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                             <constraint firstItem="djg-tR-r2Z" firstAttribute="leading" secondItem="Rzr-lh-onX" secondAttribute="leading" constant="16" id="9yz-g2-U7G"/>
                             <constraint firstItem="fGe-DU-q5c" firstAttribute="top" secondItem="14O-II-Bfa" secondAttribute="bottom" constant="16" id="FiU-By-WiB"/>
                             <constraint firstItem="Uwo-uF-55v" firstAttribute="top" secondItem="djg-tR-r2Z" secondAttribute="bottom" id="PHe-ie-YO7"/>
+                            <constraint firstItem="tG4-gz-HCb" firstAttribute="top" secondItem="Uwo-uF-55v" secondAttribute="bottom" constant="8" id="UJk-pv-YJY"/>
                             <constraint firstItem="fGe-DU-q5c" firstAttribute="leading" secondItem="Rzr-lh-onX" secondAttribute="leading" constant="16" id="ez8-aH-vCt"/>
                             <constraint firstItem="djg-tR-r2Z" firstAttribute="top" secondItem="fGe-DU-q5c" secondAttribute="bottom" constant="8" id="fOQ-4T-ICd"/>
                             <constraint firstItem="Uwo-uF-55v" firstAttribute="leading" secondItem="Rzr-lh-onX" secondAttribute="leading" constant="16" id="gwg-t0-DBR"/>
@@ -3751,7 +3905,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukC-l5-6u0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1806" y="7552"/>
+            <point key="canvasLocation" x="1805.5999999999999" y="7551.2743628185917"/>
         </scene>
         <!--Salon DetailVC-->
         <scene sceneID="i3n-Cj-aIM">
@@ -3847,7 +4001,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIw-R1-60u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-658" y="8530"/>
+            <point key="canvasLocation" x="-646" y="9344"/>
         </scene>
         <!--CancunICC-->
         <scene sceneID="vva-h9-dXq">
@@ -3899,7 +4053,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diC-Oz-821" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="8530"/>
+            <point key="canvasLocation" x="270" y="9344"/>
         </scene>
         <!--Static Tab View Controller-->
         <scene sceneID="tn6-Ny-qM9">
@@ -3954,13 +4108,13 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W87-XQ-6LS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="8530"/>
+            <point key="canvasLocation" x="1074" y="9344"/>
         </scene>
         <!--HotelesVC-->
         <scene sceneID="aTf-pe-lyp">
             <objects>
                 <tableViewController storyboardIdentifier="CDMX2" id="JXe-CE-7Fe" customClass="HotelesVC" customModule="comego_congreso" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="190" sectionHeaderHeight="28" sectionFooterHeight="28" id="D4k-g7-q2V">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="190" sectionHeaderHeight="28" sectionFooterHeight="28" id="D4k-g7-q2V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3992,15 +4146,15 @@ Horario: 9:00 - 18:00 hrs. </string>
                                                 <constraint firstAttribute="width" constant="30" id="jDf-tv-9rG"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HotelesBlanco" highlightedImage=" " translatesAutoresizingMaskIntoConstraints="NO" id="Wld-0i-6ex">
-                                            <rect key="frame" x="199" y="98" width="30" height="30"/>
+                                        <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HotelesBlanco" highlightedImage=" " translatesAutoresizingMaskIntoConstraints="NO" id="Wld-0i-6ex">
+                                            <rect key="frame" x="199" y="135" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="JI9-nt-WAx"/>
                                                 <constraint firstAttribute="width" secondItem="Wld-0i-6ex" secondAttribute="height" multiplier="1:1" id="rBX-pH-qFM"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WebBco" translatesAutoresizingMaskIntoConstraints="NO" id="Eph-c1-BDc">
-                                            <rect key="frame" x="199" y="135" width="30" height="29"/>
+                                            <rect key="frame" x="199" y="98" width="30" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="TSl-LA-mub"/>
                                                 <constraint firstAttribute="width" secondItem="Eph-c1-BDc" secondAttribute="height" multiplier="29:28" id="ZDa-At-wGZ"/>
@@ -4027,7 +4181,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtu-v8-kar">
-                                            <rect key="frame" x="237" y="99.5" width="130" height="27"/>
+                                            <rect key="frame" x="237" y="136.5" width="130" height="27"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="130" id="hyo-ZT-Vb9"/>
                                             </constraints>
@@ -4040,7 +4194,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyc-0Z-rRd">
-                                            <rect key="frame" x="237" y="135.5" width="130" height="27"/>
+                                            <rect key="frame" x="237" y="99" width="130" height="27"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="130" id="3yp-7T-yiO"/>
                                             </constraints>
@@ -4065,10 +4219,9 @@ Horario: 9:00 - 18:00 hrs. </string>
                                         <constraint firstAttribute="bottom" secondItem="yHQ-RG-D7J" secondAttribute="bottom" id="PY7-iL-nms"/>
                                         <constraint firstItem="Qtu-v8-kar" firstAttribute="leading" secondItem="Wld-0i-6ex" secondAttribute="trailing" constant="8" id="Szu-y5-73w"/>
                                         <constraint firstAttribute="trailing" secondItem="oyc-0Z-rRd" secondAttribute="trailing" constant="8" id="Toe-ln-cbV"/>
-                                        <constraint firstItem="Eph-c1-BDc" firstAttribute="top" secondItem="Wld-0i-6ex" secondAttribute="bottom" constant="7" id="UdQ-pl-8Og"/>
-                                        <constraint firstItem="Wld-0i-6ex" firstAttribute="top" secondItem="U2c-zA-Bk5" secondAttribute="bottom" constant="8" id="VEp-CE-7kt"/>
                                         <constraint firstAttribute="trailing" secondItem="yHQ-RG-D7J" secondAttribute="trailing" id="VlJ-s9-3Aq"/>
                                         <constraint firstItem="oyc-0Z-rRd" firstAttribute="leading" secondItem="Eph-c1-BDc" secondAttribute="trailing" constant="8" id="b0A-eR-QTC"/>
+                                        <constraint firstItem="Eph-c1-BDc" firstAttribute="top" secondItem="U2c-zA-Bk5" secondAttribute="bottom" constant="8" id="cjj-qG-X8l"/>
                                         <constraint firstItem="mtw-aL-f3n" firstAttribute="leading" secondItem="U2c-zA-Bk5" secondAttribute="trailing" constant="8" id="diC-rw-rFZ"/>
                                         <constraint firstItem="gCE-sU-PAa" firstAttribute="leading" secondItem="cL5-jW-ndL" secondAttribute="leading" id="doP-N0-pRN"/>
                                         <constraint firstItem="gCE-sU-PAa" firstAttribute="top" secondItem="cL5-jW-ndL" secondAttribute="top" id="fhb-MM-Ycy"/>
@@ -4076,6 +4229,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                                         <constraint firstItem="a2u-la-k9g" firstAttribute="top" secondItem="cL5-jW-ndL" secondAttribute="top" constant="11" id="mil-95-ZWN"/>
                                         <constraint firstAttribute="trailing" secondItem="Qtu-v8-kar" secondAttribute="trailing" constant="8" id="o4b-U2-KNB"/>
                                         <constraint firstItem="U2c-zA-Bk5" firstAttribute="top" secondItem="a2u-la-k9g" secondAttribute="bottom" constant="4" id="oqN-Ae-Iga"/>
+                                        <constraint firstItem="Wld-0i-6ex" firstAttribute="top" secondItem="Eph-c1-BDc" secondAttribute="bottom" constant="8" id="orB-CN-NgM"/>
                                         <constraint firstItem="a2u-la-k9g" firstAttribute="leading" secondItem="U2c-zA-Bk5" secondAttribute="leading" id="pVK-QR-8Au"/>
                                         <constraint firstItem="Cs2-GB-VVW" firstAttribute="centerY" secondItem="U2c-zA-Bk5" secondAttribute="centerY" id="rue-Hh-hOS"/>
                                         <constraint firstAttribute="trailing" secondItem="a2u-la-k9g" secondAttribute="trailing" constant="5" id="sCm-CC-H4m"/>
@@ -4090,7 +4244,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awy-fj-5ni" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.8" y="8529.9850074962524"/>
+            <point key="canvasLocation" x="1830" y="9344"/>
         </scene>
         <!--LugaresVC-->
         <scene sceneID="zRm-Qy-syv">
@@ -4200,7 +4354,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZC-MI-HMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600.8000000000002" y="8529.9850074962524"/>
+            <point key="canvasLocation" x="2614" y="9344"/>
         </scene>
         <!--Profesores-->
         <scene sceneID="UBO-af-n9r">
@@ -4374,7 +4528,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9R-NG-kIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="9322"/>
+            <point key="canvasLocation" x="257" y="10136"/>
         </scene>
         <!--Tu Foto View Controller-->
         <scene sceneID="1hq-r1-XPT">
@@ -4452,7 +4606,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtm-Ox-54G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="9322"/>
+            <point key="canvasLocation" x="1170" y="10136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P28-HE-vZr">
@@ -4474,7 +4628,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fiE-R8-v7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-671" y="9322"/>
+            <point key="canvasLocation" x="-658" y="10136"/>
         </scene>
         <!--QR Scanner-->
         <scene sceneID="B4Y-JX-iY9">
@@ -4519,7 +4673,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fng-Df-AB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="10066"/>
+            <point key="canvasLocation" x="257" y="10880"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5gk-j9-IHh">
@@ -4541,7 +4695,7 @@ Horario: 9:00 - 18:00 hrs. </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Iy-eI-L7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-671" y="10066"/>
+            <point key="canvasLocation" x="-658" y="10880"/>
         </scene>
         <!--Cancun-->
         <scene sceneID="sKr-7F-9Zn">
@@ -4988,11 +5142,474 @@ Cg
             </objects>
             <point key="canvasLocation" x="1762" y="-357"/>
         </scene>
+        <!--Programa Texto View Controller-->
+        <scene sceneID="4gN-fs-ChD">
+            <objects>
+                <viewController id="V6R-Vk-QxU" customClass="ProgramaTextoViewController" customModule="comego_congreso" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2wY-8N-kfK"/>
+                        <viewControllerLayoutGuide type="bottom" id="jcw-2m-bPK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ivo-n5-n3F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rac-X2-qmM">
+                                <rect key="frame" x="16" y="0.0" width="343" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="XIII ENCUENTRO REGIONAL DE RESIDENTES COMEGO 2018">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="TrebuchetMS-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TrebuchetMS-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" lineHeightMultiple="1.1500000000000001" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">SEDE: AUDITORIO HIR
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" lineHeightMultiple="1.1500000000000001" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Coordinador: Dra. Mayra Almaraz Gómez ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Integrantes: Dra. Sara Bermejo Huerta Dra. Diana Yazmín Copado Mendoza Dr. Hugo E. López Briones ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Dirigido a los médicos residentes de la especialidad de ginecología-obstetricia y subespecialidades afines.
+El comité organizador del congreso regional COMEGO 2018, les hace una cordial y atenta invitación a participar en el XIII Encuentro Regional de Residentes cuyo programa fue diseñado especialmente para ustedes, con la finalidad de presentarles temas actuales de gran interés y útiles para su práctica profesional. El programa incluye sesiones interactivas, talleres teórico-prácticos y una conferencia magistral que abordará el importante aspecto de la adminsitración del consultorio; todas las actividades serán impartidas y supervisadas por profesores de alto nivel académico, gran prestigio y experiencia en su campo profesional.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Sesiones interactivas:
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	1.	</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">COLPOSCOPÍA 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	2.	</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">MASTOGRAFÍA
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">En las cuales, a través de casos clínicos e imágenes podrán afinar sus conocimientos y aclarar dudas en cuanto al diagnóstico de la patología mamaria y cervical más frecuentes.
+Así mismo, se podrán inscribir de acuerdo al orden de inscripción en uno de los 4 talleres teórico prácticos:
+1.REPARACIÓN DE DESGARROS PERINEALES: dividido en dos partes, la primera con información teórica de anatomía, factores de riesgo, complicaciones y suturas; la segunda con la prática de técnicas de reparación de desgarros en tejidos biológicos (vulvas de cerdo).
+2.FÓRCEPS: en el que podrán adquirir conocimientos teóricos-prácticos sobre las características de los fórceps (Kielland, Piper, Simpson y Salinas) indicaciones, ventajas, desventajas, técnica de aplicación y complicaciones.
+3.TÉCNICAS DE CONTENCIÓN DE LA HEMORRAGIA OBSTÉTRICA: dividido en parte teórica y práctica en la en la realización de ligadura de B-Lynch, balón hemostático de Bakri, ligadura de hipogástricas, devasculzarización uterina, aplicación de sonda y preservativo.
+4.MULTITALLER: este taller inlcuye la rotación en cuatro diferentes mesas teórico- prácticas:
+1.-PLANIFICACIÓN FAMILIAR DE LARGA DURACIÓN (implante subdérmico, dispositivo intrauterino de liberación hormonal): conocerán características, mecanismo de acción, ventajas, desventajas, complicaciones y posibles efectos secundarios, con la respectiva parte práctica en la colocación de los mismos de acuerdo a modelos ya establecidos.
+2.-ASPIRACIÓN MANUAL ENDOUTERINA (AMEU): conocerán generalidades, indicaciones, ventajas, desventajas, complicaciones, y se practicará la técnica.
+3.-TALLER DE BLOQUEO CERVICAL Y PARACERVICAL: conocerán características, mecanismo de acción, ventajas, desventajas, complicaciones y posibles efectos secundarios, con la respectiva parte práctica explicacando anatomía, generalidades de anestésicos utilizados y realizando la práctica en modelos cervicales.
+4.-TALLER DE USO DE BALÓN PARA DILATACIÓN CERVICAL: en este taller se introducirá este dilatador práctico para diferentes procedimientos que ameriten la dilatación cervical.
+CONFERENCIA MAGISTRAL: Consultorio exitoso como microempresa (finanzas, impuestos, uso de nuevas tecnologías, mercadotecnia, imagen personal y del consultorio)
+PRESENTACIÓN DE TRABAJOS LIBRES: se expondrán los trabajos libres de mayor relevancia académica y se premiarán 1º, 2º y 3er lugar.
+ACTIVIDADES SOCIALES: se realizará un desayuno donde se transmitirá el partido México vs. Corea del Sur.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="REQUISITOS">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+• Presentar constancia de médico residente. • Taller de desgarros deberán presentarse en forma rigurosa con equipo de disección. • Estudiar el manual que recibirán después de su inscripción.
+"Para poder emitir su constancia de asistencia es necesario tomar uno de los cuatro talleres dentro del programa"</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Times-Roman"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCV-Jt-Fmp">
+                                <rect key="frame" x="16" y="550" width="343" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Ver Programa"/>
+                                <connections>
+                                    <segue destination="kER-6e-MH1" kind="show" id="aGz-jR-Qof"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rac-X2-qmM" firstAttribute="top" secondItem="Ivo-n5-n3F" secondAttribute="top" id="1nc-HE-dih"/>
+                            <constraint firstItem="HCV-Jt-Fmp" firstAttribute="top" secondItem="Rac-X2-qmM" secondAttribute="bottom" constant="30" id="E4W-cT-gBF"/>
+                            <constraint firstAttribute="trailing" secondItem="Rac-X2-qmM" secondAttribute="trailing" constant="16" id="Jd8-ba-7yg"/>
+                            <constraint firstItem="Rac-X2-qmM" firstAttribute="leading" secondItem="Ivo-n5-n3F" secondAttribute="leading" constant="16" id="RPQ-ws-BLg"/>
+                            <constraint firstAttribute="trailing" secondItem="HCV-Jt-Fmp" secondAttribute="trailing" constant="16" id="X5f-qQ-W6j"/>
+                            <constraint firstItem="jcw-2m-bPK" firstAttribute="top" secondItem="HCV-Jt-Fmp" secondAttribute="bottom" constant="20" id="jLv-GE-gU8"/>
+                            <constraint firstItem="HCV-Jt-Fmp" firstAttribute="leading" secondItem="Ivo-n5-n3F" secondAttribute="leading" constant="16" id="xYi-D0-l0O"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOV-Nu-vqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="2559"/>
+        </scene>
+        <!--Reglamento-->
+        <scene sceneID="ExE-oa-2pi">
+            <objects>
+                <navigationController storyboardIdentifier="ReglamentoNVC" title="Reglamento" id="gA5-Dj-7JP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="szr-QJ-AJJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.4039215686" green="0.71764705880000002" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vce-gr-Kqm" kind="relationship" relationship="rootViewController" id="cb6-z6-oon"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEP-cg-f4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658" y="11595"/>
+        </scene>
+        <!--Reglamento-->
+        <scene sceneID="hn8-Nz-o3e">
+            <objects>
+                <viewController id="vce-gr-Kqm" customClass="ReglamentoViewController" customModule="comego_congreso" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1G1-sG-kqu"/>
+                        <viewControllerLayoutGuide type="bottom" id="baa-ky-rnm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RQN-Mc-Ymp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RE0-WY-Qs7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="I0B-w8-jmg">
+                                <rect key="frame" x="169" y="283" width="37" height="37"/>
+                                <color key="color" red="0.18823529410000001" green="0.4431372549" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I0B-w8-jmg" firstAttribute="centerY" secondItem="RQN-Mc-Ymp" secondAttribute="centerY" id="DGs-eq-Duq"/>
+                            <constraint firstItem="I0B-w8-jmg" firstAttribute="centerX" secondItem="RQN-Mc-Ymp" secondAttribute="centerX" id="FTJ-dH-MPn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reglamento" id="8QW-x3-1OV">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="menu" id="AfA-zR-2R1">
+                            <connections>
+                                <segue destination="mnd-Rx-1bS" kind="presentation" id="x3X-Sy-YZc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="RE0-WY-Qs7" id="BTy-Nm-d3H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxW-1P-3Mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="11595"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C58-YU-6i3">
+            <objects>
+                <navigationController storyboardIdentifier="TrabajosNVC" id="hzm-x7-cXK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Rdp-Vc-X0s">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.4039215686" green="0.71764705880000002" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U8L-6a-I2l" kind="relationship" relationship="rootViewController" id="LUY-0v-IB9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9N0-2T-Ouk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671" y="8445"/>
+        </scene>
+        <!--Trabajos-->
+        <scene sceneID="75c-tm-zxw">
+            <objects>
+                <viewController id="U8L-6a-I2l" customClass="TrabajosViewController" customModule="comego_congreso" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I7v-mE-pfL"/>
+                        <viewControllerLayoutGuide type="bottom" id="FBN-he-Umf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XSH-gp-c1p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jt4-68-8hB">
+                                <rect key="frame" x="0.0" y="40" width="375" height="563"/>
+                                <connections>
+                                    <outlet property="delegate" destination="U8L-6a-I2l" id="KFC-tU-BtG"/>
+                                </connections>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZt-G7-goS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.83529411760000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jt4-68-8hB" secondAttribute="trailing" id="3CE-sN-T2g"/>
+                            <constraint firstItem="MZt-G7-goS" firstAttribute="leading" secondItem="XSH-gp-c1p" secondAttribute="leading" id="946-pa-fqK"/>
+                            <constraint firstAttribute="trailing" secondItem="MZt-G7-goS" secondAttribute="trailing" id="Fhq-cg-Ef7"/>
+                            <constraint firstItem="MZt-G7-goS" firstAttribute="top" secondItem="I7v-mE-pfL" secondAttribute="bottom" id="I1d-2m-dXf"/>
+                            <constraint firstItem="jt4-68-8hB" firstAttribute="leading" secondItem="XSH-gp-c1p" secondAttribute="leading" id="Ieo-ul-ICf"/>
+                            <constraint firstItem="jt4-68-8hB" firstAttribute="top" secondItem="MZt-G7-goS" secondAttribute="bottom" id="dFt-4T-Agg"/>
+                            <constraint firstItem="FBN-he-Umf" firstAttribute="top" secondItem="jt4-68-8hB" secondAttribute="bottom" id="eN3-jR-s4m"/>
+                            <constraint firstItem="jt4-68-8hB" firstAttribute="top" secondItem="I7v-mE-pfL" secondAttribute="bottom" constant="40" id="kgp-8h-EL4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trabajos" id="fo7-vt-dxr">
+                        <barButtonItem key="rightBarButtonItem" image="menu" id="55y-i7-gh7">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="jt4-68-8hB" id="E65-Wt-lN7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfT-dr-8EN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="8445"/>
+        </scene>
     </scenes>
     <resources>
         <image name=" " width="16" height="16"/>
         <image name="02-Barra2" width="694" height="124"/>
-        <image name="122PlanoExpo" width="1386" height="1126"/>
+        <image name="122PlanoExpo" width="1505" height="900"/>
         <image name="1Chapultepec" width="750" height="366"/>
         <image name="BannerAgenda" width="750" height="300"/>
         <image name="Boton-Detalle-Agregar" width="253" height="95"/>
@@ -5022,18 +5639,19 @@ Cg
         <image name="TomaFoto" width="750" height="597"/>
         <image name="Ubicacioon" width="693" height="445"/>
         <image name="WebBco" width="45" height="45"/>
-        <image name="icons8-save-50" width="50" height="50"/>
         <image name="icons8-trash-50" width="50" height="50"/>
         <image name="icons8-upload-50" width="50" height="50"/>
         <image name="menu" width="25" height="18"/>
         <image name="text-document" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="99G-cB-fNx"/>
         <segue reference="ffl-JY-88L"/>
-        <segue reference="vLp-r5-equ"/>
+        <segue reference="cFw-ZH-ohu"/>
         <segue reference="VOH-aH-Gy1"/>
         <segue reference="7nI-h9-O0l"/>
         <segue reference="tgu-Rk-072"/>
-        <segue reference="YHd-SC-kHL"/>
+        <segue reference="aGz-jR-Qof"/>
+        <segue reference="NAv-j6-VJd"/>
     </inferredMetricsTieBreakers>
 </document>

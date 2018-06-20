@@ -51,7 +51,7 @@ class PresentacionViewController: UIViewController,UIWebViewDelegate {
         self.loadingIndicator.stopAnimating()
     }
 
-    @IBAction func saveComment(_ sender: UIButton) {
+    func saveComment() {
         let commentsKey = "comment-\(presentacion.id)"
         userDefaults.set(self.textView.text, forKey: commentsKey)
         userDefaults.synchronize()
@@ -93,17 +93,23 @@ class PresentacionViewController: UIViewController,UIWebViewDelegate {
         self.textView.resignFirstResponder()
     }
     @objc func keyboardWillShow(notification: NSNotification) {
+        print("keyboardWillShow")
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             print("HELLO")
-            if self.view.frame.origin.y == 0{
+            print(self.view.frame.origin.y)
+            if self.view.frame.origin.y > 0{
+                if self.textView.text == "Ingresa texto"{
+                    self.textView.text = ""
+                }
                 self.view.frame.origin.y -= keyboardSize.height
             }
         }
     }
     @objc func keyboardWillHide(notification: NSNotification) {
-        
+        print("keyboardWillHide")
+        saveComment()
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y != 0{
+            if self.view.frame.origin.y < 0{
                 self.view.frame.origin.y += keyboardSize.height
             }
         }

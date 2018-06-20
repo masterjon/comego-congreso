@@ -36,7 +36,7 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     let userDefaults = UserDefaults.standard
     let url = "\(getApiBaseUrl())actividades_all/"
-    let months = ["Martes, 26 de Junio","Miércoles, 27 de Junio", "Jueves, 28 de Junio", "Viernes, 29 de Junio"]
+    let months = ["Sábado, 23 de Junio", "Martes, 26 de Junio","Miércoles, 27 de Junio", "Jueves, 28 de Junio", "Viernes, 29 de Junio"]
     
     let center = UNUserNotificationCenter.current()
     
@@ -116,13 +116,13 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             print("delete")
             
             let row = mylist[indexPath.section][indexPath.row]
-            if var storedCats = userDefaults.object(forKey: "my_schedule_comegoC") as? [Int]{
+            if var storedCats = userDefaults.object(forKey: "my_schedule_comegoC") as? [[Int]]{
                 let notifIdentifier = "\(row.id)\(row.title)"
                 print("Delete Notif:"+notifIdentifier)
                 center.removePendingNotificationRequests(withIdentifiers: [notifIdentifier])
                 var deleteIndex: Int?
                 for (idx,item) in storedCats.enumerated(){
-                    if item == row.id{
+                    if item[1] == row.id{
                         deleteIndex = idx
                     }
                 }
@@ -221,21 +221,23 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                     }
                     self.list.append(actividad)
                 }
-                if let schedule_items = self.userDefaults.object(forKey: "my_schedule_comegoC") as? [Int]{
+                if let schedule_items = self.userDefaults.object(forKey: "my_schedule_comegoC") as? [[Int]]{
                     for i in schedule_items{
-                        if let index = self.list.index(where: {$0.id == i}){
+                        if let index = self.list.index(where: {$0.id == i[1]}){
                             let startDate = self.list[index].dateStart
                             guard let day =  Int(dateFormatCustom3(startDate)) else{return}
                             var idx = 0
                             switch day{
-                            case 26:
+                            case 23:
                                 idx = 0
-                            case 27:
+                            case 26:
                                 idx = 1
-                            case 28:
+                            case 27:
                                 idx = 2
-                            case 29:
+                            case 28:
                                 idx = 3
+                            case 29:
+                                idx = 4
                             default:
                                 idx = 0
                             }
