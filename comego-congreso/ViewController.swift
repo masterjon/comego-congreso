@@ -8,7 +8,9 @@
 
 import UIKit
 import UserNotifications
-
+import ImageSlideshow
+import Alamofire
+import SwiftyJSON
 //import SideMenu
 class ViewController: UIViewController {
 
@@ -16,14 +18,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var counterLabel: UILabel!
     
+    @IBOutlet var slideshow: ImageSlideshow!
+    
     @IBOutlet weak var ubicacionButton: UIButton!
     var days=0,hours=0, minutes=0, seconds=0
     var secondsLeft = 0
     var timer:Timer?
+    let anunciosUrl = "\(getApiBaseUrl())anuncios/"
+    var remoteSource = [InputSource]()
+    var remoteUrls = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         center.getNotificationSettings { (settings) in
             if settings.authorizationStatus != .authorized {
@@ -40,7 +46,7 @@ class ViewController: UIViewController {
 //        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
 
         
-        let dateString = "26-06-2018 00:00:00"
+        let dateString = "26-06-2018 08:00:00"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm:ss"
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -50,37 +56,52 @@ class ViewController: UIViewController {
         }
         
         countdownTimer()
-//        setupNotification("dn-bienvenida", "¡Bienvenidos colegas!", "Hoy se realiza el primer Encuentro Latinoamericano de Residentes en Gineco-Obstetricia.", "04-11-2017 13:00:00")
-//
-//        setupNotification("dn-bienvenida2", "¡Bienvenido a #FLASOG2017!", "El congreso más importante de Gineco-Obstetricia en Latinoamérica", "04-11-2017 17:00:00")
-//
-//        setupNotification("dn-dia1", "Hoy se realizan nuestros cursos Precongreso", "Consulta el programa", "05-11-2017 07:00:00")
-//
-//        setupNotification("dn-dia1_2", "¡Acompáñanos en la inauguración de #FLASOG2017!", "Consulta el salón, código de vestir y horario", "05-11-2017 15:00:00")
-//
-//
-//        setupNotification("dn-dia2", "Hoy arrancamos nuestros cursos Transcongreso y actividades", "Programa tus actividades del día", "06-11-2017 06:30:00")
-//
-//        setupNotification("dn-dia3", "Colega, prepara tus actividades", "Programa tu agenda para hoy desde nuestra App", "07-11-2017 06:30:00")
-//
-//        setupNotification("dn-dia4", "¡No te pierdas de nada!", "Programa tu agenda para hoy", "08-11-2017 06:30:00")
-//
-//        setupNotification("dn-dia5", "Programa tus Actividades", "Han sido excelentes días de aprendizaje, no te pierdas de nada.", "09-11-2017 06:30:00")
-//
-//        setupNotification("dn-dia5_2", "¡Hoy es la clausura de nuestro congreso!", "Consulta el salón, código y horario", "09-11-2017 11:00:00")
-//
-//        setupNotification("dn-dia5_3", "¡Gracias por ser parte de nuestro congreso!", "Contigo, la Gineco-Obstetricia de Latinoamérica ¡Crece!", "09-11-2017 15:00:00")
-//
-//
-//        setupNotification("dn-dia5_4", "¡Nos vemos en Paraguay 2020 colegas!", "Manténte pendiente de nuestras redes sociales y espera noticias", "09-11-2017 17:00:00")
-//
-        //secondsLeft = roundf(date?.timeIntervalSinceNow)
-        
-        //self.navigationItem.titleView = UIImageView(image: UIImage(named: "logo_blanco"))
-        
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
+        
+        slideshow.slideshowInterval = 5.0
+        slideshow.pageControlPosition = PageControlPosition.hidden
+//        slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGray
+//        slideshow.pageControl.pageIndicatorTintColor = UIColor.black
+        slideshow.contentScaleMode = UIViewContentMode.scaleAspectFit
+        
+        // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
+        slideshow.activityIndicator = nil
+//        slideshow.currentPageChanged = { page in
+//            print("current page:", page)
+//        }
+        
+        // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
+        Alamofire.request(anunciosUrl).validate().responseJSON { (response) in
+            switch response.result{
+            case .success:
+                let myJSON = JSON(response.value ?? [])
+                for item in myJSON.arrayValue{
+                    if let sourceImg = AlamofireSource(urlString: item["picture"].string ?? ""){
+                        self.remoteSource.append(sourceImg)
+                        self.remoteUrls.append(item["link"].string ?? "")
+                        
+                    }
+                }
+                self.slideshow.setImageInputs(self.remoteSource)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
+        slideshow.addGestureRecognizer(recognizer)
+    }
+    @objc func didTap() {
+        guard let url = URL(string: self.remoteUrls[slideshow.scrollViewPage-1]) else{return}
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        print(slideshow.scrollViewPage)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

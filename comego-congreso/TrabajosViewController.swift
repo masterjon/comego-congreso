@@ -57,7 +57,7 @@ class TrabajosViewController: UIViewController {
     private func segmentioContent() -> [SegmentioItem] {
         var items : [SegmentioItem] = []
         return [
-            SegmentioItem(title: "Cartles participación", image: nil),
+            SegmentioItem(title: "Carteles participación", image: nil),
             SegmentioItem(title: "Carteles concurso", image: nil ),
             SegmentioItem(title: "Videos concurso", image: nil ),
         ]

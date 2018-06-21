@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>884558247257-crji0r5pnp1k3ijktf2gh4mcdvupi0l0.apps.googleusercontent.com</string>
+	<string>781383965627-7t3vot3jsbbp8ieutod3qivfrt6os0q4.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.884558247257-crji0r5pnp1k3ijktf2gh4mcdvupi0l0</string>
+	<string>com.googleusercontent.apps.781383965627-7t3vot3jsbbp8ieutod3qivfrt6os0q4</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBRdhx3Jc6aAmTUzPDYJakKiVny_TYgJxs</string>
+	<string>AIzaSyCUgb7pHFbruB6rfrA_kLp_SS_u49bfW74</string>
 	<key>GCM_SENDER_ID</key>
-	<string>884558247257</string>
+	<string>781383965627</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>iddeas.comego</string>
+	<string>iddeas.comego-congreso</string>
 	<key>PROJECT_ID</key>
-	<string>comego-a3877</string>
+	<string>comego-congreso</string>
 	<key>STORAGE_BUCKET</key>
-	<string>comego-a3877.appspot.com</string>
+	<string>comego-congreso.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:884558247257:ios:8c38cf4b624f4c90</string>
+	<string>1:781383965627:ios:f757031b2fdb663a</string>
 	<key>DATABASE_URL</key>
-	<string>https://comego-a3877.firebaseio.com</string>
+	<string>https://comego-congreso.firebaseio.com</string>
 </dict>
 </plist>

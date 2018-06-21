@@ -30,35 +30,40 @@ class HotelesVC: UITableViewController {
                  ["nombre":"Crowne Plaza Hotel de México",
                   "image":"HotelC2",
                   "web":"http://www.hoteldemexico.com/",
-                  "direccion":"Crowne: Calle Dakota 95, Nápoles, 03810 Benito Juárez, CDMX",
+                  "direccion":"Calle Dakota 95, Nápoles, 03810 Benito Juárez, CDMX",
                   "link":"https://www.google.com.mx/maps/place/Crowne+Plaza+Hotel+de+M%C3%A9xico/@19.3961095,-99.1766256,17z/data=!3m1!4b1!4m7!3m6!1s0x85ce013fa8989a07:0x62791b31b80a1cb0!5m1!1s2018-06-30!8m2!3d19.3961095!4d-99.1744369"]
         ],
         [
                  ["nombre":"Isaaya Hotel Boutique",
                   "image":"HotelCE1",
                   "web":"https://www.isaayahotelboutique.mx/",
-                  "direccion":"Isaaya: Dakota 155, Nápoles, 03810 Ciudad de México, CDMX",
+                  "direccion":"Dakota 155, Nápoles, 03810 Ciudad de México, CDMX",
                   "link":"https://www.google.com.mx/maps/place/Isaaya+Hotel+Boutique+by+WTC/@19.3941423,-99.1777606,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff71b74ebe23:0x18be5eeaf2ee2b77!5m1!1s2018-06-23!8m2!3d19.3941423!4d-99.1755719"],
                  ["nombre":"Filadelfia Suites Hotel Boutique",
                   "image":"HotelCE2",
                   "web":"http://www.suitesfiladelfia.com.mx",
-                  "direccion":"Filadelfia Suites: Filadelfia 42, Nápoles, 03810 Ciudad de México, CDMX ",
+                  "direccion":"Filadelfia 42, Nápoles, 03810 Ciudad de México, CDMX ",
                   "link":"https://www.google.com.mx/maps/place/Filadelfia+Suites+Hotel+Boutique/@19.3932856,-99.1753246,14z/data=!4m10!1m2!2m1!1shoteles+cercanos+wtc!3m6!1s0x85d1ff71a7d7f571:0xe9d6726422a57fbc!5m1!1s2018-06-18!8m2!3d19.3931276!4d-99.1753647"],
                  ["nombre":"J. Towers Hotel",
                   "image":"HotelCE3",
                   "web":"http://www.jtowers.com.mx/",
-                  "direccion":"JTowers: Texas 17, Nápoles, 03810 Delegación Benito Juarez, CDMX ",
+                  "direccion":"Texas 17, Nápoles, 03810 Delegación Benito Juarez, CDMX ",
                   "link":"https://www.google.com.mx/maps/place/J.+Towers+Hotel/@19.3928526,-99.1788238,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff7057c207db:0x834310139536f161!5m1!1s2018-06-23!8m2!3d19.3928526!4d-99.1766351"],
                  ["nombre":"The Host suites",
                   "image":"HotelCE4",
                   "web":"http://www.thehostsuites.com/",
-                  "direccion":"Host: Av. Magdalena 311, Col del Valle Nte, 03100 Mexico City, CDMX ",
+                  "direccion":"Av. Magdalena 311, Col del Valle Nte, 03100 Mexico City, CDMX ",
                   "link":"https://www.google.com.mx/maps/place/The+Host+Business+Suites/@19.392075,-99.1742496,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff73c72bffff:0x45a9de83587a59ad!5m1!1s2018-06-15!8m2!3d19.392075!4d-99.1720609"],
                  ["nombre":"Hotel Novit",
                   "image":"HotelCE5",
                   "web":"http://www.hotelnovit.com",
-                  "direccion":"Novit: Insurgentes Sur 635, Nápoles, 03810 Ciudad de México, CDMX",
-                  "link":"https://www.google.com.mx/maps/place/Hotel+Novit/@19.3960546,-99.1741898,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff72755e72f7:0xbfc2cef1476e4b38!5m1!1s2018-06-15!8m2!3d19.396094!4d-99.171829"]
+                  "direccion":"Insurgentes Sur 635, Nápoles, 03810 Ciudad de México, CDMX",
+                  "link":"https://www.google.com.mx/maps/place/Hotel+Novit/@19.3960546,-99.1741898,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff72755e72f7:0xbfc2cef1476e4b38!5m1!1s2018-06-15!8m2!3d19.396094!4d-99.171829"],
+                 ["nombre":"Hotel Vermont",
+                  "image":"Vermont",
+                  "web":"www.hotelvermont.com.mx",
+                  "direccion":"Dirección: Vermont 29, Nápoles, 03810 Ciudad de México, CDMX ",
+                  "link":"https://www.google.com.mx/maps/place/Hotel+Vermont/@19.397771,-99.1748623,17z/data=!3m1!4b1!4m7!3m6!1s0x85d1ff6de70fac99:0x12e233abcb785bd4!5m1!1s2018-06-24!8m2!3d19.397771!4d-99.1726736"]
         ]
     ]
     

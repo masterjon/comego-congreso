@@ -7,7 +7,10 @@ target 'comego-congreso' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
   pod 'SideMenu'
   pod 'Segmentio'
   pod 'ImageSlideshow', '~> 1.4'
+  pod "ImageSlideshow/Alamofire"
+
 end

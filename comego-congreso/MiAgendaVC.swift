@@ -135,6 +135,27 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                     mylist[indexPath.section].remove(at: indexPath.row)
                     tableView.endUpdates()
                 }
+                
+                let transIds = [[56,62,68],[57,69,63],[58,64,70],[59,65,71],[60,66,72],[61,67,73]]
+                for tansArr in transIds{
+                    if tansArr.contains(row.id){
+                        for trans in tansArr{
+                            for (idx,item) in storedCats.enumerated(){
+                                if item[1] == trans{
+                                    deleteIndex = idx
+                                }
+                            }
+                            if let i = deleteIndex{
+                                storedCats.remove(at: i)
+                                userDefaults.set(storedCats, forKey: "my_schedule_comegoC")
+                                userDefaults.synchronize()
+                            }
+                            deleteIndex = nil
+                        }
+                    }
+                }
+                
+                
             }
 //            if var rows = days[indexPath.section]["cats"] as? [MyScheduleItem]{
 //                let row = rows[indexPath.row]

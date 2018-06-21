@@ -106,16 +106,27 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
                 
             }
         }
+        if segue.identifier == "ShowTestSegue", let vc = segue.destination as? ProgramaTextoViewController{
+            let actividad = ProgramCat()
+            actividad.id = 7
+            actividad.title = "XIII Encuentro de Residentes"
+            actividad.color = "#9641a4"
+            vc.cat = actividad
+        }
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         
             if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
+                if indexPath.row == 0 && indexPath.section == 0 {
+                    return false
+                }
                 let item = self.list[indexPath.section][indexPath.row]
                 if item.category == "Otro"{
                     return false
                 }
                 
             }
+        
         
       
         
@@ -126,7 +137,7 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 && indexPath.section == 0{
-           // performSegue(withIdentifier: "ShowTestSegue", sender: Any?)
+           performSegue(withIdentifier: "ShowTestSegue", sender: nil)
         }
     }
 

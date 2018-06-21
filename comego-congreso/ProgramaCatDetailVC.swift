@@ -131,6 +131,7 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let vc = segue.destination as! ProgramItemDetailVC
         if let indexPath = tableView.indexPathForSelectedRow{
             let items = subCategories[indexPath.section].activities
@@ -138,6 +139,8 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
                
             
         }
+        
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

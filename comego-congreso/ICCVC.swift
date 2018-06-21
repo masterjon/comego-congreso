@@ -14,6 +14,8 @@ class ICCVC: UIViewController {
     var segmentioStyle = SegmentioStyle.imageOverLabel
     @IBOutlet var scrollView: UIScrollView!
     var segmentioView: Segmentio!
+    var selctedIndex = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let segmentioViewRect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 80)
@@ -35,7 +37,7 @@ class ICCVC: UIViewController {
             options: segmentioOptions()
         )
         
-        segmentioView.selectedSegmentioIndex = 0
+        
         
         segmentioView.valueDidChange = { segmentio, segmentIndex in
             print("Selected item: ", segmentIndex)
@@ -178,7 +180,10 @@ class ICCVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        segmentioView.selectedSegmentioIndex = self.selctedIndex
+        
+    }
     
     /*
      // MARK: - Navigation

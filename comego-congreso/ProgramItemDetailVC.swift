@@ -92,19 +92,31 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! PresentacionViewController
-        if let indexPath = tableView.indexPathForSelectedRow{
-            let item = programItem.presentaciones[indexPath.row]
-            vc.presentacion = item
+        if let vc = segue.destination as? PresentacionViewController{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let item = programItem.presentaciones[indexPath.row]
+                vc.presentacion = item
+            }
         }
+        if let vc = segue.destination as? ICCVC{
+            vc.selctedIndex = 1
+        }
+        
+        
         
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
-            let presentacion = programItem.presentaciones[indexPath.row]
-            if !presentacion.pdf.isEmpty{
-                return true
+        
+        if let sender = sender as? UITableViewCell{
+            if let indexPath = self.tableView.indexPath(for: sender){
+                let presentacion = programItem.presentaciones[indexPath.row]
+                if !presentacion.pdf.isEmpty{
+                    return true
+                }
             }
+        }
+        else if identifier == "salonesSegue"{
+            return true
         }
         
         return false
@@ -181,7 +193,25 @@ class ProgramItemDetailVC: UIViewController,UITableViewDataSource {
                             print("Something went wrong\(error)")
                         }
                     })
-                    my_schedule_array.append([programItem.catId ,programItem.id])
+                    
+                    let transIds = [[56,62,68],[57,69,63],[58,64,70],[59,65,71],[60,66,72],[61,67,73]]
+                    var istrans = false
+                    for tansArr in transIds{
+                        if tansArr.contains(programItem.id){
+                            istrans = true
+                            for trans in tansArr{
+                                my_schedule_array.append([programItem.catId ,trans])
+                            }
+                        }
+                    }
+                    
+                    if !istrans{
+                        my_schedule_array.append([programItem.catId ,programItem.id])
+                    }
+
+                    
+                    
+                    
                     userDefaults.set(my_schedule_array, forKey: "my_schedule_comegoC")
                     
                     self.present(alert2, animated: true, completion: nil)
