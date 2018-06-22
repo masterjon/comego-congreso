@@ -56,21 +56,10 @@ class ViewController: UIViewController {
         }
         
         countdownTimer()
-
-        
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.hidden
-//        slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGray
-//        slideshow.pageControl.pageIndicatorTintColor = UIColor.black
         slideshow.contentScaleMode = UIViewContentMode.scaleAspectFit
-        
-        // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
         slideshow.activityIndicator = nil
-//        slideshow.currentPageChanged = { page in
-//            print("current page:", page)
-//        }
-        
-        // can be used with other sample sources as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
         Alamofire.request(anunciosUrl).validate().responseJSON { (response) in
             switch response.result{
             case .success:
@@ -93,7 +82,7 @@ class ViewController: UIViewController {
         slideshow.addGestureRecognizer(recognizer)
     }
     @objc func didTap() {
-        guard let url = URL(string: self.remoteUrls[slideshow.scrollViewPage-1]) else{return}
+        guard let url = URL(string: self.remoteUrls[slideshow.scrollViewPage]) else{return}
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
