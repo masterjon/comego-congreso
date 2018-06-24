@@ -82,13 +82,15 @@ class ViewController: UIViewController {
         slideshow.addGestureRecognizer(recognizer)
     }
     @objc func didTap() {
-        guard let url = URL(string: self.remoteUrls[slideshow.scrollViewPage]) else{return}
+        print(slideshow.scrollViewPage)
+        print(slideshow.currentPage)
+        guard let url = URL(string: self.remoteUrls[slideshow.currentPage]) else{return}
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
             UIApplication.shared.openURL(url)
         }
-        print(slideshow.scrollViewPage)
+        
         
     }
     override func didReceiveMemoryWarning() {
