@@ -13,6 +13,7 @@ class ProgramaContainerVC: UIViewController {
     
     var segmentioStyle = SegmentioStyle.onlyLabel
     var segmentioView: Segmentio!
+    
     @IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()

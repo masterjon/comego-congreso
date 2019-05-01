@@ -58,6 +58,9 @@ class PatrocinadoresVC: UIViewController, UITableViewDataSource, UITableViewDele
             if sponsors[indexPath.row].url.isEmpty{
                 link.isHidden = true
             }
+            else{
+                link.isHidden = false
+            }
         }
         return cell
     }

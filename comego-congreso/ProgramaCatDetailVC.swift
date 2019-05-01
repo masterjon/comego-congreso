@@ -136,11 +136,7 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
         if let indexPath = tableView.indexPathForSelectedRow{
             let items = subCategories[indexPath.section].activities
                 vc.programItem = items[indexPath.row]
-               
-            
         }
-        
-        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -81,7 +81,7 @@ class TuFotoViewController: UIViewController,UIImagePickerControllerDelegate,UIN
     @IBAction func shareImg(_ sender: UIButton) {
         let shareText = "#XXIIICongresoCoMEGO"
         let mergedIMage = self.mergeIMages()
-        let items2Sahre = [mergedIMage,shareText] as [Any]
+        let items2Sahre = [mergedIMage] as [Any]
         let shareVC = UIActivityViewController(activityItems: items2Sahre, applicationActivities: nil)
         shareVC.excludedActivityTypes = [UIActivityType.postToWeibo,
                                          UIActivityType.print,
