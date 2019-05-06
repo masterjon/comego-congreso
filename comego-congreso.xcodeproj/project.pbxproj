@@ -330,6 +330,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -608,7 +609,7 @@
 				INFOPLIST_FILE = "comego-congreso/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "iddeas.comego-congreso";
+				PRODUCT_BUNDLE_IDENTIFIER = "iddeas.comego-congreso-iddeas.comego-congreso-iddeas.comego-congreso-iddeas.comego-congreso";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jon/XcodeProjects/flasog/flasog/flasog-Bridging-Header.h";
@@ -628,7 +629,7 @@
 				INFOPLIST_FILE = "comego-congreso/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "iddeas.comego-congreso";
+				PRODUCT_BUNDLE_IDENTIFIER = "iddeas.comego-congreso-iddeas.comego-congreso-iddeas.comego-congreso-iddeas.comego-congreso";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jon/XcodeProjects/flasog/flasog/flasog-Bridging-Header.h";

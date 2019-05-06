@@ -61,10 +61,10 @@ class OrganizadoresVC: UIViewController {
     private func segmentioContent() -> [SegmentioItem] {
         //var items : [SegmentioItem] = []
         return [
-            SegmentioItem(title: "XXIII CRC", image: nil),
-            SegmentioItem(title: "Pdte. COMEGO", image: nil ),
-            SegmentioItem(title: "Pdte. Honorario", image: nil ),
-            SegmentioItem(title: "Pdte. XXIII CRC", image: nil ),
+            SegmentioItem(title: "XXIV CRC", image: nil),
+            SegmentioItem(title: "Pdte.\n COMEGO", image: nil ),
+            SegmentioItem(title: "Pdte.\n FEMECOG", image: nil ),
+            SegmentioItem(title: "Pdte.\n XXIV CRC", image: nil ),
         ]
     }
     
