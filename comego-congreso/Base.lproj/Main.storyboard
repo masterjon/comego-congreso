@@ -5422,6 +5422,9 @@ Cg
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vce-gr-Kqm" id="1TD-wl-fQr"/>
+                                </connections>
                             </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="I0B-w8-jmg">
                                 <rect key="frame" x="169" y="283" width="37" height="37"/>
@@ -5442,6 +5445,7 @@ Cg
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="loadingIndicator" destination="I0B-w8-jmg" id="TDC-mS-jnq"/>
                         <outlet property="webView" destination="RE0-WY-Qs7" id="BTy-Nm-d3H"/>
                     </connections>
                 </viewController>
@@ -5687,6 +5691,6 @@ Cg
         <segue reference="hHa-NP-37p"/>
         <segue reference="ifI-nO-2Mf"/>
         <segue reference="GfL-9J-CJX"/>
-        <segue reference="XHE-vv-rFZ"/>
+        <segue reference="x3X-Sy-YZc"/>
     </inferredMetricsTieBreakers>
 </document>

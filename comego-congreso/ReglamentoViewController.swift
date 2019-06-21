@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ReglamentoViewController: UIViewController {
-    let url = "https://online.flippingbook.com/view/48168/"
+class ReglamentoViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet var webView: UIWebView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    
+    let url = "https://online.flippingbook.com/view/886668/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let url = URL(string:self.url){
@@ -23,7 +26,9 @@ class ReglamentoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        loadingIndicator.stopAnimating()
+    }
 
     /*
     // MARK: - Navigation

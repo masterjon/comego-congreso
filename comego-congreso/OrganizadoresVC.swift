@@ -62,9 +62,9 @@ class OrganizadoresVC: UIViewController {
         //var items : [SegmentioItem] = []
         return [
             SegmentioItem(title: "XXIV CRC", image: nil),
-            SegmentioItem(title: "Pdte.\n COMEGO", image: nil ),
-            SegmentioItem(title: "Pdte.\n FEMECOG", image: nil ),
-            SegmentioItem(title: "Pdte.\n XXIV CRC", image: nil ),
+            SegmentioItem(title: "Pdte.\nCOMEGO", image: nil ),
+            SegmentioItem(title: "Pdte.\nFEMECOG", image: nil ),
+            SegmentioItem(title: "Pdte.\nXXIV CRC", image: nil ),
         ]
     }
     
