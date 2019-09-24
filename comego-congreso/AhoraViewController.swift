@@ -36,7 +36,6 @@ class AhoraViewController: UIViewController,UITableViewDataSource, UITableViewDe
         stopTimerTest()
     }
     func startTimer() {
-        
         if timerTest == nil {
             timerTest =  Timer.scheduledTimer(timeInterval: 10,
                                               target: self,
@@ -188,13 +187,21 @@ class AhoraViewController: UIViewController,UITableViewDataSource, UITableViewDe
         listNow[0] = []
         listNow[1] = []
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssxxxxx"
+        dateFormatter.timeZone = TimeZone(abbreviation: TimeZone.current.abbreviation()!)
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         for actividad in list{
             
             if let dateSt = dateFormatter.date(from: actividad.dateStart), let dateEn = dateFormatter.date(from: actividad.dateEnd)  {
                 let dateNextLimit = dateEn.addingTimeInterval(120.0 * 60.0)
                 let datePrevtLimit = dateSt.addingTimeInterval(120.0 * 60.0 * -1)
                 let currentDate = Date()
+                print("currentDate")
+                
+                print(currentDate)
+                print(actividad.dateStart)
+                print(dateSt)
+                print("------")
                 if currentDate >= dateSt && currentDate <= dateEn{
                     print(currentDate)
                     print(dateSt)
@@ -207,6 +214,11 @@ class AhoraViewController: UIViewController,UITableViewDataSource, UITableViewDe
                 }
                 
                 
+            }
+            else{
+                print("no date format")
+                print(actividad.dateStart)
+                print("-----")
             }
         }
         self.tableView.reloadData()
