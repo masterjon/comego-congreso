@@ -18,19 +18,23 @@ class SalonesVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         return mainStoryboard.instantiateViewController(withIdentifier: storyboardId) as! SalonesVC
     }
     
-    let items = [["image":"sm_planobaja",
-                  "image_big":"planobaja",
-                  "title":"Planta baja",
+    let items = [["image":"SalonAngel",
+                  "image_big":"SalonAngel",
+                  "title":"Salon Foro COMEGO",
                   "subtitle":""],
-                 ["image":"sm_planoalta",
-                  "image_big":"planoalta",
-                  "title":"Planta alta",
-                  "subtitle":"Salones: Auditorio HIR, Olmeca 1, 2, 3 y 4, Mixteca 1 y 2, Tolteca 1 y 2, Mexica 1 y 2 "],
-                 ["image":"sm_planomezzanine",
-                  "image_big":"planomezzanine",
-                  "title":"Planta Mezzanine",
-                  "subtitle":"Sala de prensa (Salón de profesores)"]
-                 ]
+                 ["image":"SalonBellasArtes",
+                  "image_big":"SalonBellasArtes",
+                  "title":"Salon Diana La Cazadora",
+                  "subtitle":""],
+                 ["image":"SalonDianaLaCazadora",
+                  "image_big":"SalonDianaLaCazadora",
+                  "title":"Salon Bellas Artes",
+                  "subtitle":""],
+                ["image":"SalonForoCOMEGO",
+                 "image_big":"SalonForoCOMEGO",
+                 "title":"Salon Angel",
+                 "subtitle":""]
+                ]
     override func viewDidLoad() {
         super.viewDidLoad()
         

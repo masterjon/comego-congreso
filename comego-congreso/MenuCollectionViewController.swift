@@ -20,7 +20,7 @@ class MenuCollectionViewController: UICollectionViewController,UICollectionViewD
                  ["title":"m-Profesores", "vc":"ProfesoresNVC"],
                  ["title":"m-Recinto", "vc":"RecintoNVC"],
                  ["title":"m-Tabajos", "vc":"TrabajosNVC"],
-                 ["title":"m-CDMX", "vc":"CDMXNVC"],
+//                 ["title":"m-CDMX", "vc":"CDMXNVC"],
                  ["title":"m-MiFoto", "vc":"TuFotoSourceNVC"],
                  ["title":"m-Asistentes", "vc":"AsistentesNVC"],
                  ["title":"m-Puntaje", "vc":"PuntajeNVC"],

@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 //        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
 
         
-        let dateString = "25-06-2019 07:00:00"
+        let dateString = "15-07-2020 09:00:00"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm:ss"
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -126,7 +126,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func ubicacionAction(_ sender: UIButton) {
-        let url = URL(string: "https://goo.gl/maps/ZvSkq1i3gZ12")!
+        let url = URL(string: "https://bit.ly/2VKCVVG")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {

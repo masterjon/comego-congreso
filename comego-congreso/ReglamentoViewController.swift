@@ -12,7 +12,7 @@ class ReglamentoViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet var webView: UIWebView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
-    let url = "https://online.flippingbook.com/view/886668/"
+    let url = "https://online.flippingbook.com/view/219779/"
     
     override func viewDidLoad() {
         super.viewDidLoad()

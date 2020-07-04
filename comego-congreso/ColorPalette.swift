@@ -23,11 +23,23 @@ struct ColorPallete{
     
     
     //static let DarkPrimaryColor = UIColor(red:0.00, green:0.47, blue:0.42, alpha:1.0)
-    static let DarkPrimaryColor = UIColor(red:0.38, green:0.35, blue:0.63, alpha:1.0)
+    //static let DarkPrimaryColor = UIColor(red:0.38, green:0.35, blue:0.63, alpha:1.0)
+    static let DarkPrimaryColor = UIColor(red: 0.18, green: 0.25, blue: 0.44, alpha: 1.00)
 
-    static let LightPrimaryColor = UIColor(red:0.27, green:0.60, blue:0.65, alpha:1.0)
+
+
+    //static let LightPrimaryColor = UIColor(red:0.27, green:0.60, blue:0.65, alpha:1.0)
+    static let LightPrimaryColor = UIColor(red: 0.44, green: 0.55, blue: 0.94, alpha: 1.00)
+
+
+    
+
+
     static let PrimaryColor = UIColor(red:0.16, green:0.53, blue:0.58, alpha:1.0)
-    static let AccentColor = UIColor(red:1.00, green:0.32, blue:0.32, alpha:1.0)
+    //static let AccentColor = UIColor(red:1.00, green:0.32, blue:0.32, alpha:1.0)
+    static let AccentColor = UIColor(red: 0.65, green: 0.78, blue: 0.25, alpha: 1.00)
+
+
     static let PrimaryTextColor = UIColor(red:0.13, green:0.13, blue:0.13, alpha:1.0)
     static let SecondaryTextColor = UIColor(red:0.46, green:0.46, blue:0.46, alpha:1.0)
     static let DividerColor = UIColor(red:0.74, green:0.74, blue:0.74, alpha:1.0)

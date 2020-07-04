@@ -114,7 +114,7 @@ class ProfesoresViewController: UIViewController {
             type: .bottom,
             ratio: 1,
             height: 3,
-            color: .white
+            color: ColorPallete.AccentColor
         )
     }
     
