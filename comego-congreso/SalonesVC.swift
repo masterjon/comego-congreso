@@ -20,19 +20,19 @@ class SalonesVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     let items = [["image":"SalonAngel",
                   "image_big":"SalonAngel",
-                  "title":"Salon Foro COMEGO",
+                  "title":"Salón Foro COMEGO",
                   "subtitle":""],
                  ["image":"SalonBellasArtes",
                   "image_big":"SalonBellasArtes",
-                  "title":"Salon Diana La Cazadora",
+                  "title":"Salón Diana La Cazadora",
                   "subtitle":""],
                  ["image":"SalonDianaLaCazadora",
                   "image_big":"SalonDianaLaCazadora",
-                  "title":"Salon Bellas Artes",
+                  "title":"Salón Bellas Artes",
                   "subtitle":""],
                 ["image":"SalonForoCOMEGO",
                  "image_big":"SalonForoCOMEGO",
-                 "title":"Salon Angel",
+                 "title":"Salón Angel",
                  "subtitle":""]
                 ]
     override func viewDidLoad() {

@@ -209,13 +209,22 @@ class ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        if segue.identifier == "residentesHomeSegue", let vc = segue.destination as? ProgramaTextoViewController{
+//        if segue.identifier == "residentesHomeSegue", let vc = segue.destination as? ProgramaTextoViewController{
+//            let actividad = ProgramCat()
+//            actividad.id = 7
+//            actividad.title = "XIII Encuentro de Residentes"
+//            actividad.color = "#9641a4"
+//            vc.cat = actividad
+//        }
+        if segue.identifier == "residentesHomeSegue", let vc = segue.destination as? ProgramaCatDetailVC{
             let actividad = ProgramCat()
-            actividad.id = 7
-            actividad.title = "XIII Encuentro de Residentes"
-            actividad.color = "#9641a4"
+            actividad.id = 19
+            actividad.title = "Encuentro Regional de Residentes"
+            actividad.color = "#ff0019"
             vc.cat = actividad
         }
+        
+       
         
     }
     

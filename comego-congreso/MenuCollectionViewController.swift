@@ -108,6 +108,7 @@ class MenuCollectionViewController: UICollectionViewController,UICollectionViewD
                         vc.cems = true
                     }
                 }
+                nvc.modalPresentationStyle = .fullScreen
                 self.present(nvc, animated: false, completion: nil)
             }
         }

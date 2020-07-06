@@ -16,7 +16,7 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     let url = "\(getApiBaseUrl())actividades_all/"
-    let months = ["Sábado, 22 de Junio", "Martes, 25 de Junio","Miércoles, 26 de Junio", "Jueves, 27 de Junio", "Viernes, 28 de Junio"]
+    let months = ["Martes, 14 de Julio", "Miércoles, 15 de Julio","Jueves, 16 de Julio", "  Viernes, 17 de Julio"]
     
     class func create(storyboardId:String) -> ProgramaFullVC {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -106,20 +106,20 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
                 
             }
         }
-        if segue.identifier == "ShowTestSegue", let vc = segue.destination as? ProgramaTextoViewController{
-            let actividad = ProgramCat()
-            actividad.id = 7
-            actividad.title = "XIII Encuentro de Residentes"
-            actividad.color = "#9641a4"
-            vc.cat = actividad
-        }
+//        if segue.identifier == "ShowTestSegue", let vc = segue.destination as? ProgramaTextoViewController{
+//            let actividad = ProgramCat()
+//            actividad.id = 7
+//            actividad.title = "XIII Encuentro de Residentes"
+//            actividad.color = "#9641a4"
+//            vc.cat = actividad
+//        }
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         
             if let indexPath = self.tableView.indexPath(for: sender as! UITableViewCell){
-                if indexPath.row == 0 && indexPath.section == 0 {
-                    return false
-                }
+//                if indexPath.row == 0 && indexPath.section == 0 {
+//                    return false
+//                }
                 let item = self.list[indexPath.section][indexPath.row]
                 if item.category == "Otro"{
                     return false
@@ -136,9 +136,9 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 && indexPath.section == 0{
-           performSegue(withIdentifier: "ShowTestSegue", sender: nil)
-        }
+//        if indexPath.row == 0 && indexPath.section == 0{
+//           performSegue(withIdentifier: "ShowTestSegue", sender: nil)
+//        }
     }
 
     func loadItems(){
@@ -158,16 +158,14 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
                     guard let day = Int(dateFormatCustom3(startDate)) else{return}
                     var index = 0
                     switch day{
-                    case 22:
+                    case 14:
                         index = 0
-                    case 25:
+                    case 15:
                         index = 1
-                    case 26:
+                    case 16:
                         index = 2
-                    case 27:
+                    case 17:
                         index = 3
-                    case 28:
-                        index = 4
                     default:
                         index = 0
                     }

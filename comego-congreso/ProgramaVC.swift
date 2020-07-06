@@ -93,11 +93,11 @@ class ProgramaVC: UIViewController, UICollectionViewDataSource, UICollectionView
                 vc.cat = self.items[sender as! Int]
             }
         }
-        else if let vc = segue.destination as? ProgramaTextoViewController{
-            if let index = self.items.index(where: {$0.id == 7}){
-                vc.cat = self.items[index]
-            }
-        }
+//        else if let vc = segue.destination as? ProgramaTextoViewController{
+//            if let index = self.items.index(where: {$0.id == 7}){
+//                vc.cat = self.items[index]
+//            }
+//        }
         
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {

@@ -76,13 +76,13 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gV-y8-PhA">
                                                 <rect key="frame" x="0.0" y="0.0" width="166.5" height="140.5"/>
                                                 <connections>
-                                                    <segue destination="Wpf-p4-D7w" kind="presentation" modalTransitionStyle="crossDissolve" id="Ymd-tQ-fy0"/>
+                                                    <segue destination="Wpf-p4-D7w" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Ymd-tQ-fy0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l0-6v-MfA">
                                                 <rect key="frame" x="0.0" y="148.5" width="166.5" height="62.5"/>
                                                 <connections>
-                                                    <segue destination="V6R-Vk-QxU" kind="show" identifier="residentesHomeSegue" id="99G-cB-fNx"/>
+                                                    <segue destination="kER-6e-MH1" kind="presentation" identifier="residentesHomeSegue" id="pC7-yR-Z7B"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -118,13 +118,13 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpl-bd-YVG">
                                                 <rect key="frame" x="0.0" y="0.0" width="166.5" height="62.5"/>
                                                 <connections>
-                                                    <segue destination="jwu-6C-Bhb" kind="presentation" modalTransitionStyle="crossDissolve" id="AgK-hA-puE"/>
+                                                    <segue destination="jwu-6C-Bhb" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="AgK-hA-puE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIp-7e-FYw">
                                                 <rect key="frame" x="0.0" y="70.5" width="166.5" height="140.5"/>
                                                 <connections>
-                                                    <segue destination="Uyz-Xo-ztS" kind="presentation" modalTransitionStyle="crossDissolve" id="wC2-6v-52i"/>
+                                                    <segue destination="Uyz-Xo-ztS" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="wC2-6v-52i"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -160,7 +160,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="77.5"/>
                                         <state key="normal" title="Button" image="BotonCDMX"/>
                                         <connections>
-                                            <segue destination="pYZ-dM-F81" kind="presentation" modalTransitionStyle="crossDissolve" id="Gq1-zR-ij2"/>
+                                            <segue destination="pYZ-dM-F81" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Gq1-zR-ij2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17a-Xy-qUB">
@@ -174,7 +174,7 @@
                                         <rect key="frame" x="176.5" y="0.0" width="78.5" height="77.5"/>
                                         <state key="normal" title="Button" image="BotonQR"/>
                                         <connections>
-                                            <segue destination="269-gr-qP4" kind="presentation" modalTransitionStyle="crossDissolve" id="AcS-sZ-kOR"/>
+                                            <segue destination="269-gr-qP4" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="AcS-sZ-kOR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIm-aj-cXz">
@@ -608,7 +608,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
             <objects>
                 <navigationController storyboardIdentifier="ProgramaNVC" id="Wpf-p4-D7w" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="cm3-VM-D5D">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -987,7 +987,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                         <viewControllerLayoutGuide type="bottom" id="ziu-Zj-9O6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BTG-al-VbK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBS-v2-h4W">
@@ -1003,7 +1003,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZrL-T5-Gdk">
-                                <rect key="frame" x="0.0" y="63" width="375" height="560"/>
+                                <rect key="frame" x="0.0" y="63" width="375" height="584"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -1051,7 +1051,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                 </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="RAA-Td-tg5">
-                                <rect key="frame" x="169" y="293" width="37" height="37"/>
+                                <rect key="frame" x="169" y="305" width="37" height="37"/>
                                 <color key="color" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -1071,6 +1071,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                             <constraint firstItem="ZrL-T5-Gdk" firstAttribute="top" secondItem="jBS-v2-h4W" secondAttribute="bottom" constant="20" id="oJ2-BB-LGA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vnj-8c-RMI"/>
                     <connections>
                         <outlet property="loadingIndicator" destination="RAA-Td-tg5" id="cTg-UF-ByZ"/>
                         <outlet property="tableView" destination="ZrL-T5-Gdk" id="M2W-z1-ZBd"/>
@@ -1090,7 +1091,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                         <viewControllerLayoutGuide type="bottom" id="cPi-Go-27c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bd8-au-TmN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sVU-xt-EgV">
@@ -1109,14 +1110,14 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ece-0w-SZe">
-                                <rect key="frame" x="16" y="507" width="343" height="1"/>
+                                <rect key="frame" x="16" y="531" width="343" height="1"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.1647058824" blue="0.40784313729999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="tYc-M8-ISG"/>
                                 </constraints>
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxm-o0-fke">
-                                <rect key="frame" x="16" y="585" width="164" height="30"/>
+                                <rect key="frame" x="16" y="609" width="164" height="30"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Programa Académico">
@@ -1134,7 +1135,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4tY-aH-F6W">
-                                <rect key="frame" x="235" y="585" width="124" height="30"/>
+                                <rect key="frame" x="235" y="609" width="124" height="30"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Inscríbete ahora">
@@ -1151,7 +1152,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-TB-oYN">
-                                <rect key="frame" x="16" y="256" width="343" height="243"/>
+                                <rect key="frame" x="16" y="256" width="343" height="267"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="147" id="AhN-Es-32U">
@@ -1246,7 +1247,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZ8-X3-nnu">
-                                <rect key="frame" x="16" y="515" width="343" height="100"/>
+                                <rect key="frame" x="16" y="539" width="343" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salón:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mti-Gh-ZP5">
                                         <rect key="frame" x="8" y="34.5" width="209" height="18.5"/>
@@ -1334,6 +1335,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                             <constraint firstItem="N41-1S-MdP" firstAttribute="top" secondItem="VmH-lB-Qaa" secondAttribute="bottom" constant="8" id="uEr-tu-uVq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Whw-XT-dGq"/>
                     <connections>
                         <outlet property="InscribeteBtn" destination="4tY-aH-F6W" id="eMA-iW-Xav"/>
                         <outlet property="academicProgramBtn" destination="sxm-o0-fke" id="RjV-OR-YCi"/>
@@ -1359,14 +1361,14 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                         <viewControllerLayoutGuide type="bottom" id="tAM-YX-sdr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZEL-Fj-azb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-LP-XTi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gw6-Sa-OPW">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hB-lH-TRq">
                                                 <rect key="frame" x="16" y="20" width="343" height="20"/>
@@ -1388,27 +1390,27 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                                 </constraints>
                                             </view>
                                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmy-Ui-6xh">
-                                                <rect key="frame" x="8" y="98.5" width="359" height="329.5"/>
+                                                <rect key="frame" x="8" y="98.5" width="359" height="353.5"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="jFV-dS-pxJ" id="akb-ny-jlM"/>
                                                 </connections>
                                             </webView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-Wr-fir">
-                                                <rect key="frame" x="8" y="436" width="359" height="1"/>
+                                                <rect key="frame" x="8" y="460" width="359" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="kJt-CT-FBW"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis notas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsD-5s-loC">
-                                                <rect key="frame" x="8" y="444" width="359" height="19"/>
+                                                <rect key="frame" x="8" y="468" width="359" height="19"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctJ-pO-1aH">
-                                                <rect key="frame" x="309" y="441" width="25" height="25"/>
+                                                <rect key="frame" x="309" y="465" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="SgH-l3-ngf"/>
                                                     <constraint firstAttribute="width" secondItem="ctJ-pO-1aH" secondAttribute="height" multiplier="1:1" id="u94-l7-N9J"/>
@@ -1419,7 +1421,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayz-Hd-DIy">
-                                                <rect key="frame" x="342" y="441" width="25" height="25"/>
+                                                <rect key="frame" x="342" y="465" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ayz-Hd-DIy" secondAttribute="height" multiplier="1:1" id="9p8-lz-U09"/>
                                                     <constraint firstAttribute="width" constant="25" id="Asl-v1-Ti2"/>
@@ -1430,7 +1432,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" keyboardDismissMode="onDrag" text="Ingresa texto" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VzL-H7-lX3">
-                                                <rect key="frame" x="8" y="471" width="359" height="150"/>
+                                                <rect key="frame" x="8" y="495" width="359" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="hEb-Mh-4qb"/>
@@ -1494,6 +1496,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                             <constraint firstItem="uGT-LP-XTi" firstAttribute="leading" secondItem="ZEL-Fj-azb" secondAttribute="leading" id="kJX-d5-fBt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wrE-a8-cwp"/>
                     <connections>
                         <outlet property="loadingIndicator" destination="HhL-w8-dgX" id="cNe-MK-Zom"/>
                         <outlet property="profesorLabel" destination="XGs-Fx-jcG" id="s80-cI-KCg"/>
@@ -2090,11 +2093,11 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
                         <viewControllerLayoutGuide type="bottom" id="If1-Fq-fwC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BU3-UZ-KsH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QB-0w-dHe">
-                                <rect key="frame" x="0.0" y="40" width="375" height="551"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="583"/>
                                 <connections>
                                     <outlet property="delegate" destination="ey8-Sp-Sl2" id="zAT-dD-Ylj"/>
                                 </connections>
@@ -2137,7 +2140,7 @@ Presidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia
             <objects>
                 <navigationController storyboardIdentifier="ProfesoresNVC" id="jwu-6C-Bhb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Xzf-ub-UUn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2669,7 +2672,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7b-Mb-eVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="-385"/>
+            <point key="canvasLocation" x="244" y="-356"/>
         </scene>
         <!--Static Tab View Controller-->
         <scene sceneID="b29-XI-ajB">
@@ -3324,7 +3327,7 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                 <navigationController storyboardIdentifier="PuntajeNVC" id="pYZ-dM-F81" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="m3K-td-0XP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KT4-wW-2eT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3350,11 +3353,11 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                         <viewControllerLayoutGuide type="bottom" id="d14-iF-0c8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Sf-rW-AgB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9w-Wo-MPi">
-                                <rect key="frame" x="16" y="0.0" width="343" height="581"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="613"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -3371,30 +3374,234 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                                         </attributes>
                                     </fragment>
                                     <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="PRE CONGRESO">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
                                         <string key="content">
-
-- PRE CONGRESO
    6 puntos
  
-- TRANS CONGRESO
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="TRANS CONGRESO">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
   7 puntos
  
-- TALLER
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="TALLER">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
   5 puntos por plática
  
-- ASISTENCIA
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ASISTENCIA">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
   12 puntos
  
-- PROFESOR TITULAR, ADJUNTO Y CONFERENCISTA
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="PROFESOR TITULAR, ADJUNTO Y CONFERENCISTA">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
   6 puntos
  
-- COMITE ORGANIZADOR
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="COMITE ORGANIZADOR">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
   6 puntos
  
-- OTROS MIEMBROS DEL COMITE
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="OTROS MIEMBROS DEL COMITE">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
   3 puntos
-  - TRABAJOS LIBRES, VIDEOS Y CARTELES   10 puntos
-
+  </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="TRABAJOS LIBRES, VIDEOS Y CARTELES">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">   10 puntos
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3414,7 +3621,7 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3449,7 +3656,7 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
             <objects>
                 <navigationController storyboardIdentifier="RecintoNVC" id="Uyz-Xo-ztS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="S1F-3I-76H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3475,11 +3682,11 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                         <viewControllerLayoutGuide type="bottom" id="gcI-97-e21"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W1L-2P-2FI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDs-H9-kNw">
-                                <rect key="frame" x="0.0" y="80" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="567"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="5hB-u0-QZI" id="tRe-Ob-E7e"/>
@@ -3696,7 +3903,7 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Acerca la imágen usando los dedos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djg-tR-r2Z">
-                                <rect key="frame" x="16" y="230" width="343" height="38"/>
+                                <rect key="frame" x="16" y="424" width="343" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="koP-gD-lVZ"/>
                                 </constraints>
@@ -3705,7 +3912,7 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uwo-uF-55v">
-                                <rect key="frame" x="16" y="268" width="343" height="391"/>
+                                <rect key="frame" x="16" y="462" width="343" height="197"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content" base64-UTF8="YES">
@@ -3718,16 +3925,34 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">83 stands
-3 áreas de descanso
-8 áreas de café
-26-29 de junio
-a partir de las 7:00 hrs.</string>
+                                        <string key="content">15 al 17 de julio 17 stands
+2 salas virtuales
+5 visitas a la expo comercial
+Interactúa con los expositores a través de:</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
                                             <real key="NSKern" value="0.0"/>
                                             <font key="NSOriginalFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="19" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops>
                                                     <textTab alignment="left" location="11">
@@ -3765,6 +3990,35 @@ Cg
                                             <real key="NSStrokeWidth" value="0.0"/>
                                         </attributes>
                                     </fragment>
+                                    <fragment>
+                                        <string key="content">Correo electrónico (registro)
+Teléfono
+WhatsApp
+Videollamada
+Sitio Web
+Quiz de encuesta
+Carteles promocionales
+Videos informativos</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name=".SFNSDisplay"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="19" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="19" name="Times-Roman"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -3772,7 +4026,9 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="* Para visitar la exposición comercial es indispensable portar el gafete del congreso en un lugar visible">
+                                    <fragment>
+                                        <string key="content">* Para obtener el retorno académico deberá visitar los 12 stands del COMEGO-ELITE, recopilar las 12 claves y enviarlas por correo electrónico. (Para más información visualice las políticas de inscripción 4 y 5).
+</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="12" name=".HelveticaNeueDeskInterface-Regular"/>
@@ -3784,10 +4040,10 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="fGe-DU-q5c">
-                                <rect key="frame" x="16" y="16" width="343" height="206"/>
+                                <rect key="frame" x="16" y="16" width="343" height="400"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="122PlanoExpo" translatesAutoresizingMaskIntoConstraints="NO" id="BYT-7o-p3o">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="206"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="400.00000000000023"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -3795,7 +4051,7 @@ Cg
                                     <constraint firstItem="BYT-7o-p3o" firstAttribute="centerX" secondItem="fGe-DU-q5c" secondAttribute="centerX" id="QIP-0N-7vS"/>
                                     <constraint firstAttribute="trailing" secondItem="BYT-7o-p3o" secondAttribute="trailing" id="YHB-d6-lZY"/>
                                     <constraint firstItem="BYT-7o-p3o" firstAttribute="top" secondItem="fGe-DU-q5c" secondAttribute="top" id="kvy-OS-0c2"/>
-                                    <constraint firstAttribute="width" secondItem="fGe-DU-q5c" secondAttribute="height" multiplier="15:9" id="vsF-cQ-ieR"/>
+                                    <constraint firstAttribute="width" secondItem="fGe-DU-q5c" secondAttribute="height" multiplier="6:7" id="vsF-cQ-ieR"/>
                                     <constraint firstAttribute="bottom" secondItem="BYT-7o-p3o" secondAttribute="bottom" id="zci-Ih-eBf"/>
                                     <constraint firstItem="BYT-7o-p3o" firstAttribute="leading" secondItem="fGe-DU-q5c" secondAttribute="leading" id="zr0-bV-P7q"/>
                                 </constraints>
@@ -4559,11 +4815,11 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="IAL-Wh-NLU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UyZ-ot-5Kd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscando código QR ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0q-ik-RPx">
-                                <rect key="frame" x="0.0" y="541" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="573" width="375" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Icc-xA-zH1"/>
@@ -4600,7 +4856,7 @@ Cg
             <objects>
                 <navigationController storyboardIdentifier="QRNVC" id="269-gr-qP4" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="xFQ-vC-4cm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4626,11 +4882,11 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="XWq-hE-6dw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0ZP-Gn-HIG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-tC-fXE">
-                                <rect key="frame" x="0.0" y="40" width="375" height="551"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="mgr-fN-10I" id="MV2-sv-IPY"/>
@@ -4686,9 +4942,9 @@ Cg
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Comité Organizador 
-XXV Congreso COMEGO</string>
+XXV Congreso COMEGO Virtual</string>
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="5" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -4702,7 +4958,7 @@ XXV Congreso COMEGO</string>
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="12" name="TrebuchetMS"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="5" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -4727,19 +4983,6 @@ Cg
                                     </fragment>
                                     <fragment content="Presidente Honorario">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-ICAgIAo
-</string>
-                                        <attributes>
                                             <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
@@ -4749,7 +4992,8 @@ ICAgIAo
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Dr. Víctor Manuel Espinosa de los Reyes Sánchez
+                                        <string key="content">    
+Dr. Víctor Manuel Espinosa de los Reyes Sánchez
 
 </string>
                                         <attributes>
@@ -4763,19 +5007,6 @@ ICAgIAo
                                     </fragment>
                                     <fragment content="Presidente Ejecutivo">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-ICAgIAo
-</string>
-                                        <attributes>
                                             <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
@@ -4785,7 +5016,8 @@ ICAgIAo
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Dr. Gilberto Tena Alavez
+                                        <string key="content">    
+Dr. Gilberto Tena Alavez
 
 </string>
                                         <attributes>
@@ -4799,19 +5031,6 @@ ICAgIAo
                                     </fragment>
                                     <fragment content="Secretario">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
                                             <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
@@ -4821,7 +5040,8 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Dr. Gerardo Aurioles López
+                                        <string key="content">
+Dr. Jesus Armando Montaño Uzcanga
 
 </string>
                                         <attributes>
@@ -4833,9 +5053,9 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="Tesorero">
+                                    <fragment content="Tesorero:">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -4844,7 +5064,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">:   
+                                        <string key="content">   
 Dr. Jesús Armando Montaño Uzcanga Dr. Leonel A. Pedraza González
      
 </string>
@@ -4859,19 +5079,6 @@ Dr. Jesús Armando Montaño Uzcanga Dr. Leonel A. Pedraza González
                                     </fragment>
                                     <fragment content="Comité científico">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-ICAgIAo
-</string>
-                                        <attributes>
                                             <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
@@ -4881,7 +5088,8 @@ ICAgIAo
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Dr. Víctor Saúl Vital Reyes
+                                        <string key="content">    
+Dr. Víctor Saúl Vital Reyes
      
 </string>
                                         <attributes>
@@ -4895,19 +5103,6 @@ ICAgIAo
                                     </fragment>
                                     <fragment content="Comité de Comunicación Virtual">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-IAo
-</string>
-                                        <attributes>
                                             <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
@@ -4917,7 +5112,8 @@ IAo
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Dra. Elsa Díaz López
+                                        <string key="content"> 
+Dra. Elsa Díaz López
 Dr. Alejandro Rosas Balan
 
 </string>
@@ -4932,19 +5128,6 @@ Dr. Alejandro Rosas Balan
                                     </fragment>
                                     <fragment content="Comité de Sesiones">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
                                             <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
@@ -4954,7 +5137,8 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Dr. Francisco J. Bernárdez Zapata
+                                        <string key="content">
+Dr. Francisco J. Bernárdez Zapata
 
 </string>
                                         <attributes>
@@ -4966,11 +5150,9 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">Comité de Difusión y Prensa
-</string>
+                                    <fragment content="Comité de Difusión y Prensa">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -4979,7 +5161,8 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Dra. Paola Iturralde Rosas Priego
+                                        <string key="content">
+Dra. Paola Iturralde Rosas Priego
 
 
 </string>
@@ -4994,7 +5177,7 @@ Cg
                                     </fragment>
                                     <fragment content="Comité de Atención a Profesores">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -5020,7 +5203,7 @@ Dr. Ignacio Lara Barragán
                                     </fragment>
                                     <fragment content="Comité de Trabajos Libres y Carteles">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -5044,7 +5227,7 @@ Dr. René J. Toro Calzada
                                     </fragment>
                                     <fragment content="Coordinador del 15 Encuentro Regional de Residentes">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -5067,11 +5250,9 @@ Dr. Rogelio A. Aguado Pérez
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">Comité de Administración
-</string>
+                                    <fragment content="Comité de Administración">
                                         <attributes>
-                                            <color key="NSColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.37647058820000001" green="0.34901960780000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -5080,7 +5261,8 @@ Dr. Rogelio A. Aguado Pérez
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">C.P. Eduardo Martínez Aguilar
+                                        <string key="content">
+C.P. Eduardo Martínez Aguilar
 Sr. Eduardo Rodríguez Solís
 
 
@@ -5137,14 +5319,14 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="jcw-2m-bPK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ivo-n5-n3F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rac-X2-qmM">
-                                <rect key="frame" x="16" y="0.0" width="343" height="540"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="564"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="XXIV ENCUENTRO REGIONAL DE RESIDENTES COMEGO 2020">
+                                    <fragment content="XV Encuentro de los Residentes de México">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
@@ -5182,11 +5364,10 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Estimados Residentes:
-</string>
+                                        <string key="content">¡Bienvenidos al XV Encuentro de los Residentes de México! Sigue #DesdeCasa a través de nuestra plataforma www.congresovirtualcomego.com nuestras actividades y a través de esta App programa tus actividades y sigue la agenda del evento.</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" lineHeightMultiple="1.1500000000000001" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -5195,67 +5376,22 @@ Cg
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="Nos encontramos a pocos días del inicio de nuestro magno evento, el ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" lineHeightMultiple="1.0791666666666666" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="25">
+                                    <fragment content="  Esto es innovación COMEGO.">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" lineHeightMultiple="1.0791666666666666" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10" lineHeightMultiple="1.1500000000000001" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> congreso regional del COMEGO, de donde forma parte el 14 encuentro regional de residentes. En conjunto con los profesores adjuntos, hemos diseñado un programa atractivo para que de manera inmediata los temas tratados tengan impacto en cada una de sus actividades realizadas en su institución sede.
-Todos los temas serán expuestos por residentes de especialidad coordinados por residentes de subespecialidad, el compromiso del COMEGO es fortalecer tanto las actividades académicas como de formación de los residentes, es por eso que al término de las exposiciones el COMEGO premiará, a quien a juicio de sus compañeros, se destacó en su participación en el 14 encuentro regional.  Estamos seguros de que la oferta académica de este año y las actividades sociales serán de su agrado. Inscríbete te esperamos.
-Atte.
-Dr. Alejandro Rosas Balan 
-Coordinador 14 encuentro de residentes.</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" lineHeightMultiple="1.0791666666666666" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" lineHeightMultiple="1.0791666666666666" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCV-Jt-Fmp">
-                                <rect key="frame" x="16" y="570" width="343" height="33"/>
+                                <rect key="frame" x="16" y="594" width="343" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Ver Programa"/>
                                 <connections>
@@ -5543,7 +5679,7 @@ Cg
     </scenes>
     <resources>
         <image name=" " width="16" height="16"/>
-        <image name="122PlanoExpo" width="1386" height="1126"/>
+        <image name="122PlanoExpo" width="1200" height="1429"/>
         <image name="1Chapultepec" width="750" height="366"/>
         <image name="24Nuevo" width="339" height="146"/>
         <image name="Banner8.3Programa" width="750" height="300"/>
@@ -5581,14 +5717,14 @@ Cg
         <image name="text-document" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="99G-cB-fNx"/>
+        <segue reference="Okd-lq-8yQ"/>
         <segue reference="J2l-n7-Zbw"/>
         <segue reference="cFw-ZH-ohu"/>
         <segue reference="0zk-E8-o83"/>
         <segue reference="VOH-aH-Gy1"/>
         <segue reference="hlk-He-i1h"/>
-        <segue reference="ifI-nO-2Mf"/>
-        <segue reference="aGz-jR-Qof"/>
-        <segue reference="Atg-BI-MeW"/>
+        <segue reference="mAd-Oo-91F"/>
+        <segue reference="pC7-yR-Z7B"/>
+        <segue reference="XHE-vv-rFZ"/>
     </inferredMetricsTieBreakers>
 </document>

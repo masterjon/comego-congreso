@@ -117,7 +117,7 @@ class ProgramaContainerVC: UIViewController {
             type: .bottom,
             ratio: 1,
             height: 3,
-            color: ColorPallete.AccentColor
+            color: .white
         )
     }
     private func segmentioSeparationOptions() -> SegmentioHorizontalSeparatorOptions{
