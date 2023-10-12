@@ -329,7 +329,7 @@
                                     <fragment content="Objetivo">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="5" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
@@ -342,7 +342,7 @@
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="5" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
@@ -352,13 +352,32 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Propiciar la educación médica continua a través de contenidos académicos de alta excelencia que impacten en la prevención, diagnóstico y terapéutica de la práctica clínica del gineco-obstétra.   Favorecer el reencuentro fraterno con los colegas y amigos en un ambiente académico de respeto y cordialidad.
+                                        <string key="content">Diseñar un congreso con enfoque predominantemente clínico, de fácil implementación en el día a día de nuestra práctica, con la intención de corregir la variabilidad clínica y mejorar la calidad de la atención a la salud de la mujer.
+
 </string>
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">o a) Volcar la visión del especialista en ginecología y obstetricia hacia los problemas fundamentales que afectan hoy a la mujer mexicana.
+o b) Replantear las prioridades en la atención de la salud reproductiva y perinatal.
+o c) Enfatizar en la atención integral de nuestras mujeres incluyendo aspectos biológicos, psicológicos y sociales.
+o d) Incidir en la práctica clínica promoviendo la incorporación de avances tecnológicos y del conocimiento con fundamento científico.
+o e) Promover el abandono de prácticas clínicas tradicionales pero inadecuadas a la luz de la evidencia científica actual.
+o f) Dirigir el enfoque a la calidad de la atención.
+o g) Fomentar la discusión, el análisis y el intercambio de opinión en los temas de frontera y/o que causan controversia para la práctica clínica.
+o h) Intercambiar experiencias entre médicos, hospitales, centros de investigación y agrupaciones científicas de México y el extranjero.
+o i) Promover un ejercicio profesional ético, satisfactorio y seguro.</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" firstLineHeadIndent="8" headIndent="45" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -408,7 +427,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUR-CL-i7e">
                                 <rect key="frame" x="16" y="274" width="343" height="373"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Distinguidos colegas:">
+                                    <fragment content="Distinguidos colegas y amigos:">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
@@ -419,19 +438,69 @@
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </attributes>
                                     </fragment>
+                                    <fragment content="   ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="15" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
                                     <fragment>
-                                        <string key="content">   Reciban un cordial saludo, esperando haya bienestar en Usted y familia. El Colegio Mexicano de Especialistas en Ginecología y Obstetricia A. C. (COMEGO), reconocido en la comunidad médica por su capacidad de innovación y consolidado como uno de los colegios médicos con liderazgo en la Ginecología organizada de nuestro país, organiza su 27 Congreso Regional en modalidad Presencial-Virtual. “Reencuentro: Por la salud de la mujer”.
+                                        <mutableString key="content">Es para mí, un doble honor dirigirme a ustedes: en primer lugar como presidente de la Federación Mexicana de Colegios de Obstetricia y Ginecología A.C. y en segundo lugar como expresidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia A.C., en este segundo comunicado de nuestro 71 Congreso Mexicano de Obstetricia y Ginecología “La salud de la mujer desde una visión integral”. En esta ocasión, le corresponde a la Región Uno de la FEMECOG ser el responsable de la organización de nuestro magno evento a celebrarse del 29 de octubre al 2 de noviembre del año en curso.
+</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17.667000000000002" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="15" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">
+La FEMECOG y COMEGO se han esforzado para integrar para ustedes un programa innovador, con temas de vanguardia y nuevas modalidades pedagógicas. El Dr. Luis Sentíes como presidente ejecutivo, en conjunto con el Comité de Actividades Científicas han logrado conjuntar en este programa de alta calidad científica dónde podrás disfrutar de más de 650 ponencias por más de 200 conferencistas mexicanos y 22 conferencistas extranjeros. Todos ellos de renombre y auténticos especialistas en los temas a exponer.
 
-Esfuerzo, continuidad, ahora innovación y experiencia de más de 77 años en organizar actividades académicas con la más alta exigencia en la generación de contenidos de interés para la Ginecología y Obstetricia, ramas derivadas y afines a la misma, que cumplen con sus objetivos primarios: fomentar y promover la enseñanza médica y ahora más que nunca la necesidad de reencontrarnos con la presencia física de cada uno de nosotros, posterior a la ausencia de esta sensibilidad generada por condiciones conocidas, elementos determinantes en la organización del 27 Congreso Regional Presencial-Virtual que lleva el eslogan “Reencuentro: Por la salud de la mujer”.
-Me honra poder presentar el avance de nuestro 27 Congreso Regional Presencial- Virtual, acorde con la evolución y las formas actuales de trasmitir la educación médica, lleva el lema “Reencuentro: Por la salud de la mujer”. Conscientes del reto que representa poder organizar, por primera vez en la historia del COMEGO, un congreso en modalidad PRESENCIAL-VIRTUAL, asumimos la responsabilidad y la necesidad de redoblar esfuerzos para que la calidad académica y de organización cumpla y rebase las expectativas que cada uno de nuestros congresos lo demanda.
-Se designó al Dr. Manuel Mario Matute González como presidente ejecutivo y por tanto, responsable de la organización de nuestro magno evento; seguro de su voluntad, experiencia y profesionalismo, la calidad del 27 Congreso Regional Presencial-Virtual está garantizada.
-Se mantiene la continuidad de integrar a la Ginecología organizada a los médicos residentesdelaespecialidadyramasderivadas;poresosecelebrará el17Encuentro de Residentes, actividad que seguramente, fomentará el intercambio académico de las diferentes instituciones de origen.
-El Dr. Miguel Ángel Mancera Reséndiz es designado como Presidente Honorario de nuestro congreso, sus méritos profesionales, académicos, personales y el apoyo incondicional que ha dejado huella en el propio COMEGO son determinantes para esta asignación.
-El Consejo Directivo del Colegio Mexicano de Especialistas en Ginecología y Obstetricia (Región 1 de la Federación Mexicana de Colegios de Obstetricia y Ginecología) y el Comité Organizador del 27 Congreso Regional Presencial-Virtual “Reencuentro: Por la salud de la mujer”, trabajaremos con la fortaleza que nos distingue para que las expectativas y el éxito de nuestro magno evento sean nuestro resultado final. 
-No puedes faltar, tú eres la parte esencial y la motivación principal de nuestro magno evento.
+Cabe mencionar que, en esta ocasión, el encuentro de residentes va a ser más dinámico, buscando objetivos académicos e integrando residentes tanto de la Ciudad de México como del interior de la República Mexicana.
 
-“Por un COMEGO Sin Fronteras”
-Dr. Ranferi Gaona Arreola
+Es de todos conocido que durante los Congresos Mexicanos, todos aprovechamos para convivir con nuestros colegas de otros estados de la República Mexicana. Los invito a aprovechar los eventos sociales de gran nivel que se han preparado para ustedes, estamos seguros de que los van a disfrutar.
+
+Quiero invitarlos a participar en este congreso, NUESTRO CONGRESO, que sin duda contribuirá de manera fehaciente a que seamos mejores profesionistas en pro de la salud femenina y de la mujer mexicana.
+
+Los espero en la Ciudad de México a partir del 29 de octubre 2023 </mutableString>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17.667000000000002" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14.667" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Presidente FEMECOG
+Dr. Javier Gómezpedroso Rea
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -446,7 +515,7 @@ Dr. Ranferi Gaona Arreola
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FotoDrNeri" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-lV-SJM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PdteFEMECOG-Dr-Javier-Gomezpedroso-Rea" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-lV-SJM">
                                 <rect key="frame" x="87.5" y="40" width="200" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="D3B-lV-SJM" secondAttribute="height" multiplier="325:315" id="a3x-ZB-7dQ"/>
@@ -2384,7 +2453,7 @@ Dr. Ranferi Gaona Arreola
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqA-H1-I7w">
                                 <rect key="frame" x="16" y="274" width="343" height="373"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Estimados colegas:">
+                                    <fragment content="Queridos Congresistas:">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
@@ -2396,20 +2465,61 @@ Dr. Ranferi Gaona Arreola
                                         </attributes>
                                     </fragment>
                                     <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">Para el Colegio Mexicano de Especialistas en Ginecología y Obstetricia, es un verdadero privilegio ser los anfitriones del 71 Congreso Mexicano de Obstetricia y Ginecología, el máximo evento académico de la Gineco-Obstetricia organizada del país cuyo lema es “La salud de la mujer desde una visión integral”.
+
+La organización del Congreso Mexicano representa todo un reto, por la alta expectativa que genera y porque cada vez es más fácil acceder a información médica actualizada a través de las tecnologías de la información y es más difícil satisfacer el apetito académico de los congresistas.
+
+El Comité Organizador presidido por el Dr. Luis Sentíes Cortina ha asumido este reto con toda atingencia, estructurando un ambicioso e innovador programa científico con nuevas modalidades académicas como los “Hilos Clínicos”. En sinergia con el Comité de Actividades Científicas de FEMECOG, han seleccionado a profesores nacionales e internacionales con apego a un estricto rigor académico para asegurar la calidad científica del Congreso.
+
+En este 2° comunicado se percatarán de las diferentes actividades académicas y sociales que se desarrollarán y de las facilidades que se dispondrán para los congresistas. El fin de semana previo al evento la Ciudad de México gozará de gran ambiente por la celebración del día de muertos, el Gran Premio de Fórmula 1, un animado coctel de bienvenida y nuestra tradicional cena de integración, los esperamos.
+
+Finalmente, deseo destacar la nominación del Dr. René Guillermo Bailón Uriza como presidente Honorario del 71 Congreso Mexicano de Obstetricia y Ginecología, les invitamos a que nos acompañen en este merecido reconocimiento.
+
+Vengan a disfrutar esta experiencia académica, los esperamos con los brazos abiertos.
+Con todo afecto 
+</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17.667000000000002" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14.667" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
                                         <string key="content">
-Es un gran placer poder dirigirme a ustedes en este primer comunicado con motivo del 26 Congreso Regional COMEGO, en nombre del Consejo Directivo de la Federación Mexicana de Colegios de Obstetricia y Ginecología el primer pensamiento que emana es desear que se encuentren bien ante esta terrible situación de salud que vive el mundo y desde luego nuestro país.
-
-Con el confinamiento por el SARS-CoV-2 hemos perdido el contacto personal que enriquece sobre manera cualquier reunión académica y añoramos que este modelo pronto regrese, sin embargo hemos aprendido que tendremos que vivir con esta nueva modalidad de enseñanza virtual, hasta hace poco inusual en nuestro medio.
-
-Es por este hecho que el Comité Organizador del 26 Congreso COMEGO nos ofrecerá el formato virtual con el slogan ¨Retos ante la nueva normalidad”.
-
-Estamos convencidos de que uno de los peores errores que cometen las personas y las sociedades es la autocomplacencia, la deformación en nuestra percepción de que todo está bien, la satisfacción que conlleva el acostumbrarse a que nada pueda ser mejorado y por lo tanto fatalmente nada puede mejorar. Me parece que justo el COMEGO se ha alejado de la autocomplacencia para poder desarrollar novedosos esquemas académicos con calidad y variedad que satisfacen al ginecólogo más exigente.
-
-Finalmente viene bien recordar las palabras de Ortega y Gasset quien afirmaba que “Una Institución que no convoca y cobija a sus jóvenes, hipoteca su futuro”, es por esto que el tradicional encuentro de residentes tiene gran relevancia para el COMEGO.
-
-Te esperamos. Cordial saludo.
-
-Dr. Cuauhtémoc Celis GonzálezPresidente de la Federación Mexicana de Colegios de Obstetricia y Ginecología A.C. 
+Presidente COMEGO
+Dr. Gilberto Tena Alavez
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2424,7 +2534,7 @@ Dr. Cuauhtémoc Celis GonzálezPresidente de la Federación Mexicana de Colegios
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FotoDrManuelA" translatesAutoresizingMaskIntoConstraints="NO" id="kOb-5Z-8F9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PdeteCOMEGO-Dr.-Gilberto-Tena-Alavez" translatesAutoresizingMaskIntoConstraints="NO" id="kOb-5Z-8F9">
                                 <rect key="frame" x="87.5" y="40" width="200" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kOb-5Z-8F9" secondAttribute="height" multiplier="325:315" id="Mkx-NW-EJR"/>
@@ -2465,7 +2575,7 @@ Dr. Cuauhtémoc Celis GonzálezPresidente de la Federación Mexicana de Colegios
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWy-W4-jvt">
                                 <rect key="frame" x="16" y="274" width="343" height="373"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Estimados Coleg">
+                                    <fragment content="Estimado Coleg">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
@@ -2504,13 +2614,31 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Es para mí motivo de enorme satisfacción invitarlos al XXVII Congreso Regional COMEGO. El Congreso Regional va a hacer un evento diferente, porque es el primero con actividades presenciales después de la pandemia. Por lo anterior será un reencuentro con el conocimiento y los amigos. </string>
+                                        <mutableString key="content">Hemos preparado un Congreso con un enfoque clínico de gran aplicabilidad a la práctica diaria y centrado en LA SALUD DE LA MUJER DESDE UNA VISIÓN INTEGRAL
+
+Si aún no te inscribes, valora lo que te podrías perder:
+• Un programa académico de gran calidad con una selección cuidadosa de temas de trascendencia con más de 600 ponencias.
+• 22 profesores extranjeros y 250 profesores nacionales de excelencia.
+• Nuevas modalidades académicas: 15 HILOS CLÍNICOS, 5 simposios de frontera, 5 de actualización, 5 de ejercicio profesional, 13 cursos pre y transcongreso.
+• Foro de investigación y concurso de trabajos y carteles.
+• Encuentro académico, comida de intregración, Taller práctico, concurso “Ginepardy” y concurso de tesis para RESIDENTES.
+• Las últimas novedades de la industria en una Exposición Comercial sin precedente.
+• Actividades sociales con espectáculos de talla internacional.
+• Un Programa novedoso para acompañantes.
+• Vivir la gran Ciudad de México en las festividades de muertos, de Fórmula 1 y muchas otras • Una oportunidad inigualable de convivir y encontrarse con amigos y colegas de todo el país.
+
+Participa activamente en nuestras actividades académicas y en nuestras instituciones, colegios y Federación para el enaltecimiento de nuestra especialidad.
+
+¡No se hace un país diferente con gente indiferente!
+Juntos por la salud de la mujer con una visión integral
+¡TE ESPERAMOS!
+
+</mutableString>
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2522,122 +2650,15 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">La visión del Congreso es combinar la experiencia de las actividades presenciales realizadas por muchos años, con la fortaleza de las actividades en línea. </string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">El evento contará con la participación de profesores nacionales y profesores extranjeros para reafirmar y actualizar sus conocimientos en Ginecología y Obstetricia, así como en Medicina Materno Fetal, Uroginecología, Oncología Ginecológica y Medicina de la Reproducción. </string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Los temas serán variados, se abordarán tópicos de interés, actualidad y de controversia. En las actividades académicas esperamos su interacción constante y los invitamos a compartir sus experiencias en carteles, videos y trabajos libres. </string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Esperamos contar con su asistencia, así como con su entusiasta y constante participación. ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="17" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="“Reencuentro: Por la Salud de la Mujer”">
+                                    <fragment content="Presidente Ejecutivo">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
@@ -2651,7 +2672,7 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-Dr. Manuel Mario Matute González</string>
+Dr. Luis G. Sentíes Cortina</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
@@ -2666,7 +2687,7 @@ Dr. Manuel Mario Matute González</string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FotoDrEmilio" translatesAutoresizingMaskIntoConstraints="NO" id="IUP-hk-mbK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pdte71-Dr-Luis-G.-Senties-Cortina" translatesAutoresizingMaskIntoConstraints="NO" id="IUP-hk-mbK">
                                 <rect key="frame" x="87.5" y="40" width="200" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IUP-hk-mbK" secondAttribute="height" multiplier="325:315" id="FOC-7i-P9G"/>
@@ -5145,16 +5166,16 @@ Cg
         <image name="BotonShare" width="157" height="157"/>
         <image name="BotonUbicacion" width="157" height="157"/>
         <image name="FondoP9" width="16" height="16"/>
-        <image name="FotoDrEmilio" width="325" height="315"/>
-        <image name="FotoDrManuelA" width="325" height="315"/>
-        <image name="FotoDrNeri" width="325" height="315"/>
         <image name="HotelC1" width="750" height="366"/>
         <image name="HotelesBlanco" width="45" height="45"/>
         <image name="Logo" width="123" height="181"/>
         <image name="LogoCDMX" width="365" height="135"/>
-        <image name="LogoCongreso" width="339" height="146"/>
+        <image name="LogoCongreso" width="500" height="213"/>
         <image name="LogoWTC-Recinto" width="450" height="172"/>
         <image name="MarcoFoto" width="750" height="933"/>
+        <image name="PdeteCOMEGO-Dr.-Gilberto-Tena-Alavez" width="325" height="315"/>
+        <image name="Pdte71-Dr-Luis-G.-Senties-Cortina" width="325" height="315"/>
+        <image name="PdteFEMECOG-Dr-Javier-Gomezpedroso-Rea" width="325" height="315"/>
         <image name="PlaceBco" width="45" height="45"/>
         <image name="Save" width="375" height="110"/>
         <image name="SeleccionaFoto" width="750" height="597"/>

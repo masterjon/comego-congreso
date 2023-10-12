@@ -60,7 +60,7 @@ class ComitesViewController: UIViewController {
         //var items : [SegmentioItem] = []
         return [
             SegmentioItem(title: "Consejo Directivo", image: nil),
-            SegmentioItem(title: "Comité Organizador", image: nil ),
+            SegmentioItem(title: "Comité Ejecutivo", image: nil ),
             SegmentioItem(title: "Historia COMEGO", image: nil ),
         ]
     }
