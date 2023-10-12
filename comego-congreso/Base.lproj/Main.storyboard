@@ -3525,7 +3525,7 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plataforma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pba-Dm-blX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plataforma Virtual" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pba-Dm-blX">
                                 <rect key="frame" x="0.0" y="439.5" width="375" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5182,7 +5182,7 @@ Cg
         <image name="Share" width="375" height="110"/>
         <image name="TomaFoto" width="750" height="597"/>
         <image name="UbicacionPresencial" width="693" height="324"/>
-        <image name="Ubicacioon" width="693" height="324"/>
+        <image name="Ubicacioon" width="2560" height="1230"/>
         <image name="WebBco" width="45" height="45"/>
         <image name="icons8-trash-50" width="50" height="50"/>
         <image name="icons8-upload-50" width="50" height="50"/>

@@ -135,7 +135,7 @@ class OrganizadoresVC: UIViewController {
         let tab3 = StaticTabViewController.create(storyboardId:"vc22")
         let tab4 = StaticTabViewController.create(storyboardId:"vc23")
   
-        return [tab1,tab2,tab4]
+        return [tab1,tab2,tab3,tab4]
         
         //        return viewcontrollers
     }

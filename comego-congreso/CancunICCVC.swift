@@ -47,7 +47,7 @@ class CancunICCVC: UIViewController {
     }
     
     @IBAction func showMap(_ sender: UIButton) {
-        let url = URL(string: "https://congresovirtualcomego.com")!
+        let url = URL(string: "https://www.congresovirtualfemecog.com/")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
