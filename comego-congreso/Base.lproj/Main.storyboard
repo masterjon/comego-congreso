@@ -3177,7 +3177,7 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Puntaje para vigencia de la Certificación del Consejo Mexicano de Ginecología y Obstetricia, A.C.
+                                        <string key="content">Puntaje para la vigencia de Recertificación del Consejo Mexicano de Ginecología y Obstetricia A.C.
 </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -3243,7 +3243,7 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-  7 puntos
+  8 puntos
  
 </string>
                                         <attributes>
@@ -3270,7 +3270,7 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-  12 puntos
+  18 puntos
  
 </string>
                                         <attributes>
@@ -3297,7 +3297,7 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-  6 puntos
+  8 puntos
  
 </string>
                                         <attributes>
@@ -3324,7 +3324,7 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-  6 puntos
+  8 puntos
  
 </string>
                                         <attributes>
@@ -3351,7 +3351,7 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-  3 puntos
+  6 puntos
   </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -3397,19 +3397,6 @@ Cg
                                             <font key="NSFont" size="16" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">*Al asistir a todo el programa académico del XXVII Congreso COMEGO podrás obtener hasta 25 puntos para la vigencia de certificación.</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
                                             <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5146,7 +5133,7 @@ Cg
         <segue reference="yEx-GR-D0a"/>
         <segue reference="tgu-Rk-072"/>
         <segue reference="pC7-yR-Z7B"/>
-        <segue reference="ic0-mI-hqK"/>
+        <segue reference="x3X-Sy-YZc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name=" " width="16" height="16"/>
