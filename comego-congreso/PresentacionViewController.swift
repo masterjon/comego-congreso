@@ -7,13 +7,13 @@
 //
 
 import UIKit
-
-class PresentacionViewController: UIViewController,UIWebViewDelegate {
+import WebKit
+class PresentacionViewController: UIViewController {
     
-    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
+    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var profesorLabel: UILabel!
-    @IBOutlet var webView: UIWebView!
+    @IBOutlet weak var webViewContainer: UIView!
     
     @IBOutlet var textView: UITextView!
     
@@ -30,8 +30,13 @@ class PresentacionViewController: UIViewController,UIWebViewDelegate {
         self.profesorLabel.text = presentacion.profesor
         
         if let url = URL(string:presentacion.pdf){
-            self.webView.loadRequest(URLRequest(url: url))
+//            self.webView.loadRequest(URLRequest(url: url))
+            let webView = WKWebView(frame: CGRect(x:20,y:20,width:webViewContainer.frame.size.width, height:webViewContainer.frame.size.height))
+            webView.load(URLRequest(url: url))
+           webViewContainer.addSubview(webView)
         }
+        
+        
         let commentsKey = "comment-\(presentacion.id)"
         print(commentsKey)
         
@@ -47,9 +52,9 @@ class PresentacionViewController: UIViewController,UIWebViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        self.loadingIndicator.stopAnimating()
-    }
+//    func webViewDidFinishLoad(_ webView: UIWebView) {
+//        self.loadingIndicator.stopAnimating()
+//    }
 
     func saveComment() {
         let commentsKey = "comment-\(presentacion.id)"

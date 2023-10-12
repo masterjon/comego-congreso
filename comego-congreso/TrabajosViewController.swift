@@ -59,6 +59,7 @@ class TrabajosViewController: UIViewController {
         return [
             SegmentioItem(title: "Carteles participación", image: nil),
             SegmentioItem(title: "Carteles concurso", image: nil ),
+            SegmentioItem(title: "Trabajos libres", image: nil ),
             SegmentioItem(title: "Videos concurso", image: nil ),
         ]
     }
@@ -76,7 +77,7 @@ class TrabajosViewController: UIViewController {
             maxVisibleItems: 3,
             scrollEnabled: true,
             indicatorOptions: segmentioIndicatorOptions(),
-            horizontalSeparatorOptions: nil,
+            horizontalSeparatorOptions: SegmentioHorizontalSeparatorOptions(type: .bottom, height: 0, color: .gray),
             verticalSeparatorOptions: nil,
             imageContentMode: imageContentMode,
             labelTextAlignment: .center,
@@ -91,17 +92,17 @@ class TrabajosViewController: UIViewController {
             defaultState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .black
+                titleTextColor: .white
             ),
             selectedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .white
+                titleTextColor: ColorPallete.AccentColor
             ),
             highlightedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: .white
+                titleTextColor: ColorPallete.AccentColor
             )
         )
     }
@@ -114,22 +115,25 @@ class TrabajosViewController: UIViewController {
             type: .bottom,
             ratio: 1,
             height: 3,
-            color: ColorPallete.WhiteColor
+            color: ColorPallete.AccentColor
         )
     }
     
     private func preparedViewControllers() -> [WebViewController] {
         
         let tab1 = WebViewController.create(storyboardId:"WebView")
-        tab1.webUrl = "http://comego.org.mx/regional/Regional_25/Trabajos/Resultados/listas_C_Presentacion.pdf"
+        tab1.webUrl = "https://comego.org.mx/27_Congreso/ListadoConcurso_compressed.pdf"
         let tab2 = WebViewController.create(storyboardId:"WebView")
-        tab2.webUrl = "https://comego.org.mx/regional/Regional_25/Trabajos/Resultados/Lista_T_Concurso.pdf"
+        tab2.webUrl = "https://comego.org.mx/27_Congreso/ListadoPresentacion_compressed.pdf"
         
         let tab3 = WebViewController.create(storyboardId:"WebView")
-        tab3.webUrl = "http://comego.org.mx/regional/Regional_25/Trabajos/Resultados/listas_videos.pdf"
+        tab3.webUrl = "https://comego.org.mx/27_Congreso/Listado_de_trabajos_libres.pdf"
+        
+        let tab4 = WebViewController.create(storyboardId:"WebView")
+        tab4.webUrl = "https://comego.org.mx/27_Congreso/Listado_de_Videos.pdf"
         
         
-        return [tab1,tab2,tab3]
+        return [tab1,tab2,tab3,tab4]
         //        return viewcontrollers
     }
     

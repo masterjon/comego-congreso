@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Network
 
 class QRViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegate {
     

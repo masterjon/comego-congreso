@@ -54,6 +54,14 @@ class CancunICCVC: UIViewController {
             UIApplication.shared.openURL(url)
         }
     }
+    @IBAction func showMapLocation(_ sender: UIButton) {
+        let url = URL(string: "https://goo.gl/maps/QLwsgypJmGGpaJve7")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

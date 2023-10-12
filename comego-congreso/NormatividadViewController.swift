@@ -77,7 +77,7 @@ class NormatividadViewController: UIViewController {
             maxVisibleItems: 3,
             scrollEnabled: true,
             indicatorOptions: segmentioIndicatorOptions(),
-            horizontalSeparatorOptions: nil,
+            horizontalSeparatorOptions: SegmentioHorizontalSeparatorOptions(type: .bottom, height: 0, color: .gray),
             verticalSeparatorOptions: nil,
             imageContentMode: imageContentMode,
             labelTextAlignment: .center,

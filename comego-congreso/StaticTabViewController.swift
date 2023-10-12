@@ -8,13 +8,12 @@
 
 import UIKit
 import ImageSlideshow
-class StaticTabViewController: UIViewController,UIWebViewDelegate{
+class StaticTabViewController: UIViewController{
 
     
     @IBOutlet var textView1: UITextView!
     @IBOutlet var textView2: UITextView!
     
-    @IBOutlet var webView: UIWebView!
     
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     
@@ -35,12 +34,12 @@ class StaticTabViewController: UIViewController,UIWebViewDelegate{
         if textView2 != nil{
             textView2.contentOffset = CGPoint.zero
         }
-        if webView != nil{
-                
-            self.loadingIndicator.startAnimating()
-            self.webView.loadRequest(URLRequest(url: URL(string:"https://online.flippingbook.com/view/287773/")!))
-            
-        }
+//        if webView != nil{
+//
+//            self.loadingIndicator.startAnimating()
+//            self.webView.loadRequest(URLRequest(url: URL(string:"https://online.flippingbook.com/view/287773/")!))
+//
+//        }
         if slideshow != nil{
             slideshow.slideshowInterval = 5.0
             slideshow.pageControlPosition = PageControlPosition.underScrollView
@@ -65,9 +64,7 @@ class StaticTabViewController: UIViewController,UIWebViewDelegate{
     
        
     }
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        self.loadingIndicator.stopAnimating()
-    }
+  
     
     @objc func didTap() {
         let fullScreenController = slideshow.presentFullScreenController(from: self)

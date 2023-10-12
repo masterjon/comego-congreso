@@ -75,7 +75,7 @@ class ProfesoresViewController: UIViewController {
             maxVisibleItems: 3,
             scrollEnabled: true,
             indicatorOptions: segmentioIndicatorOptions(),
-            horizontalSeparatorOptions: nil,
+            horizontalSeparatorOptions: SegmentioHorizontalSeparatorOptions(type: .bottom, height: 0, color: .gray),
             verticalSeparatorOptions: nil,
             imageContentMode: imageContentMode,
             labelTextAlignment: .center,
@@ -96,12 +96,12 @@ class ProfesoresViewController: UIViewController {
             selectedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: ColorPallete.DarkPrimaryColor
+                titleTextColor: ColorPallete.AccentColor
             ),
             highlightedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: ColorPallete.DarkPrimaryColor
+                titleTextColor: ColorPallete.AccentColor
             )
         )
     }
@@ -114,7 +114,7 @@ class ProfesoresViewController: UIViewController {
             type: .bottom,
             ratio: 1,
             height: 3,
-            color: .white
+            color: ColorPallete.AccentColor
         )
     }
     

@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     var remoteUrls = [String]()
     
     override func viewDidLoad() {
+        //ubicacionButton.backgroundColor = .blue
         super.viewDidLoad()
         
         center.getNotificationSettings { (settings) in
@@ -46,7 +47,7 @@ class ViewController: UIViewController {
 //        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
 
         
-        let dateString = "15-07-2020 09:00:00"
+        let dateString = "22-06-2022 07:30:00"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm:ss"
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -126,7 +127,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func ubicacionAction(_ sender: UIButton) {
-        let url = URL(string: "https://bit.ly/2VKCVVG")!
+        let url = URL(string: "https://congresovirtualcomego.com/perfil")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
@@ -141,6 +142,15 @@ class ViewController: UIViewController {
         self.present(vc, animated: false, completion: nil)
     }
     
+    @IBAction func recintoVirtualAction(_ sender: Any) {
+        let url = URL(string: "https://congresovirtualcomego.com/")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    
+    }
     @IBAction func shareAction(_ sender: UIButton) {
         let alert = UIAlertController(title: "Síguenos en ", message: "", preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "Facebook", style: .default, handler: { (action) in
@@ -173,7 +183,7 @@ class ViewController: UIViewController {
         }))
         alert.addAction(UIAlertAction(title: "Cancelar", style: .destructive, handler: { (action) in
             //execute some code when this option is selected
-            self.dismiss(animated: true, completion: nil)
+            alert.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
     }

@@ -25,6 +25,10 @@ class ICCVC: UIViewController {
         view.addSubview(segmentioView)
         self.setupSegmentioView()
         self.setupScrollView()
+        if self.selctedIndex == 0{
+            segmentioView.selectedSegmentioIndex = self.selctedIndex
+            
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -56,7 +60,7 @@ class ICCVC: UIViewController {
     private func segmentioContent() -> [SegmentioItem] {
         
         return [
-            SegmentioItem(title: "25 CVC", image: UIImage(named: "CIECBco")),
+            SegmentioItem(title: "Sede", image: UIImage(named: "CIECBco")),
             SegmentioItem(title: "Salones", image: UIImage(named: "SalonesBco")),
             SegmentioItem(title: "Expo", image: UIImage(named: "ExpoBco"))
             
@@ -100,12 +104,12 @@ class ICCVC: UIViewController {
             selectedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: ColorPallete.DarkPrimaryColor
+                titleTextColor: ColorPallete.AccentColor
             ),
             highlightedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: ColorPallete.DarkPrimaryColor
+                titleTextColor: ColorPallete.AccentColor
             )
         )
     }
@@ -119,7 +123,7 @@ class ICCVC: UIViewController {
             type: .bottom,
             ratio: 1,
             height: 3,
-            color: ColorPallete.WhiteColor
+            color: ColorPallete.AccentColor
         )
     }
     private func segmentioSeparationOptions() -> SegmentioHorizontalSeparatorOptions{
@@ -181,8 +185,9 @@ class ICCVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func viewDidAppear(_ animated: Bool) {
+        if self.selctedIndex != 0{
         segmentioView.selectedSegmentioIndex = self.selctedIndex
-        
+        }
     }
     
     /*

@@ -7,16 +7,21 @@
 //
 
 import UIKit
+import WebKit
 
 class PatrocinadoresDetailVC: UIViewController {
 
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var webViewContainer: UIView!
+    
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     var url = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         if let url = URL(string:self.url){
-            self.webView.loadRequest(URLRequest(url: url))
+    //            self.webView.loadRequest(URLRequest(url: url))
+                let webView = WKWebView(frame: CGRect(x:20,y:20,width:webViewContainer.frame.size.width, height:webViewContainer.frame.size.height))
+                webView.load(URLRequest(url: url))
+               webViewContainer.addSubview(webView)
         }
         // Do any additional setup after loading the view.
         
@@ -26,9 +31,7 @@ class PatrocinadoresDetailVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        self.loadingIndicator.stopAnimating()
-    }
+  
     
 
     /*

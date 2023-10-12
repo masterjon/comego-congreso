@@ -19,6 +19,7 @@ class MenuCollectionViewController: UICollectionViewController,UICollectionViewD
                  ["title":"m-Ahora", "vc":"AhoraNVC"],
                  ["title":"m-Profesores", "vc":"ProfesoresNVC"],
                  ["title":"m-Recinto", "vc":"RecintoNVC"],
+                 ["title":"m-Virtual", "link":"https://congresovirtualcomego.com"],
                  ["title":"m-Tabajos", "vc":"TrabajosNVC"],
 //                 ["title":"m-CDMX", "vc":"CDMXNVC"],
                  ["title":"m-MiFoto", "vc":"TuFotoSourceNVC"],

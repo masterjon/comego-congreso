@@ -61,10 +61,10 @@ class OrganizadoresVC: UIViewController {
     private func segmentioContent() -> [SegmentioItem] {
         //var items : [SegmentioItem] = []
         return [
-            SegmentioItem(title: "XXV CVC", image: nil),
+            SegmentioItem(title: "XXVII CRC", image: nil),
             SegmentioItem(title: "Pdte.\nCOMEGO", image: nil ),
-            SegmentioItem(title: "Pdte.\nFEMECOG", image: nil ),
-            SegmentioItem(title: "Pdte.\nXXV CVC", image: nil ),
+//            SegmentioItem(title: "Pdte.\nFEMECOG", image: nil ),
+            SegmentioItem(title: "Pdte.\nXXVII CRC", image: nil ),
         ]
     }
     
@@ -84,7 +84,7 @@ class OrganizadoresVC: UIViewController {
             maxVisibleItems: 4,
             scrollEnabled: true,
             indicatorOptions: segmentioIndicatorOptions(),
-            horizontalSeparatorOptions: nil,
+            horizontalSeparatorOptions: SegmentioHorizontalSeparatorOptions(type: .bottom, height: 0, color: .gray),
             verticalSeparatorOptions: nil,
             imageContentMode: imageContentMode,
             labelTextAlignment: .center,
@@ -105,12 +105,12 @@ class OrganizadoresVC: UIViewController {
             selectedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: ColorPallete.DarkPrimaryColor
+                titleTextColor: ColorPallete.AccentColor
             ),
             highlightedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: ColorPallete.DarkPrimaryColor
+                titleTextColor: ColorPallete.AccentColor
             )
         )
     }
@@ -124,7 +124,7 @@ class OrganizadoresVC: UIViewController {
             type: .bottom,
             ratio: 1,
             height: 3,
-            color: .white
+            color: ColorPallete.AccentColor
         )
     }
 
@@ -135,7 +135,7 @@ class OrganizadoresVC: UIViewController {
         let tab3 = StaticTabViewController.create(storyboardId:"vc22")
         let tab4 = StaticTabViewController.create(storyboardId:"vc23")
   
-        return [tab1,tab2,tab3,tab4]
+        return [tab1,tab2,tab4]
         
         //        return viewcontrollers
     }

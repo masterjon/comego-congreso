@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import WebKit
+class WebViewController: UIViewController {
 
-class WebViewController: UIViewController, UIWebViewDelegate {
-
-    @IBOutlet var webView: UIWebView!
+    @IBOutlet weak var webViewContainer: UIView!
+//    @IBOutlet var webView: UIWebView!
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     var webUrl = ""
     var hideLoading = false
@@ -25,8 +26,13 @@ class WebViewController: UIViewController, UIWebViewDelegate {
             self.loadingIndicator.stopAnimating()
         }
         if let url = URL(string:self.webUrl){
-            self.webView.loadRequest(URLRequest(url: url))
+            //self.webView.loadRequest(URLRequest(url: url))
+            let webView = WKWebView(frame: CGRect(x:20,y:20,width:webViewContainer.frame.size.width, height:webViewContainer.frame.size.height))
+            webView.load(URLRequest(url: url))
+           webViewContainer.addSubview(webView)
         }
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -34,9 +40,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func webViewDidFinishLoad(_ webView: UIWebView) {
-        self.loadingIndicator.stopAnimating()
-    }
+  
 
     /*
     // MARK: - Navigation

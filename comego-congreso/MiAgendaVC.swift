@@ -32,11 +32,11 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var days : [[String:Any]] = []
     var list : [ProgramItem] = []
     var mylist : [[ProgramItem]] = []
-    
+    var name : String = ""
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     let userDefaults = UserDefaults.standard
     let url = "\(getApiBaseUrl())actividades_all/"
-    let months = ["Martes, 14 de Julio", "Miércoles, 15 de Julio","Jueves, 16 de Julio", "  Viernes, 17 de Julio"]
+    let months = ["Martes, 22 de Junio", "Miércoles, 23 de Junio","Jueves, 24 de Junio", "  Viernes, 25 de Junio"]
     
     let center = UNUserNotificationCenter.current()
     
@@ -249,13 +249,13 @@ class MiAgendaVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                             guard let day =  Int(dateFormatCustom3(startDate)) else{return}
                             var idx = 0
                             switch day{
-                            case 14:
+                            case 22:
                                 idx = 0
-                            case 15:
+                            case 23:
                                 idx = 1
-                            case 16:
+                            case 24:
                                 idx = 2
-                            case 17:
+                            case 25:
                                 idx = 3
                             default:
                                 idx = 0

@@ -98,12 +98,12 @@ class ProgramaContainerVC: UIViewController {
             selectedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: ColorPallete.DarkPrimaryColor
+                titleTextColor: ColorPallete.AccentColor
             ),
             highlightedState: segmentioState(
                 backgroundColor: ColorPallete.TransparentColor,
                 titleFont: font,
-                titleTextColor: ColorPallete.DarkPrimaryColor
+                titleTextColor: ColorPallete.AccentColor
             )
         )
     }
@@ -117,7 +117,7 @@ class ProgramaContainerVC: UIViewController {
             type: .bottom,
             ratio: 1,
             height: 3,
-            color: .white
+            color: ColorPallete.AccentColor
         )
     }
     private func segmentioSeparationOptions() -> SegmentioHorizontalSeparatorOptions{

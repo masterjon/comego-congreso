@@ -43,7 +43,9 @@ class ProgramaCatDetailVC: UIViewController, UITableViewDataSource,UITableViewDe
     func loadItems(){
 
         Alamofire.request("\(url)\(cat.id)").validate().responseJSON { (response) in
+            let url = response.request?.url
             switch response.result{
+                
             case .success:
                 let catData = JSON(response.value!)
                 

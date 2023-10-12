@@ -37,7 +37,8 @@ struct ColorPallete{
 
     static let PrimaryColor = UIColor(red:0.16, green:0.53, blue:0.58, alpha:1.0)
     //static let AccentColor = UIColor(red:1.00, green:0.32, blue:0.32, alpha:1.0)
-    static let AccentColor = UIColor(red: 0.65, green: 0.78, blue: 0.25, alpha: 1.00)
+    static let AccentColor = UIColor(red: 0.90, green: 0.75, blue: 0.41, alpha: 1.00)
+    
 
 
     static let PrimaryTextColor = UIColor(red:0.13, green:0.13, blue:0.13, alpha:1.0)

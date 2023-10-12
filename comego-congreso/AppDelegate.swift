@@ -9,7 +9,7 @@
 import UIKit
 import UserNotifications
 import Firebase
-import FirebaseInstanceID
+
 import FirebaseMessaging
     
 @UIApplicationMain
@@ -34,15 +34,13 @@ import FirebaseMessaging
 
         
         var configureError: NSError?
-        Messaging.messaging().remoteMessageDelegate = self
+        Messaging.messaging().delegate = self
         application.registerForRemoteNotifications()
         FirebaseApp.configure()
         // Override point for customization after application launch.
         return true
     }
-    func application(received remoteMessage: MessagingRemoteMessage) {
-        print(remoteMessage.appData)
-    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

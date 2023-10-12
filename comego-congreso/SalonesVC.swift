@@ -18,23 +18,40 @@ class SalonesVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         return mainStoryboard.instantiateViewController(withIdentifier: storyboardId) as! SalonesVC
     }
     
-    let items = [["image":"SalonAngel",
-                  "image_big":"SalonAngel",
-                  "title":"Salón Foro COMEGO",
-                  "subtitle":""],
-                 ["image":"SalonBellasArtes",
-                  "image_big":"SalonBellasArtes",
-                  "title":"Salón Diana La Cazadora",
-                  "subtitle":""],
-                 ["image":"SalonDianaLaCazadora",
-                  "image_big":"SalonDianaLaCazadora",
-                  "title":"Salón Bellas Artes",
-                  "subtitle":""],
-                ["image":"SalonForoCOMEGO",
-                 "image_big":"SalonForoCOMEGO",
-                 "title":"Salón Angel",
-                 "subtitle":""]
-                ]
+//    let items = [["image":"SalonForoCOMEGO",
+//                  "image_big":"SalonForoCOMEGO",
+//                  "title":"Salón Foro COMEGO",
+//                  "subtitle":""],
+//                 ["image":"SalonDianaLaCazadora",
+//                  "image_big":"SalonDianaLaCazadora",
+//                  "title":"Salón Diana La Cazadora",
+//                  "subtitle":""],
+//                 ["image":"SalonBellasArtes",
+//                  "image_big":"SalonBellasArtes",
+//                  "title":"Salón Bellas Artes",
+//                  "subtitle":""],
+//                ["image":"SalonAngel",
+//                 "image_big":"SalonAngel",
+//                 "title":"Salón Angel",
+//                 "subtitle":""],
+//                ["image":"SalonReforma",
+//                 "image_big":"SalonReforma",
+//                 "title":"Salón Reforma",
+//                 "subtitle":""]
+//                ]
+    let items = [["image":"planoalta",
+                      "image_big":"planoalta",
+                      "title":"Planta alta",
+                      "subtitle":""],
+                     ["image":"planobaja",
+                      "image_big":"planobaja",
+                      "title":"Planta baja",
+                      "subtitle":""],
+                     ["image":"planomezzanine",
+                      "image_big":"planomezzanine",
+                      "title":"Mezzanine",
+                      "subtitle":""]
+                    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         
