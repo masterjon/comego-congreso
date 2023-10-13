@@ -122,15 +122,15 @@ class TrabajosViewController: UIViewController {
     private func preparedViewControllers() -> [WebViewController] {
         
         let tab1 = WebViewController.create(storyboardId:"WebView")
-        tab1.webUrl = "https://congresovirtualcomego.com/media/ListadoConcurso_compressed.pdf"
+        tab1.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/ListadoConcurso_compressed.pdf"
         let tab2 = WebViewController.create(storyboardId:"WebView")
-        tab2.webUrl = "https://congresovirtualcomego.com/media//ListadoPresentacion_compressed.pdf"
+        tab2.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/ListadoPresentacion_compressed.pdf"
         
         let tab3 = WebViewController.create(storyboardId:"WebView")
-        tab3.webUrl = "https://congresovirtualcomego.com/media/Listado_de_trabajos_libres.pdf"
+        tab3.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/Listado_de_trabajos_libres.pdf"
         
         let tab4 = WebViewController.create(storyboardId:"WebView")
-        tab4.webUrl = "https://congresovirtualcomego.com/media/Listado_de_Videos.pdf"
+        tab4.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/Listado_de_Videos.pdf"
         
         
         return [tab1,tab2,tab3,tab4]

@@ -207,16 +207,30 @@
                                     <constraint firstAttribute="width" secondItem="LRu-vK-y5k" secondAttribute="height" multiplier="195:44" id="L6a-ja-6Ez"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="JOc-RJ-Pyj">
-                                <rect key="frame" x="155.5" y="8" width="64" height="93.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-71CMOG" translatesAutoresizingMaskIntoConstraints="NO" id="JOc-RJ-Pyj">
+                                <rect key="frame" x="146.5" y="20" width="82" height="81.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="JOc-RJ-Pyj" secondAttribute="height" multiplier="123:181" id="tME-5W-Cx6"/>
+                                    <constraint firstAttribute="width" secondItem="JOc-RJ-Pyj" secondAttribute="height" multiplier="1:1" id="tME-5W-Cx6"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24Nuevo" translatesAutoresizingMaskIntoConstraints="NO" id="xZV-nL-Qaf">
-                                <rect key="frame" x="5" y="133" width="177.5" height="76.5"/>
+                                <rect key="frame" x="16" y="154" width="166.5" height="55.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="xZV-nL-Qaf" secondAttribute="height" multiplier="339:146" id="j3A-kW-c6D"/>
+                                    <constraint firstAttribute="width" secondItem="xZV-nL-Qaf" secondAttribute="height" multiplier="281:94" id="j3A-kW-c6D"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-FEMECOG" translatesAutoresizingMaskIntoConstraints="NO" id="k02-HB-mWS">
+                                <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="k02-HB-mWS" secondAttribute="height" multiplier="1:1" id="WDn-vT-9YZ"/>
+                                    <constraint firstAttribute="width" constant="70" id="sRO-cU-BZ8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home-COMEGO" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-Ic-g9U">
+                                <rect key="frame" x="305" y="8" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="BRu-Is-v8x"/>
+                                    <constraint firstAttribute="width" secondItem="gUK-Ic-g9U" secondAttribute="height" multiplier="1:1" id="tua-Vi-gUY"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -228,18 +242,24 @@
                             <constraint firstItem="LRu-vK-y5k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Ah4-eo-sId"/>
                             <constraint firstItem="LRu-vK-y5k" firstAttribute="top" secondItem="jJ7-GA-GBL" secondAttribute="bottom" constant="8.5" id="BZi-9b-Q9N"/>
                             <constraint firstAttribute="trailing" secondItem="Ffd-sf-HhN" secondAttribute="trailing" constant="5" id="BqA-MC-PIP"/>
-                            <constraint firstItem="JOc-RJ-Pyj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FMG-vf-GE6"/>
+                            <constraint firstItem="JOc-RJ-Pyj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="FMG-vf-GE6"/>
                             <constraint firstItem="Mpq-p6-Hgl" firstAttribute="top" secondItem="LRu-vK-y5k" secondAttribute="bottom" constant="8" id="GIy-x9-d7R"/>
                             <constraint firstItem="Ffd-sf-HhN" firstAttribute="top" secondItem="JOc-RJ-Pyj" secondAttribute="bottom" constant="8" id="I4I-Ej-F3q"/>
+                            <constraint firstItem="k02-HB-mWS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="KIS-bT-0pl"/>
                             <constraint firstItem="Ffd-sf-HhN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="M4E-jb-kUr"/>
                             <constraint firstItem="jJ7-GA-GBL" firstAttribute="top" secondItem="Ffd-sf-HhN" secondAttribute="bottom" constant="19.5" id="QKl-bm-V8n"/>
                             <constraint firstItem="jJ7-GA-GBL" firstAttribute="top" secondItem="xZV-nL-Qaf" secondAttribute="bottom" constant="19.5" id="UUw-Ul-Gag"/>
                             <constraint firstAttribute="trailing" secondItem="jJ7-GA-GBL" secondAttribute="trailing" constant="16" id="Ut9-7T-wf6"/>
+                            <constraint firstItem="k02-HB-mWS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Yhx-YC-WzC"/>
                             <constraint firstItem="JOc-RJ-Pyj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zns-jK-rOm"/>
                             <constraint firstItem="jJ7-GA-GBL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="gym-1w-6zD"/>
                             <constraint firstItem="Ffd-sf-HhN" firstAttribute="leading" secondItem="xZV-nL-Qaf" secondAttribute="trailing" id="ihm-jP-cHs"/>
-                            <constraint firstItem="xZV-nL-Qaf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="qmj-1z-8mk"/>
+                            <constraint firstItem="gUK-Ic-g9U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="iql-rl-W21"/>
+                            <constraint firstAttribute="trailing" secondItem="gUK-Ic-g9U" secondAttribute="trailing" id="j8N-yh-p2L"/>
+                            <constraint firstItem="xZV-nL-Qaf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="qmj-1z-8mk"/>
                             <constraint firstAttribute="trailing" secondItem="Mpq-p6-Hgl" secondAttribute="trailing" constant="16" id="vU0-9L-Hf3"/>
+                            <constraint firstItem="gUK-Ic-g9U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JOc-RJ-Pyj" secondAttribute="trailing" constant="8" id="zLS-5V-shS"/>
+                            <constraint firstItem="JOc-RJ-Pyj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k02-HB-mWS" secondAttribute="trailing" constant="8" id="zaz-SF-vVG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Inicio" id="ugU-Q4-EvQ">
@@ -5133,13 +5153,13 @@ Cg
         <segue reference="yEx-GR-D0a"/>
         <segue reference="tgu-Rk-072"/>
         <segue reference="pC7-yR-Z7B"/>
-        <segue reference="x3X-Sy-YZc"/>
+        <segue reference="XHE-vv-rFZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name=" " width="16" height="16"/>
         <image name="122PlanoExpo" width="1386" height="1230"/>
         <image name="1Chapultepec" width="750" height="366"/>
-        <image name="24Nuevo" width="339" height="146"/>
+        <image name="24Nuevo" width="281" height="94"/>
         <image name="Banner8.3Programa" width="750" height="300"/>
         <image name="BannerAgenda" width="750" height="300"/>
         <image name="Boton-Detalle-Agregar" width="253" height="95"/>
@@ -5153,9 +5173,11 @@ Cg
         <image name="BotonShare" width="157" height="157"/>
         <image name="BotonUbicacion" width="157" height="157"/>
         <image name="FondoP9" width="16" height="16"/>
+        <image name="Home-71CMOG" width="296" height="306"/>
+        <image name="Home-COMEGO" width="79" height="126"/>
+        <image name="Home-FEMECOG" width="121" height="117"/>
         <image name="HotelC1" width="750" height="366"/>
         <image name="HotelesBlanco" width="45" height="45"/>
-        <image name="Logo" width="123" height="181"/>
         <image name="LogoCDMX" width="365" height="135"/>
         <image name="LogoCongreso" width="500" height="213"/>
         <image name="LogoWTC-Recinto" width="450" height="172"/>

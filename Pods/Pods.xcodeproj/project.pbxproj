@@ -292,7 +292,7 @@
 		85379CCF081FC9C36F082E71D2DF4D2F /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB3B141A1A58D950844BDBCB2416BC /* SessionDelegate.swift */; };
 		859CC12CBDFBA1ED92F0BA9292A556C6 /* FIRMessagingSyncMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D69F5414EE465086978A4B20DD81F558 /* FIRMessagingSyncMessageManager.m */; };
 		85EEA60C1D9FCB854F036BDBDEC24B93 /* GDTCCTUploadOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DB66E9DAC4FD05D4677F05D5A2F781 /* GDTCCTUploadOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		866DFC022937069F38003035850BB546 /* Segmentio-Segmentio in Resources */ = {isa = PBXBuildFile; fileRef = C8F2C375082C9FA86026FA0A69016000 /* Segmentio-Segmentio */; };
+		866DFC022937069F38003035850BB546 /* Segmentio.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8F2C375082C9FA86026FA0A69016000 /* Segmentio.bundle */; };
 		86A023A1BD2FA2FF0CF83510C07EA890 /* GULSecureCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAFC67A9E1D011F04606647DD83DF7E /* GULSecureCoding.m */; };
 		8722F718BD80A792FE66EEC912D8AC56 /* FIRMessagingCheckinPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F6DB8B316E36904F8CF1811BE98640 /* FIRMessagingCheckinPreferences.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		874EF5CFF532BD1D77F3D061AB5DE153 /* FIRInstallationsHTTPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A870DFD6CFB4006BA76B467487608B /* FIRInstallationsHTTPError.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1282,7 +1282,7 @@
 		C83A7ED4CF28E6FFBE210FE5E95F622C /* FIRInstallationsAPIService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsAPIService.m; path = FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.m; sourceTree = "<group>"; };
 		C8498160B5D29EF2745E4D41F2D971B5 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F1B769F43B87B9CEE4446FEED54E78 /* NSDictionary+FIRMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+FIRMessaging.h"; path = "FirebaseMessaging/Sources/NSDictionary+FIRMessaging.h"; sourceTree = "<group>"; };
-		C8F2C375082C9FA86026FA0A69016000 /* Segmentio-Segmentio */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Segmentio-Segmentio"; path = Segmentio.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F2C375082C9FA86026FA0A69016000 /* Segmentio.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Segmentio.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E0A51D959E6FEF3BD651EE9C413B6C /* ImageSlideshow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-prefix.pch"; sourceTree = "<group>"; };
 		CA27C6383B233DDE88D72923AC9B1F97 /* FIRHeartbeatLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatLogger.m; path = FirebaseCore/Sources/FIRHeartbeatLogger.m; sourceTree = "<group>"; };
 		CA95348057E0759DAD2DD36B3C5E4E44 /* FBLPromise+Reduce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Reduce.m"; path = "Sources/FBLPromises/FBLPromise+Reduce.m"; sourceTree = "<group>"; };
@@ -1965,7 +1965,7 @@
 				31A88B8A729EE38C9989B0E6B254C05A /* Pods-comego-congreso */,
 				3347A1AB6546F0A3977529B8F199DC41 /* PromisesObjC */,
 				E17D1F60CD1816128BD7D11434B9EDC6 /* Segmentio.framework */,
-				C8F2C375082C9FA86026FA0A69016000 /* Segmentio-Segmentio */,
+				C8F2C375082C9FA86026FA0A69016000 /* Segmentio.bundle */,
 				319D06AA0D1D0BA345459C039040A1ED /* SideMenu */,
 				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */,
 			);
@@ -3171,7 +3171,7 @@
 			);
 			name = "Segmentio-Segmentio";
 			productName = Segmentio;
-			productReference = C8F2C375082C9FA86026FA0A69016000 /* Segmentio-Segmentio */;
+			productReference = C8F2C375082C9FA86026FA0A69016000 /* Segmentio.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		B2F46A67275CC5973EE13076CD708247 /* ImageSlideshow */ = {
@@ -3292,6 +3292,12 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AFCF7D29EC7396E4018DB1E49BC64FFE = {
+						DevelopmentTeam = X8G464WQ9L;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3438,7 +3444,7 @@
 			files = (
 				A45C6978B572456DB3BA5B4AF399C2F7 /* BadgeWithCounterViewBigSized.xib in Resources */,
 				A7D01C817C3D67F23DB842D897E60CAD /* BadgeWithCounterViewStandardSized.xib in Resources */,
-				866DFC022937069F38003035850BB546 /* Segmentio-Segmentio in Resources */,
+				866DFC022937069F38003035850BB546 /* Segmentio.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5085,12 +5091,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EE2A06FC5BAA79948A422080B14789E /* Segmentio.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Segmentio";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8G464WQ9L;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = X8G464WQ9L;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = Segmentio;
 				INFOPLIST_FILE = "Target Support Files/Segmentio/ResourceBundle-Segmentio-Segmentio-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = Segmentio;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5234,12 +5246,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D3EEA139758BDA4EEB7CA59FCA3569D /* Segmentio.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Segmentio";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X8G464WQ9L;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = X8G464WQ9L;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = Segmentio;
 				INFOPLIST_FILE = "Target Support Files/Segmentio/ResourceBundle-Segmentio-Segmentio-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = Segmentio;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
