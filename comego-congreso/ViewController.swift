@@ -127,7 +127,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func ubicacionAction(_ sender: UIButton) {
-        let url = URL(string: "https://congresovirtualcomego.com/perfil")!
+        let url = URL(string: "https://femecog.org.mx")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
@@ -143,7 +143,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func recintoVirtualAction(_ sender: Any) {
-        let url = URL(string: "https://congresovirtualcomego.com/")!
+        let url = URL(string: "https://www.congresovirtualfemecog.com")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {

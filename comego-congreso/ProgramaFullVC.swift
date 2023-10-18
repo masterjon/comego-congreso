@@ -16,7 +16,7 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     let url = "\(getApiBaseUrl())actividades_all/"
-    let months = ["Martes, 21 de Junio", "Miércoles, 22 de Junio","Jueves, 23 de Junio", "  Viernes, 24 de Junio"]
+    let months = ["28 de octubre", "29 de octubre","30 de octubre", "31 de octubre", "1 de noviembre", "2 de noviembre"]
     
     class func create(storyboardId:String) -> ProgramaFullVC {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -158,14 +158,18 @@ class ProgramaFullVC: UIViewController, UITableViewDataSource, UITableViewDelega
                     guard let day = Int(dateFormatCustom3(startDate)) else{return}
                     var index = 0
                     switch day{
-                    case 21:
+                    case 28:
                         index = 0
-                    case 22:
+                    case 29:
                         index = 1
-                    case 23:
+                    case 30:
                         index = 2
-                    case 24:
+                    case 31:
                         index = 3
+                    case 1:
+                        index = 4
+                    case 2:
+                        index = 5
                     default:
                         index = 0
                     }

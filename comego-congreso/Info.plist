@@ -28,11 +28,11 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Tómate una foto y compártela</string>
+	<string>El acceso a la cámara permite poder tomarte una foto con nuestro marco perzonalizado del 71 CMOG.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Selecciona o guarda tu foto</string>
+	<string>El acceso a tus fotos permite poder ponerle a tus fotos nuestro marco perzonalizado del 71 CMOG.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Selecciona o guarda tu foto</string>
+	<string>El acceso a tus fotos permite poder ponerle a tus fotos nuestro marco perzonalizado del 71 CMOG.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
