@@ -59,9 +59,9 @@ class ComitesViewController: UIViewController {
     private func segmentioContent() -> [SegmentioItem] {
         //var items : [SegmentioItem] = []
         return [
-            SegmentioItem(title: "Consejo Directivo", image: nil),
-            SegmentioItem(title: "Comité Ejecutivo", image: nil ),
-            SegmentioItem(title: "Historia COMEGO", image: nil ),
+            SegmentioItem(title: "Consejo Dir. COMEGO", image: nil),
+            SegmentioItem(title: "Consejo Dir. FEMECOG", image: nil ),
+            SegmentioItem(title: "Comité Ejecutivo", image: nil )
         ]
     }
     
@@ -132,7 +132,7 @@ class ComitesViewController: UIViewController {
         let tab2 = StaticTabViewController.create(storyboardId:"vc02")
         
         
-        return [tab1,tab3, tab2]
+        return [tab1,tab2, tab3]
         
         //        return viewcontrollers
     }

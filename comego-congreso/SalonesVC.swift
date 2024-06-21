@@ -39,9 +39,15 @@ class SalonesVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
 //                 "title":"Salón Reforma",
 //                 "subtitle":""]
 //                ]
-    let items = [["image":"planoalta",
-                      "image_big":"planoalta",
-                      "title":"Planta alta",
+    let items = [
+        
+        ["image":"accsesos",
+                          "image_big":"accsesos",
+                          "title":"Accesos",
+                          "subtitle":""],
+        ["image":"generalsalones",
+                      "image_big":"generalsalones",
+                      "title":"General Salones",
                       "subtitle":""],
                      ["image":"planobaja",
                       "image_big":"planobaja",

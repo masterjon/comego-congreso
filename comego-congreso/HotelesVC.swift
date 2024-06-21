@@ -165,7 +165,7 @@ class HotelesVC: UITableViewController {
     
     
     @IBAction func reserveBtn(_ sender: Any) {
-        let url = URL(string: "http://www.comego.org.mx/regional/index.php/hospedaje")!
+        let url = URL(string: "https://www.comego.org.mx")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {

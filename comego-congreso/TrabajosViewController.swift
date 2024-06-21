@@ -57,10 +57,10 @@ class TrabajosViewController: UIViewController {
     private func segmentioContent() -> [SegmentioItem] {
         var items : [SegmentioItem] = []
         return [
-            SegmentioItem(title: "Carteles participación", image: nil),
+            SegmentioItem(title: "Carteles presentación", image: nil),
             SegmentioItem(title: "Carteles concurso", image: nil ),
-            SegmentioItem(title: "Trabajos libres", image: nil ),
-            SegmentioItem(title: "Videos concurso", image: nil ),
+            SegmentioItem(title: "Videos Concurso", image: nil ),
+            SegmentioItem(title: "Trabajos Inv. Libres:", image: nil ),
         ]
     }
     private func segmentioOptions() -> SegmentioOptions {
@@ -122,15 +122,15 @@ class TrabajosViewController: UIViewController {
     private func preparedViewControllers() -> [WebViewController] {
         
         let tab1 = WebViewController.create(storyboardId:"WebView")
-        tab1.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/ListadoConcurso_compressed.pdf"
+        tab1.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/1-Inv-Clinica.pdf"
         let tab2 = WebViewController.create(storyboardId:"WebView")
-        tab2.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/ListadoPresentacion_compressed.pdf"
+        tab2.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/2-Inv-Video.pdf"
         
         let tab3 = WebViewController.create(storyboardId:"WebView")
-        tab3.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/Listado_de_trabajos_libres.pdf"
+        tab3.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/3-Cartel-Digital.pdf"
         
         let tab4 = WebViewController.create(storyboardId:"WebView")
-        tab4.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/Listado_de_Videos.pdf"
+        tab4.webUrl = "https://comego-congreso.iddeasapps.xyz/media/trabajos/4-Trabajos-Residentes.pdf"
         
         
         return [tab1,tab2,tab3,tab4]

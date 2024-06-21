@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 //        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
 
         
-        let dateString = "29-10-2023 07:30:00"
+        let dateString = "25-06-2024 08:00:00"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm:ss"
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func ubicacionAction(_ sender: UIButton) {
-        let url = URL(string: "https://femecog.org.mx")!
+        let url = URL(string: "https://comego.org.mx/constancias.php")!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         } else {
@@ -228,9 +228,15 @@ class ViewController: UIViewController {
 //        }
         if segue.identifier == "residentesHomeSegue", let vc = segue.destination as? ProgramaCatDetailVC{
             let actividad = ProgramCat()
-            actividad.id = 19
+            actividad.id = 58
             actividad.title = "Encuentro Regional de Residentes"
-            actividad.color = "#ff0019"
+            actividad.color = "#6b73e1"
+            vc.cat = actividad
+        } else if segue.identifier == "eventosEspecialesHomeSegue",  let vc = segue.destination as? ProgramaCatDetailVC{
+            let actividad = ProgramCat()
+            actividad.id = 74
+            actividad.title = "Eventos Especiales"
+            actividad.color = "#db743d"
             vc.cat = actividad
         }
         

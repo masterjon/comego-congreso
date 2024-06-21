@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MVq-bF-xyn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MVq-bF-xyn">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -134,7 +134,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcd-gn-hNl">
                                                 <rect key="frame" x="86.5" y="62.5" width="80" height="148.5"/>
                                                 <connections>
-                                                    <action selector="recintoVirtualAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2mo-lm-N6x"/>
+                                                    <segue destination="kER-6e-MH1" kind="presentation" identifier="eventosEspecialesHomeSegue" id="6tm-Mg-Qid"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -300,7 +300,7 @@
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaM-ZN-q94">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -385,7 +385,7 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">o a) Volcar la visión del especialista en ginecología y obstetricia hacia los problemas fundamentales que afectan hoy a la mujer mexicana.
+                                        <string key="content">o a) Volcar la visión del especialista en ginecología y obstetricia hacia los problemas fundamentales que afectan hoy a la mujer mexicana.
 o b) Replantear las prioridades en la atención de la salud reproductiva y perinatal.
 o c) Enfatizar en la atención integral de nuestras mujeres incluyendo aspectos biológicos, psicológicos y sociales.
 o d) Incidir en la práctica clínica promoviendo la incorporación de avances tecnológicos y del conocimiento con fundamento científico.
@@ -393,7 +393,7 @@ o e) Promover el abandono de prácticas clínicas tradicionales pero inadecuadas
 o f) Dirigir el enfoque a la calidad de la atención.
 o g) Fomentar la discusión, el análisis y el intercambio de opinión en los temas de frontera y/o que causan controversia para la práctica clínica.
 o h) Intercambiar experiencias entre médicos, hospitales, centros de investigación y agrupaciones científicas de México y el extranjero.
-o i) Promover un ejercicio profesional ético, satisfactorio y seguro.</mutableString>
+o i) Promover un ejercicio profesional ético, satisfactorio y seguro.</string>
                                         <attributes>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
@@ -470,8 +470,8 @@ o i) Promover un ejercicio profesional ético, satisfactorio y seguro.</mutableS
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">Es para mí, un doble honor dirigirme a ustedes: en primer lugar como presidente de la Federación Mexicana de Colegios de Obstetricia y Ginecología A.C. y en segundo lugar como expresidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia A.C., en este segundo comunicado de nuestro 71 Congreso Mexicano de Obstetricia y Ginecología “La salud de la mujer desde una visión integral”. En esta ocasión, le corresponde a la Región Uno de la FEMECOG ser el responsable de la organización de nuestro magno evento a celebrarse del 29 de octubre al 2 de noviembre del año en curso.
-</mutableString>
+                                        <string key="content">Es para mí, un doble honor dirigirme a ustedes: en primer lugar como presidente de la Federación Mexicana de Colegios de Obstetricia y Ginecología A.C. y en segundo lugar como expresidente del Colegio Mexicano de Especialistas en Ginecología y Obstetricia A.C., en este segundo comunicado de nuestro 71 Congreso Mexicano de Obstetricia y Ginecología “La salud de la mujer desde una visión integral”. En esta ocasión, le corresponde a la Región Uno de la FEMECOG ser el responsable de la organización de nuestro magno evento a celebrarse del 29 de octubre al 2 de noviembre del año en curso.
+</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17.667000000000002" name="Helvetica"/>
@@ -483,7 +483,7 @@ o i) Promover un ejercicio profesional ético, satisfactorio y seguro.</mutableS
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">
+                                        <string key="content">
 La FEMECOG y COMEGO se han esforzado para integrar para ustedes un programa innovador, con temas de vanguardia y nuevas modalidades pedagógicas. El Dr. Luis Sentíes como presidente ejecutivo, en conjunto con el Comité de Actividades Científicas han logrado conjuntar en este programa de alta calidad científica dónde podrás disfrutar de más de 650 ponencias por más de 200 conferencistas mexicanos y 22 conferencistas extranjeros. Todos ellos de renombre y auténticos especialistas en los temas a exponer.
 
 Cabe mencionar que, en esta ocasión, el encuentro de residentes va a ser más dinámico, buscando objetivos académicos e integrando residentes tanto de la Ciudad de México como del interior de la República Mexicana.
@@ -492,7 +492,7 @@ Es de todos conocido que durante los Congresos Mexicanos, todos aprovechamos par
 
 Quiero invitarlos a participar en este congreso, NUESTRO CONGRESO, que sin duda contribuirá de manera fehaciente a que seamos mejores profesionistas en pro de la salud femenina y de la mujer mexicana.
 
-Los espero en la Ciudad de México a partir del 29 de octubre 2023 </mutableString>
+Los espero en la Ciudad de México a partir del 29 de octubre 2023 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17.667000000000002" name="Helvetica"/>
@@ -568,7 +568,7 @@ Dr. Javier Gómezpedroso Rea
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ngv-cC-bvQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="10" id="Yyn-e9-JA5">
                             <size key="itemSize" width="102" height="104"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -620,9 +620,9 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="ht9-Yb-2cB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -645,9 +645,9 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Nhm-hK-nqg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.176768958568573" green="0.24530059099197388" blue="0.43930792808532715" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -667,8 +667,8 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="oZx-Jk-ba5">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1764705882352941" green="0.24705882352941178" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -688,9 +688,9 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Vw5-R4-ZKK">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -710,9 +710,9 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="cm3-VM-D5D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -867,9 +867,9 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="clD-lu-wh3">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -1191,7 +1191,7 @@ Dr. Javier Gómezpedroso Rea
                         <viewControllerLayoutGuide type="bottom" id="cPi-Go-27c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bd8-au-TmN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sVU-xt-EgV">
@@ -1210,14 +1210,14 @@ Dr. Javier Gómezpedroso Rea
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ece-0w-SZe">
-                                <rect key="frame" x="16" y="487" width="343" height="1"/>
+                                <rect key="frame" x="16" y="531" width="343" height="1"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.1647058824" blue="0.40784313729999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="tYc-M8-ISG"/>
                                 </constraints>
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxm-o0-fke">
-                                <rect key="frame" x="16" y="565" width="164" height="30"/>
+                                <rect key="frame" x="16" y="609" width="164" height="30"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Programa Académico">
@@ -1235,7 +1235,7 @@ Dr. Javier Gómezpedroso Rea
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4tY-aH-F6W">
-                                <rect key="frame" x="235" y="565" width="124" height="30"/>
+                                <rect key="frame" x="235" y="609" width="124" height="30"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Inscríbete ahora">
@@ -1252,7 +1252,7 @@ Dr. Javier Gómezpedroso Rea
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-TB-oYN">
-                                <rect key="frame" x="16" y="256" width="343" height="223"/>
+                                <rect key="frame" x="16" y="256" width="343" height="267"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="147" id="AhN-Es-32U">
@@ -1338,7 +1338,7 @@ Dr. Javier Gómezpedroso Rea
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N41-1S-MdP">
                                 <rect key="frame" x="0.0" y="231" width="375" height="25"/>
-                                <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="oK6-pw-bhw"/>
                                 </constraints>
@@ -1347,7 +1347,7 @@ Dr. Javier Gómezpedroso Rea
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZ8-X3-nnu">
-                                <rect key="frame" x="16" y="495" width="343" height="100"/>
+                                <rect key="frame" x="16" y="539" width="343" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salón:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mti-Gh-ZP5">
                                         <rect key="frame" x="8" y="34.5" width="209" height="18.5"/>
@@ -1461,14 +1461,14 @@ Dr. Javier Gómezpedroso Rea
                         <viewControllerLayoutGuide type="bottom" id="tAM-YX-sdr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZEL-Fj-azb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-LP-XTi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gw6-Sa-OPW">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hB-lH-TRq">
                                                 <rect key="frame" x="16" y="20" width="343" height="20"/>
@@ -1490,20 +1490,20 @@ Dr. Javier Gómezpedroso Rea
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnt-Wr-fir">
-                                                <rect key="frame" x="8" y="416" width="359" height="1"/>
+                                                <rect key="frame" x="8" y="460" width="359" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="kJt-CT-FBW"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis notas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsD-5s-loC">
-                                                <rect key="frame" x="8" y="424" width="359" height="19"/>
+                                                <rect key="frame" x="8" y="468" width="359" height="19"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctJ-pO-1aH">
-                                                <rect key="frame" x="309" y="421" width="25" height="25"/>
+                                                <rect key="frame" x="309" y="465" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="SgH-l3-ngf"/>
                                                     <constraint firstAttribute="width" secondItem="ctJ-pO-1aH" secondAttribute="height" multiplier="1:1" id="u94-l7-N9J"/>
@@ -1514,7 +1514,7 @@ Dr. Javier Gómezpedroso Rea
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayz-Hd-DIy">
-                                                <rect key="frame" x="342" y="421" width="25" height="25"/>
+                                                <rect key="frame" x="342" y="465" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ayz-Hd-DIy" secondAttribute="height" multiplier="1:1" id="9p8-lz-U09"/>
                                                     <constraint firstAttribute="width" constant="25" id="Asl-v1-Ti2"/>
@@ -1525,7 +1525,7 @@ Dr. Javier Gómezpedroso Rea
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" keyboardDismissMode="onDrag" text="Ingresa texto" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VzL-H7-lX3">
-                                                <rect key="frame" x="8" y="451" width="359" height="150"/>
+                                                <rect key="frame" x="8" y="495" width="359" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="hEb-Mh-4qb"/>
@@ -1534,7 +1534,7 @@ Dr. Javier Gómezpedroso Rea
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
                                             </textView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2VW-k6-dGt">
-                                                <rect key="frame" x="8" y="91" width="359" height="317"/>
+                                                <rect key="frame" x="8" y="91" width="359" height="361"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
@@ -2182,7 +2182,7 @@ Dr. Javier Gómezpedroso Rea
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAK-hN-ZX2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2220,9 +2220,9 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Xzf-ub-UUn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -2255,7 +2255,7 @@ Dr. Javier Gómezpedroso Rea
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph4-65-pAt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2293,9 +2293,9 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="nLd-Ra-MhR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -2443,9 +2443,9 @@ Dr. Javier Gómezpedroso Rea
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="oZs-mh-is6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -2499,7 +2499,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">Para el Colegio Mexicano de Especialistas en Ginecología y Obstetricia, es un verdadero privilegio ser los anfitriones del 71 Congreso Mexicano de Obstetricia y Ginecología, el máximo evento académico de la Gineco-Obstetricia organizada del país cuyo lema es “La salud de la mujer desde una visión integral”.
+                                        <string key="content">Para el Colegio Mexicano de Especialistas en Ginecología y Obstetricia, es un verdadero privilegio ser los anfitriones del 71 Congreso Mexicano de Obstetricia y Ginecología, el máximo evento académico de la Gineco-Obstetricia organizada del país cuyo lema es “La salud de la mujer desde una visión integral”.
 
 La organización del Congreso Mexicano representa todo un reto, por la alta expectativa que genera y porque cada vez es más fácil acceder a información médica actualizada a través de las tecnologías de la información y es más difícil satisfacer el apetito académico de los congresistas.
 
@@ -2511,7 +2511,7 @@ Finalmente, deseo destacar la nominación del Dr. René Guillermo Bailón Uriza 
 
 Vengan a disfrutar esta experiencia académica, los esperamos con los brazos abiertos.
 Con todo afecto 
-</mutableString>
+</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="17.667000000000002" name="Helvetica"/>
@@ -2634,7 +2634,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">Hemos preparado un Congreso con un enfoque clínico de gran aplicabilidad a la práctica diaria y centrado en LA SALUD DE LA MUJER DESDE UNA VISIÓN INTEGRAL
+                                        <string key="content">Hemos preparado un Congreso con un enfoque clínico de gran aplicabilidad a la práctica diaria y centrado en LA SALUD DE LA MUJER DESDE UNA VISIÓN INTEGRAL
 
 Si aún no te inscribes, valora lo que te podrías perder:
 • Un programa académico de gran calidad con una selección cuidadosa de temas de trascendencia con más de 600 ponencias.
@@ -2653,7 +2653,7 @@ Participa activamente en nuestras actividades académicas y en nuestras instituc
 Juntos por la salud de la mujer con una visión integral
 ¡TE ESPERAMOS!
 
-</mutableString>
+</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue"/>
@@ -2740,8 +2740,8 @@ Dr. Luis G. Sentíes Cortina</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KUH-LN-PUn">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -2775,7 +2775,7 @@ Dr. Luis G. Sentíes Cortina</string>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nti-1t-Rkw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2822,7 +2822,7 @@ Dr. Luis G. Sentíes Cortina</string>
                                 <rect key="frame" x="16" y="40" width="343" height="607"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Consejo Directivo
+                                        <string key="content">Consejo Dir. COMEGO
 </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -2935,106 +2935,87 @@ CgoKA
                                 <rect key="frame" x="16" y="40" width="343" height="607"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Durante la primera mitad del Siglo XX la medicina mexicana tuvo progresos importantes, se fueron modificando los planes de estudio acordes con los avances de la medicina y los diseños educacionales internacionales.
-En 1934, el entonces Director de Hospital Juárez de la Ciudad de México, el maestro doctor José Castro Villagrana estableció lasAsambleas Nacionales de Cirujanos que deberían celebrarse cada dos años en el Hospital Juárez, para que durante una semana tuvieran la oportunidad de actualizar sus conocimientos, y aportar e intercambiar experiencias con sus compañeros.
-En esa época ya había médicos especializados en el diagnóstico y tratamiento de diversas enfermedades. Su dedicación a la ginecología y a la obstetricia era el resultado de un esfuerzo autodidacta para dominar los conocimientos existentes en ese campo.
- Las Asambleas Nacionales de Cirujanos del Hospital Juárez abrieron una valiosa oportunidad para satisfacer inquietudes de los médicos ávidos de educación para estar al día con los avances de la medicina.
-Desde los años 1942 y 1943 hubo reuniones, llamadas cenas científicas, en los domicilios particulares de médicos interesados en crear una agrupación para el estudio de la ginecología y la obstetricia.
- En noviembre de 1944 tuvo lugar la VI Asamblea Nacional de Cirujanos, después de diez años de experiencia es estas reuniones, el Presidente de la sección de Ginecología fue el doctor José Rojo de la Vega y el Presidente de la sección de Obstetricia el doctor Atanasio Garza Ríos pero ocurrió que uno de los inscritos, el doctor Alejandro Otero, Jefe del Servicio de Ginecología del Hospital Español de México, convenció a los asistentes de la Sección de Ginecología y a los asistentes de la Sección de Obstetricia para que se unieran en un solo salón en el que se podrían presentar todos los trabajos programados en las dos secciones.
-Un grupo de los asistentes a esta reunión acordaron fundar la Asociación Mexicana de Ginecología y Obstetricia y comisionaron a los doctores Alfonso Álvarez Bravo, Alcibíades Marván, Carlos D. Guerrero, David Fragoso Lizalde y Luis Gómez Daza qienes se ocuparon de invitar a los profesores de Ginecología y Obstetricia de las escuelas de Medicina, a los Jefes de Servicio de estas especialidades en los diferentes Hospitales de la Ciudad de México y de las ciudades de Guadalajara, Monterrey, Mérida, San Luis Potosí, Veracruz, Oaxaca, Puebla y Torreón.
- En una reunión que se celebró tres meses más tarde, el día </string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="7 de febrero de 1945">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> en el Salón de Actos de la Escuela de Medicina de la Universidad Nacional Autónoma de México, en el antiguo Palacio de Santo Domingo en el Centro Histórico de la Ciudad de México, se levantó un acta por la cual se constituyó la </string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="ASOCIACION MEXICANA DE GINECOLOGÍA Y OBSTETRICIA">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">, una asociación civil de carácter científico con la firma de 59 médicos fundadores.
- 
-Nacida al calor de un deseo, tan imperativo como auténtico, de asociarse para el beneficio común en el orden profesional y académico, e inspirada su fundación en desinteresados anhelos de progreso la Asociación Mexicana de Ginecología y Obstetricia, A. C. (AMGO) se fundó el 7 de febrero de 1945 en el Salón de Actos de la Escuela de Medicina de la Universidad Nacional Autónoma de México, en el antiguo Palacio de Santo Domingo en el Centro Histórico de la Ciudad de México, tras cumplir la encomienda que se les hiciera a los doctores Carlos D. Guerrero, Alcibíades Marván, Luis Gómez Daza y Alfonso Álvarez Bravo de dar estructura a la AMGO que junto con otros 55 médicos firmaron el acta constitutiva.
-En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado muestras de plena madurez y ha demostrado que los fines para los que fue creada se han cumplido cabalmente.
- Ello se debe a la capacidad intelectual y visión de quienes la han guiado a lo largo de 53 Mesas o Consejos Directivos desde la </string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Primera Mesa Directiva">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> presidida por el Dr. Isidro Espinosa de los Reyes.
+                                        <string key="content">Consejo Dir. FEMECOG
 </string>
                                         <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="5" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="12" name="TrebuchetMS"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Presidente
+Dr. Javier Gómezpedroso Rea
+
+Vicepresidente
+Dr. Paulo Felipe Meade Treviño
+
+1er. Secretario Propietario
+Dra. Paola Iturralde Rosas Priego
+
+Tesorero
+Dr. Gerardo Eloy Arturo Aurioles López
+
+2do. Secretario Prop.
+Dr. Carlos G. Salazar López Ortiz
+
+1er. Secretario Suplente
+Dra. Atziri Ramírez Negrín
+
+2do. Secretario Suplente
+Dr. Jorge Iván Ceballos Mendoza
+
+Sub-Tesorero
+Dr. Leonel Alfonso Pedraza González</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="16" name="Helvetica"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -3055,7 +3036,7 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kr2-s9-eZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="-356"/>
+            <point key="canvasLocation" x="2967" y="-357"/>
         </scene>
         <!--Asistentes-->
         <scene sceneID="XA8-B1-lge">
@@ -3142,9 +3123,9 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="xll-DP-2nv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -3165,9 +3146,9 @@ En sus 67 años de vida primero como Asociación y ahora como Colegio ha dado mu
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="KT4-wW-2eT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -3453,9 +3434,9 @@ Cg
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="S1F-3I-76H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -3477,11 +3458,11 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="gcI-97-e21"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W1L-2P-2FI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDs-H9-kNw">
-                                <rect key="frame" x="0.0" y="80" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="567"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="5hB-u0-QZI" id="tRe-Ob-E7e"/>
@@ -3489,7 +3470,7 @@ Cg
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6H-B2-ccZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
-                                <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3532,7 +3513,7 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plataforma Virtual" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pba-Dm-blX">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plataforma Virtual" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pba-Dm-blX">
                                 <rect key="frame" x="0.0" y="439.5" width="375" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3544,14 +3525,14 @@ Cg
                                 <color key="textColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ubicacioon" translatesAutoresizingMaskIntoConstraints="NO" id="eT2-aF-cPc">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ubicacioon" translatesAutoresizingMaskIntoConstraints="NO" id="eT2-aF-cPc">
                                 <rect key="frame" x="30" y="463.5" width="315" height="166.5"/>
                                 <color key="backgroundColor" red="0.52156862749999999" green="0.83529411760000005" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eT2-aF-cPc" secondAttribute="height" multiplier="70:37" id="9qA-8b-nOq"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E84-gj-hZN">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E84-gj-hZN">
                                 <rect key="frame" x="30" y="463.5" width="315" height="166.5"/>
                                 <connections>
                                     <action selector="showMap:" destination="mbu-Po-fY4" eventType="touchUpInside" id="wY7-cQ-yfD"/>
@@ -3866,8 +3847,8 @@ Cg
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="M7E-sB-3Zs">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -4492,9 +4473,9 @@ Cg
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="SPC-b0-mVe">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -4559,9 +4540,9 @@ Cg
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="xFQ-vC-4cm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -4583,11 +4564,11 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="XWq-hE-6dw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0ZP-Gn-HIG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-tC-fXE">
-                                <rect key="frame" x="0.0" y="40" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="mgr-fN-10I" id="MV2-sv-IPY"/>
@@ -4595,7 +4576,7 @@ Cg
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-s4-Khd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -4722,7 +4703,7 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">
+                                        <string key="content">
 Dr. Luis G. Sentíes Cortina  Vicepresidente
 Dr. Ranferi Gaona Arreola  Vicepresidente
 Dra. Josefina Lira Plascencia  Secretaria    
@@ -4734,18 +4715,7 @@ Dra. Rosa María Sánchez Javier
 Dra. María Nallely Moreno Uribe  Comité de Atención a Profesores
 Dr. Zigor Campos Goenaga  Comité de Actividades Sociales
 Dra. Erika Torres Valdez
-</mutableString>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="35.399999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <mutableString key="content">
+
 Comité Científico COMEGO
 Coordinador: Dr. Salvador Espino y Sosa
 Secretario: Dr. Johnatan Torres Torres
@@ -4759,7 +4729,7 @@ Dr. José Ma. Torres Rincón
 Dr. Jesús Armando Montaño Uzcanga
 Dr. Luis Eduardo Romero Nava
 Dr. Miguel Ángel Mancera Reséndiz
-Dr. Manuel Mario Matute González </mutableString>
+Dr. Manuel Mario Matute González </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
@@ -4787,7 +4757,7 @@ Dr. Manuel Mario Matute González </mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgx-l7-y6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1762" y="-357"/>
+            <point key="canvasLocation" x="2367" y="-358"/>
         </scene>
         <!--Programa Texto View Controller-->
         <scene sceneID="4gN-fs-ChD">
@@ -4901,9 +4871,9 @@ Cg
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="szr-QJ-AJJ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -4961,9 +4931,9 @@ Cg
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Rdp-Vc-X0s">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.1767689586" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -4996,7 +4966,7 @@ Cg
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZt-G7-goS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.1764705882352941" green="0.24530059100000001" blue="0.43930792810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.3803921569" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -5146,14 +5116,14 @@ Cg
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Okd-lq-8yQ"/>
-        <segue reference="ffl-JY-88L"/>
+        <segue reference="J2l-n7-Zbw"/>
         <segue reference="cFw-ZH-ohu"/>
-        <segue reference="fIy-He-X28"/>
+        <segue reference="0zk-E8-o83"/>
         <segue reference="JDu-S6-Xr5"/>
         <segue reference="yEx-GR-D0a"/>
-        <segue reference="tgu-Rk-072"/>
-        <segue reference="pC7-yR-Z7B"/>
-        <segue reference="XHE-vv-rFZ"/>
+        <segue reference="mAd-Oo-91F"/>
+        <segue reference="6tm-Mg-Qid"/>
+        <segue reference="xlY-jl-qXJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name=" " width="16" height="16"/>
@@ -5171,7 +5141,7 @@ Cg
         <image name="BotonResidentes" width="334" height="137"/>
         <image name="BotonSede" width="157" height="280"/>
         <image name="BotonShare" width="157" height="157"/>
-        <image name="BotonUbicacion" width="157" height="157"/>
+        <image name="BotonUbicacion" width="160" height="160"/>
         <image name="FondoP9" width="16" height="16"/>
         <image name="Home-71CMOG" width="296" height="306"/>
         <image name="Home-COMEGO" width="79" height="126"/>
@@ -5179,7 +5149,7 @@ Cg
         <image name="HotelC1" width="750" height="366"/>
         <image name="HotelesBlanco" width="45" height="45"/>
         <image name="LogoCDMX" width="365" height="135"/>
-        <image name="LogoCongreso" width="500" height="213"/>
+        <image name="LogoCongreso" width="339" height="146"/>
         <image name="LogoWTC-Recinto" width="450" height="172"/>
         <image name="MarcoFoto" width="750" height="933"/>
         <image name="PdeteCOMEGO-Dr.-Gilberto-Tena-Alavez" width="325" height="315"/>

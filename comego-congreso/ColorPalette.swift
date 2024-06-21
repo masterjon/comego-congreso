@@ -24,7 +24,7 @@ struct ColorPallete{
     
     //static let DarkPrimaryColor = UIColor(red:0.00, green:0.47, blue:0.42, alpha:1.0)
     //static let DarkPrimaryColor = UIColor(red:0.38, green:0.35, blue:0.63, alpha:1.0)
-    static let DarkPrimaryColor = UIColor(red: 0.18, green: 0.25, blue: 0.44, alpha: 1.00)
+    static let DarkPrimaryColor = UIColor(red:0.13, green:0.13, blue:0.13, alpha:1.0)
 
 
 
@@ -35,7 +35,7 @@ struct ColorPallete{
     
 
 
-    static let PrimaryColor = UIColor(red:0.16, green:0.53, blue:0.58, alpha:1.0)
+    static let PrimaryColor = UIColor(red: 0.07, green: 0.38, blue: 0.41, alpha: 1.00)
     //static let AccentColor = UIColor(red:1.00, green:0.32, blue:0.32, alpha:1.0)
     static let AccentColor = UIColor(red: 0.90, green: 0.75, blue: 0.41, alpha: 1.00)
     
