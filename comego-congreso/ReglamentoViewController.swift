@@ -20,7 +20,7 @@ class ReglamentoViewController: UIViewController {
 //        if let url = URL(string:self.url){
 //            self.webView.loadRequest(URLRequest(url: url))
 //        }
-        if let pdfURL = Bundle.main.url(forResource: "Reglamento-71CMOG", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+        if let pdfURL = Bundle.main.url(forResource: "Reglamento28", withExtension: "pdf", subdirectory: nil, localization: nil)  {
             do {
                 let data = try Data(contentsOf: pdfURL)
                 let webView = WKWebView(frame: CGRect(x:20,y:20,width:view.frame.size.width-40, height:view.frame.size.height-40))

@@ -53,6 +53,7 @@
 		FCD228E720CB368C000F427A /* SalonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD228E620CB368C000F427A /* SalonDetailVC.swift */; };
 		FCD335BE2AD84EA000A2B981 /* Reglamento-71CMOG.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FCD335BD2AD84EA000A2B981 /* Reglamento-71CMOG.pdf */; };
 		FCD579F31F34EED4004A311C /* ProgramaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD579F21F34EED4004A311C /* ProgramaVC.swift */; };
+		FCDFF4442C262BBA001EB179 /* Reglamento28.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FCDFF4432C262BBA001EB179 /* Reglamento28.pdf */; };
 		FCE4AD8220CF146B005734F4 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4AD8120CF146B005734F4 /* QRViewController.swift */; };
 		FCE5C1B120B5D5D000F7A30D /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C1B020B5D5D000F7A30D /* Podcast.swift */; };
 		FCE5C1B320B6371F00F7A30D /* NormatividadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5C1B220B6371F00F7A30D /* NormatividadViewController.swift */; };
@@ -124,6 +125,7 @@
 		FCD228E620CB368C000F427A /* SalonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonDetailVC.swift; sourceTree = "<group>"; };
 		FCD335BD2AD84EA000A2B981 /* Reglamento-71CMOG.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Reglamento-71CMOG.pdf"; sourceTree = "<group>"; };
 		FCD579F21F34EED4004A311C /* ProgramaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramaVC.swift; sourceTree = "<group>"; };
+		FCDFF4432C262BBA001EB179 /* Reglamento28.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Reglamento28.pdf; sourceTree = "<group>"; };
 		FCE4AD8120CF146B005734F4 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		FCE5C1B020B5D5D000F7A30D /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		FCE5C1B220B6371F00F7A30D /* NormatividadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormatividadViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				FC1270131F005A2A008624C3 /* Info.plist */,
 				FCD335BD2AD84EA000A2B981 /* Reglamento-71CMOG.pdf */,
 				FCC487C8285B81DA0062A18A /* Reglamento.pdf */,
+				FCDFF4432C262BBA001EB179 /* Reglamento28.pdf */,
 				FCC149BF20DA3259007BB27A /* GoogleService-Info.plist */,
 				FCA60C9B20C7584300561EC3 /* ComitesViewController.swift */,
 				FC812BEE1F04C5F2004C406D /* OrganizadoresVC.swift */,
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD335BE2AD84EA000A2B981 /* Reglamento-71CMOG.pdf in Resources */,
+				FCDFF4442C262BBA001EB179 /* Reglamento28.pdf in Resources */,
 				FC1270121F005A2A008624C3 /* LaunchScreen.storyboard in Resources */,
 				FCC149C020DA325A007BB27A /* GoogleService-Info.plist in Resources */,
 				FC12700F1F005A2A008624C3 /* Assets.xcassets in Resources */,
